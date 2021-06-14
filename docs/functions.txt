@@ -1,0 +1,9 @@
+Regisztráció: az alkalmazásba be lehet regisztrálni username, e-mail és jelszó megadásával
+Bejelentkezés: az alkalmazásba be lehet lépni e-mail és jelszó segítségével
+Kijelentkezés: az alkalmazásból ki lehet jelentkezni az alkalmazás jobb felső sarkában található Log out gomb aktiválásával
+Új blog post: bejelentkezve új postot lehet létrehozni az alkalmazás jobb felső sarkában található new article gomb aktiválásával
+Meglévő post szerkesztése: bejelentkezve Edit article gombot aktiválva a poston a user módosítani, szerleszteni tudja a postot
+Poszt törlése: bejelentkezett user delete post gombot aktiválva törölni tudja a posztot
+Tagok követése: follow gomb aktiválása után user követheti a másik usert
+Tagek használata: New article-ben a bejelentkezett user tagekkel láthatja el a cikket, hogy mások könyebben megtalálják a cikket
+cikkek megtekintése: belépett user a cikkek címére kattintva megtekintheti más belépett userek cikkeit
