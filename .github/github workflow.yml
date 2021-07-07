@@ -29,17 +29,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Install Selenium Side Runner
-      run: |
-        npm install -g selenium-side-runner
     - name: Install Chrome
       run: |
         sudo apt install google-chrome-stable
-    - name: Install seleniumbase
-      run: pip install seleniumbase
-    - name: Install chromedriver
-      run: |
-        seleniumbase install chromedriver
     - name: Test with pytest
         run: |
           pytest --alluredir=allure-results
