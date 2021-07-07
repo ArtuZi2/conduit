@@ -31,7 +31,8 @@ def register(username, email, password):
 
     assert (megjelen_username == username)
 
-driver.close
+    driver.close
+
 
 register("sun", "tkata@gmail.com", "Sunshine2046")
 
