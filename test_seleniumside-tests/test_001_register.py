@@ -29,12 +29,14 @@ def register(username, email, password):
     megjelen_username = driver.find_element_by_xpath("//*[@id='app']/nav/div/ul/li[4]/a").text
     username = driver.find_element_by_xpath("//input[@type='text'][@placeholder='Your username']").text
 
-    assert (megjelen_username == username)
+    print(megjelen_username)
+
+    assert(megjelen_username == username)
 
     driver.close
 
 
-register("sun", "tkata@gmail.com", "Sunshine2046")
+register("sun3", "tkata1@gmail.com", "Sunshine2046")
 
 """try:
     driver.get("http://localhost:1667/#/")
