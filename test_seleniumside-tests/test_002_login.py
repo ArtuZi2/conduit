@@ -21,4 +21,7 @@ driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-ri
 div = driver.find_element_by_class_name('nav-item')
 print(div.find_element_by_css_selector('a').get_attribute('href'))
 
+driver.find_element_by_class_name("nav-link").click()
+
+
 #driver.close()

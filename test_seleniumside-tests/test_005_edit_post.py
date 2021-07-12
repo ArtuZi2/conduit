@@ -18,3 +18,5 @@ driver.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send
 driver.find_element_by_xpath("//input[@type='password'][@placeholder='Password']").send_keys("Sunshine2046")
 driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
 
+new_article = driver.find_element_by_xpath("//a[@href='#/editor']")
+new_article.click()

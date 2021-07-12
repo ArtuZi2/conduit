@@ -17,4 +17,5 @@ element.click()
 driver.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys("tkata@gmail.com")
 driver.find_element_by_xpath("//input[@type='password'][@placeholder='Password']").send_keys("Sunshine2046")
 driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
-driver.find_element_by_link_text("Log out").click()
+logout = driver.find_element_by_class_name("ion-android-exit")
+logout.click
