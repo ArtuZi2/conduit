@@ -1,6 +1,10 @@
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import time
+from selenium.webdriver.chrome.options import Options
+options = Options()
+options.add_argument('--headless')
+options.add_argument('--disable-gpu')
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
 
@@ -28,12 +32,12 @@ def register(username, email, password):
     megjelen_username = driver.find_element_by_xpath(f"//a[contains(@href, '@{username}')]").text
     assert megjelen_username == username
 
-    register("sun2", "tkata23456123@gmail.com", "Sunshine2046")
+    register("sun2", "tkata342436@gmail.com", "Sunshine2046")
 
     #driver.close"""
 
 try:
-    def register(username, email, password):
+    def test_register(username, email, password):
 
         driver.get("http://localhost:1667/#/")
         driver.find_element_by_xpath("/html/body//a[contains(@href,'register')]").click()
@@ -73,7 +77,7 @@ try:
         assert megjelen_username == username
 
 
-    register("sun2", "tkata1234122@gmail.com", "Sunshine2046")
+    test_register("sun2", "tkata1231278@gmail.com", "Sunshine2046")
     driver.find_element_by_xpath("//ul/li[5]").click()
 
 finally:

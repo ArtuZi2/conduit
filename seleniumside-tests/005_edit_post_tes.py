@@ -1,10 +1,15 @@
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import time
+from selenium.webdriver.chrome.options import Options
+options = Options()
+options.add_argument('--headless')
+options.add_argument('--disable-gpu')
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
+
 try:
-    def new_post():
+    def edit_post():
         driver.get("http://localhost:1667/#/")
 
         navbar = driver.find_elements_by_class_name("ion-compose")
@@ -23,18 +28,23 @@ try:
 
         continue_link = driver.find_element_by_xpath("//ul/li[2]").click()
 
-        article = driver.find_element_by_xpath("//input[@placeholder='Article Title']")
-        article.send_keys("Spring")
-        driver.find_element_by_xpath("//input[@type='text'][@placeholder='What's this article about?']").send_keys("About my favorite season")
-        driver.find_element_by_xpath("//input[@rows='8'][@placeholder='Write your article (in markdown)']").send_keys("Spring is my life")
+        driver.find_element_by_xpath("//input[@type='text'][@placeholder='Article Title']").send_keys("Spring")
+        driver.find_element_by_xpath("//input[@type='text'][@placeholder='What's this article about?']").send_keys(
+            "About my favorite season")
+        driver.find_element_by_xpath("//input[@rows='8'][@placeholder='Write your article (in markdown)']").send_keys(
+            "Spring is my life")
         driver.find_element_by_xpath("//input[@type='text'][@placeholder='Enter tags')']").send_keys("Spring is my life")
 
         driver.find_element_by_xpath("//button[@class='btn btn-lg pull-xs-right btn-primary']").click()
+
+
+        #beírni a cikket
+        # aktiválni a publish gombot
+        #aktiválni cikkoldalon az edit gombot
+        #módosítani a cikken
+        #aktiválni a publich gombot
+        #asserttel ellenőrizni a változást
+        #logout
 finally:
     pass
     #driver.close()
-
-
-#user send key-el kitölti ...miért nem tudom kitölteni?
-#user click publish button
-#assert home oldalon, hogy a cikk látható-e, kattintható-e, elérhető-e
