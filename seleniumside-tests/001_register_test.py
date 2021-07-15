@@ -77,7 +77,7 @@ try:
         assert megjelen_username == username
 
 
-    test_register("sun2", "tkata1231278@gmail.com", "Sunshine2046")
+    test_register("sun2", "tkata12313338@gmail.com", "Sunshine2046")
     driver.find_element_by_xpath("//ul/li[5]").click()
 
 finally:
