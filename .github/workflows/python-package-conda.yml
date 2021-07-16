@@ -17,9 +17,6 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '14'
-    - name: Install dependencies
-      run: |
-        conda env update --file environment.yml --name base
     - name: Lint with flake8
       run: |
         conda install flake8
