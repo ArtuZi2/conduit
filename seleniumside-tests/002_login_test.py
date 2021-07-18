@@ -6,13 +6,13 @@ options = Options()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
 
+
 driver = webdriver.Chrome(ChromeDriverManager().install())
 
+driver.get("http://localhost:1667/#/")
+
 try:
-    def logout(emil, password):
-
-        driver.get("http://localhost:1667/#/")
-
+    def test_login(emil, password):
         navbar = driver.find_elements_by_class_name("ion-compose")
         print(navbar)
 
@@ -24,9 +24,12 @@ try:
         driver.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys(emil)
         driver.find_element_by_xpath("//input[@type='password'][@placeholder='Password']").send_keys(password)
         driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
-        time.sleep(2)
-        driver.find_element_by_xpath("//a [@active-class='active']").click()
 
-    logout("tkata@gmail.com", "Sunshine2046")
+        time.sleep(2)
+
+    test_login("tkata@gmail.com", "Sunshine2046")
+
+    driver.find_element_by_xpath("//a [@active-class='active']").click()
+
 finally:
     driver.close()

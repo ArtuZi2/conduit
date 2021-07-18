@@ -5,10 +5,13 @@ from selenium.webdriver.chrome.options import Options
 options = Options()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
+
 driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.get("http://localhost:1667/#/")
+
 try:
-    def login(emil, password):
+    def test_login(emil, password):
+
         navbar = driver.find_elements_by_class_name("ion-compose")
         print(navbar)
 
@@ -23,31 +26,28 @@ try:
 
         time.sleep(2)
 
-    login("tkata@gmail.com", "Sunshine2046")
+    test_login("tkata@gmail.com", "Sunshine2046")
 
-#New Article button
     continue_link = driver.find_element_by_xpath("//a[@href='#/editor']").click()
 
-    def new_post():
+    def test_new_post(title, lead, szoveg, tag):
 
         time.sleep(2)
         article = driver.find_element_by_xpath("//fieldset[1]/input")
-        article.send_keys("Spring")
+        article.send_keys(title)
         time.sleep(3)
-        #driver.find_element_by_xpath("//fieldset[2]/input"").send_keys("About my favorite season")
+        driver.find_element_by_xpath("//fieldset[2]/input").send_keys(lead)
         time.sleep(2)
-        driver.find_element_by_xpath("//input[@rows='8'][@placeholder='Write your article (in markdown)']").send_keys("Spring is my life")
-        time.sleep()
-        driver.find_element_by_xpath("//input[@type='text'][@placeholder='Enter tags')']").send_keys("Spring is my life")
-
+        driver.find_element_by_xpath("//fieldset[3]/textarea").send_keys(szoveg)
+        time.sleep(2)
+        driver.find_element_by_xpath("//fieldset[4]/div/div/ul/li/input").send_keys(tag)
+        time.sleep(2)
         driver.find_element_by_xpath("//button[@class='btn btn-lg pull-xs-right btn-primary']").click()
 
-    new_post()
-finally:
-    pass
-    #driver.close()
+    test_new_post("Spring", "About my favorite season", "Spring is my life.", "Spring\n")
 
+    def test_delete_post():
+        driver.find_element_by_xpath("//a[@class='btn btn-outline-danger btn-sm']").click()
+        driver.find_elements_by_tag_name('button')[2].click()
 
-#user send key-el kitölti ...miért nem tudom kitölteni?
-#user click publish button
-#assert home oldalon, hogy a cikk látható-e, kattintható-e, elérhető-e
+    test_delete_post()
