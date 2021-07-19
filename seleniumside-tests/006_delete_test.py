@@ -51,3 +51,5 @@ try:
         driver.find_elements_by_tag_name('button')[2].click()
 
     test_delete_post()
+#ellenőrizni, hogy kitörölte-e a cikket
+#back aktiválása után ismét ellenőrizni
