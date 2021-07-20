@@ -36,9 +36,9 @@ jobs:
       run: |
         sudo apt install google-chrome-stable
     - name: Test with pytest
-        run: |
+      run: |
           pytest --alluredir=allure-results
-        env:
+      env:
           RUNENV: GITHUB
     
     - name: Get Allure history
