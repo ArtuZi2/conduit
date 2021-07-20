@@ -17,6 +17,9 @@ jobs:
     - name: Builds and Starts
       run: |
           docker-compose up -d
+    - name: Sleep for 45 seconds
+      run: sleep 45s
+      shell: bash
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
       with:
