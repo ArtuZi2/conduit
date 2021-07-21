@@ -14,6 +14,7 @@ driver.get("http://localhost:1667/#/")
 try:
     def test_login(emil, password):
         navbar = driver.find_elements_by_class_name("ion-compose")
+        #át lehet ezt alakítani, hogy kiírja a navban elemeit?
         print(navbar)
 
         element = driver.find_element_by_xpath("/html/body//a[contains(@href,'login')]")
@@ -29,7 +30,24 @@ try:
 
     test_login("tkata@gmail.com", "Sunshine2046")
 
+    time.sleep(2)
+    #driver.find_element_by_xpath("//a[@href='#/settings']").click()
+    #time.sleep(2)
+    #megjelen = driver.find_element_by_xpath("//*[@id='app']/div/div/div/div/form/fieldset/fieldset[2]/input")
+    #driver.find_element_by_xpath("//*[@id='app']/nav/div/ul/li[4]/a").click()
+    #megjelen = driver.find_element_by_xpath("//*[@id='app']/nav/div/ul/li[4]/a")
+    #print(megjelen)
+    driver.find_element_by_xpath("//*[@id='app']/nav/div/ul/li[4]/a").click()
+    time.sleep(2)
+    user_sett = driver.find_element_by_tag_name("h4")
+    time.sleep(2)
+    print(user_sett.text)
+    user = "sun2"
+
+    assert user == user_sett.text
+
     driver.find_element_by_xpath("//a [@active-class='active']").click()
+
 
 finally:
     driver.close()

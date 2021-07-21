@@ -49,7 +49,7 @@ try:
 
         # megjelen_username = driver.find_element_by_xpath("//a[contains(@href, '@sun2')]").text
 
-        megjelen_username = driver.find_element_by_xpath(f"//a[contains(@href, '@{username}')]").text
+        megjelen_username = driver.find_element_by_xpath(f"//a[contains(@href, '@sun2')]").text
         # driver.find_element_by_xpath("//fieldset[2]/input[@type='text']").send_keys("emma")
 
         print(megjelen_username)

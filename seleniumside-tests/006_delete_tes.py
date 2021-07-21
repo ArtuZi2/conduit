@@ -46,10 +46,16 @@ try:
 
     test_new_post("Spring", "About my favorite season", "Spring is my life.", "Spring\n")
 
+    time.sleep(2)
+
     def test_delete_post():
         driver.find_element_by_xpath("//a[@class='btn btn-outline-danger btn-sm']").click()
         driver.find_elements_by_tag_name('button')[2].click()
 
     test_delete_post()
+finally:
+    pass
+    driver.close()
+
 #ellenőrizni, hogy kitörölte-e a cikket
 #back aktiválása után ismét ellenőrizni

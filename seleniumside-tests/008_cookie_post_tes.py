@@ -9,20 +9,28 @@ options.add_argument('--disable-gpu')
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
 
-def test_cookie():
+
+def test_cookie1():
 
     driver.get("http://localhost:1667/#/")
 
-    cookie = driver.find_element_by_xpath("//*[@id='cookie-policy-panel']/div/div[2]")
+    cookies = driver.find_element_by_xpath("//*[@id='cookie-policy-panel']/div/div[2]")
 
-    print(cookie.is_displayed())
-    print(cookie.is_enabled())
+    print(cookies.is_displayed())
+    print(cookies.is_enabled())
 
-    buttons = driver.find_elements_by_xpath("//*[@id='cookie-policy-panel']/div/div[2]/button"[1])
-    buttons_text = "I decline!"
-    print(buttons)
-    print(buttons_text)
+    print(driver.get_cookies())
 
+    accept = driver.find_element_by_xpath("//*[@id='cookie-policy-panel']/div/div[2]/button[2]/div")
+    accept.click()
 
-test_cookie()
+    print(driver.get_cookies())
+
+    time.sleep(2)
+    driver.close()
+
+    #elnavigálni, megnézni, megjelenik-e a cookie még egyszer
+
+test_cookie1()
+
 

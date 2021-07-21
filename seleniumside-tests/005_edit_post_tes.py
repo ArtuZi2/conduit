@@ -68,6 +68,7 @@ try:
         driver.find_element_by_xpath("//button[@class='btn btn-lg pull-xs-right btn-primary']").click()
 
     test_edit_post("Winter", "About my favorite season", "Winter is the best.", "Winter\n")
+    driver.find_element_by_xpath("//*[@id='app']/div/div/div/div/form/button")
 finally:
     pass
 

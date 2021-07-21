@@ -28,10 +28,22 @@ try:
 
     test_login("tkata@gmail.com", "Sunshine2046")
 
-    def test_logout(emil, password):
+    def test_logout():
 
-        driver.find_element_by_xpath("//a [@active-class='active']").click()
+        logout = driver.find_element_by_xpath("//a [@active-class='active']")
+        print(logout.is_enabled())
+        print(logout.is_displayed())
+        logout.click()
+        time.sleep(2)
+        while True:
+            try:
+                logout.is_enabled()
+                print("Látható")
+            except:
+                print("Nem látható az oldalon")
+                break
 
-        test_logout()
+    test_logout()
 finally:
-    driver.close()
+    pass
+    #driver.close()
