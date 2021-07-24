@@ -3,19 +3,20 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 from selenium.webdriver.chrome.options import Options
 options = webdriver.ChromeOptions()
-#options.add_argument('--headless')
-#options.add_argument('--disable-gpu')
+options.add_argument('--headless')
+options.add_argument('--disable-gpu')
 
 
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
-driver.get("http://localhost:1667/#/")
-
 
 def test_login():
+    driver.get("http://localhost:1667/#/")
     navbar = driver.find_elements_by_class_name("ion-compose")
     #át lehet ezt alakítani, hogy kiírja a navban elemeit?
     print(navbar)
+
+    time.sleep(2)
 
     element = driver.find_element_by_xpath("/html/body//a[contains(@href,'login')]")
     print(element.is_enabled())
@@ -25,8 +26,11 @@ def test_login():
     password = "Sunshine2046"
 
     element.click()
+    time.sleep(2)
     driver.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys(emil)
+    time.sleep(2)
     driver.find_element_by_xpath("//input[@type='password'][@placeholder='Password']").send_keys(password)
+    time.sleep(2)
     driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
 
 
@@ -39,14 +43,14 @@ def test_login():
     #print(megjelen)
     driver.find_element_by_xpath("//*[@id='app']/nav/div/ul/li[4]/a").click()
     time.sleep(2)
-    user_sett = driver.find_element_by_tag_name("h4")
+    user_setting = driver.find_element_by_tag_name("h4")
     time.sleep(2)
-    print(user_sett.text)
+    print(user_setting.text)
     user = "sun2"
 
-    assert user == user_sett.text
+    assert user == user_setting.text
 
-    driver.find_element_by_xpath("//a [@active-class='active']").click()
+    #driver.find_element_by_xpath("//a [@active-class='active']").click()
 
-
-driver.close()
+test_login()
+#driver.close()

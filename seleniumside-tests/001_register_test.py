@@ -3,7 +3,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 from selenium.webdriver.chrome.options import Options
 import random, string
-
 options = webdriver.ChromeOptions()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
@@ -12,6 +11,7 @@ driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
 
 def test_register():
+    driver.get("http://localhost:1667/#/")
     def generate_email(prefix='tkata+', domain='gmail.com'):
         random_part = ''.join(random.choice(string.ascii_lowercase + string.digits)
                               for _ in range(10))
@@ -23,7 +23,7 @@ def test_register():
     username = "sun2"
     password = "Sunshine2046"
 
-    driver.get("http://localhost:1667/#/")
+
     driver.find_element_by_xpath("/html/body//a[contains(@href,'register')]").click()
     driver.find_element_by_xpath("//input[@type='text'][@placeholder='Username']").send_keys(username)
     driver.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys(generate_email())
@@ -63,6 +63,6 @@ def test_register():
     time.sleep(2)
 
 test_register()
-#driver.find_element_by_xpath("//a [@active-class='active']").click()
+driver.find_element_by_xpath("//a [@active-class='active']").click()
 
 driver.close()

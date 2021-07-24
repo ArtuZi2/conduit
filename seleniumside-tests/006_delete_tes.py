@@ -9,53 +9,61 @@ options.add_argument('--disable-gpu')
 driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.get("http://localhost:1667/#/")
 
-try:
-    def test_login(emil, password):
 
-        navbar = driver.find_elements_by_class_name("ion-compose")
-        print(navbar)
+def test_login(emil, password):
 
-        element = driver.find_element_by_xpath("/html/body//a[contains(@href,'login')]")
-        print(element.is_enabled())
-        print(element.is_displayed())
+    navbar = driver.find_elements_by_class_name("ion-compose")
+    print(navbar)
 
-        element.click()
-        driver.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys(emil)
-        driver.find_element_by_xpath("//input[@type='password'][@placeholder='Password']").send_keys(password)
-        driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
+    element = driver.find_element_by_xpath("/html/body//a[contains(@href,'login')]")
+    print(element.is_enabled())
+    print(element.is_displayed())
 
-        time.sleep(2)
-
-    test_login("tkata@gmail.com", "Sunshine2046")
-
-    continue_link = driver.find_element_by_xpath("//a[@href='#/editor']").click()
-
-    def test_new_post(title, lead, szoveg, tag):
-
-        time.sleep(2)
-        article = driver.find_element_by_xpath("//fieldset[1]/input")
-        article.send_keys(title)
-        time.sleep(3)
-        driver.find_element_by_xpath("//fieldset[2]/input").send_keys(lead)
-        time.sleep(2)
-        driver.find_element_by_xpath("//fieldset[3]/textarea").send_keys(szoveg)
-        time.sleep(2)
-        driver.find_element_by_xpath("//fieldset[4]/div/div/ul/li/input").send_keys(tag)
-        time.sleep(2)
-        driver.find_element_by_xpath("//button[@class='btn btn-lg pull-xs-right btn-primary']").click()
-
-    test_new_post("Spring", "About my favorite season", "Spring is my life.", "Spring\n")
+    element.click()
+    driver.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys(emil)
+    driver.find_element_by_xpath("//input[@type='password'][@placeholder='Password']").send_keys(password)
+    driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
 
     time.sleep(2)
 
-    def test_delete_post():
-        driver.find_element_by_xpath("//a[@class='btn btn-outline-danger btn-sm']").click()
-        driver.find_elements_by_tag_name('button')[2].click()
+test_login("tkata@gmail.com", "Sunshine2046")
 
-    test_delete_post()
-finally:
-    pass
-    driver.close()
+continue_link = driver.find_element_by_xpath("//a[@href='#/editor']").click()
+
+def test_new_post(title, lead, szoveg, tag):
+
+    time.sleep(2)
+    article = driver.find_element_by_xpath("//fieldset[1]/input")
+    article.send_keys(title)
+    time.sleep(3)
+    driver.find_element_by_xpath("//fieldset[2]/input").send_keys(lead)
+    time.sleep(2)
+    driver.find_element_by_xpath("//fieldset[3]/textarea").send_keys(szoveg)
+    time.sleep(2)
+    driver.find_element_by_xpath("//fieldset[4]/div/div/ul/li/input").send_keys(tag)
+    time.sleep(2)
+    driver.find_element_by_xpath("//button[@class='btn btn-lg pull-xs-right btn-primary']").click()
+
+test_new_post("Spring", "About my favorite season", "Spring is my life.", "Spring\n")
+
+time.sleep(2)
+
+def test_delete_post():
+    delete_button = driver.find_element_by_xpath("//button[@class='btn btn-outline-danger btn-sm']")
+    delete_button.click()
+    driver.find_elements_by_tag_name('button')[2].click()
+
+test_delete_post()
+
+time.sleep(2)
+
+
+
+driver.back()
+
+driver.close()
+
+
 
 #ellenőrizni, hogy kitörölte-e a cikket
 #back aktiválása után ismét ellenőrizni
