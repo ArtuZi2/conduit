@@ -1,19 +1,29 @@
 from selenium import webdriver
+from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 from selenium.webdriver.chrome.options import Options
 import random, string
+from selenium.webdriver.chrome.options import Options
 
-driver = webdriver.Chrome(ChromeDriverManager().install(), )
+
+chrome_options = Options()
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument('--disable-dev-shm-usage')
+driver = webdriver.Chrome('C:/Users/Zitu/PycharmProjects/chromedriver.exe', chrome_options=chrome_options)
+driver.get('http://localhost:1667')
+
+"""driver = webdriver.Chrome(ChromeDriverManager().install(), )
 
 
-"""def pytest_setup_selenium():
+def pytest_setup_selenium():
     options = Options()
     options.headless = True
     return {
         'executable_path': '/usr/bin/chromedriver',
         'chrome_options': options,
-    }"""
+    }
 
 import pytest
 options = webdriver.ChromeOptions()
@@ -23,7 +33,7 @@ options.add_argument('--disable-gpu')
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 driver.get("http://localhost:1667/#/")
 
-"""print("Current session is {}".format(driver.session_id))
+print("Current session is {}".format(driver.session_id))
 driver.quit()
 try:
     driver.get("http://localhost:1667")
