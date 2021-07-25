@@ -3,19 +3,20 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 from selenium.webdriver.chrome.options import Options
 options = webdriver.ChromeOptions()
+options = Options()
+options.add_argument('--headless')
+options.add_argument('--disable-gpu')
+driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+driver.get("http://localhost:1667/#/")
 #options.add_argument('--headless')
 #options.add_argument('--disable-gpu')
 
 
-driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
-
-
 def test_login():
-    driver.get("http://localhost:1667/#/")
-    time.sleep(2)
+    """time.sleep(2)
     navbar = driver.find_elements_by_class_name("ion-compose")
     #át lehet ezt alakítani, hogy kiírja a navban elemeit?
-    print(navbar)
+    print(navbar)"""
 
     time.sleep(2)
 
