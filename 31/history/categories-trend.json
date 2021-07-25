@@ -1,3 +1,49 @@
 [ {
+  "buildOrder" : 31,
+  "reportUrl" : "https://ArtuZi2.github.io/conduit/31/",
+  "reportName" : "Allure Report with history",
+  "data" : { }
+}, {
+  "buildOrder" : 30,
+  "reportUrl" : "https://ArtuZi2.github.io/conduit/30/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "Test defects" : 2
+  }
+}, {
+  "buildOrder" : 29,
+  "reportUrl" : "https://ArtuZi2.github.io/conduit/29/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "Test defects" : 1
+  }
+}, {
+  "buildOrder" : 28,
+  "reportUrl" : "https://ArtuZi2.github.io/conduit/28/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "Test defects" : 2
+  }
+}, {
+  "buildOrder" : 27,
+  "reportUrl" : "https://ArtuZi2.github.io/conduit/27/",
+  "reportName" : "Allure Report with history",
+  "data" : { }
+}, {
+  "buildOrder" : 26,
+  "reportUrl" : "https://ArtuZi2.github.io/conduit/26/",
+  "reportName" : "Allure Report with history",
+  "data" : { }
+}, {
+  "buildOrder" : 25,
+  "reportUrl" : "https://ArtuZi2.github.io/conduit/25/",
+  "reportName" : "Allure Report with history",
+  "data" : { }
+}, {
+  "buildOrder" : 24,
+  "reportUrl" : "https://ArtuZi2.github.io/conduit/24/",
+  "reportName" : "Allure Report with history",
+  "data" : { }
+}, {
   "data" : { }
 } ]
