@@ -1,5 +1,43 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body//a[contains(@href,'register')]\"}\n  (Session info: headless chrome=91.0.4472.164)",
+      "children" : [ {
+        "name" : "test_register",
+        "uid" : "4082236acc703487",
+        "parentUid" : "e3f38d515e6a952548a117dacba089fe",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627241622053,
+          "stop" : 1627241624071,
+          "duration" : 2018
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e3f38d515e6a952548a117dacba089fe"
+    }, {
+      "name" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "children" : [ {
+        "name" : "test_login",
+        "uid" : "fe48a02b3718340f",
+        "parentUid" : "04e0e10128006169cbbb0fa535941c37",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627241624154,
+          "stop" : 1627241626158,
+          "duration" : 2004
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "04e0e10128006169cbbb0fa535941c37"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
   "name" : "categories"
 }

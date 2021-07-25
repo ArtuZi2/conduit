@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Sun Jul 25 19:33:42 GMT 2021","Sun Jul 25 19:33:44 GMT 2021","2018","conduit_tests","001_register_test","","","","test_register",""
+"broken","Sun Jul 25 19:33:44 GMT 2021","Sun Jul 25 19:33:46 GMT 2021","2004","conduit_tests","002_login_test","","","","test_login","time.sleep(2)
+    navbar = driver.find_elements_by_class_name(""ion-compose"")
+    #át lehet ezt alakítani, hogy kiírja a navban elemeit?
+    print(navbar)"
