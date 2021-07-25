@@ -2,48 +2,58 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 from selenium.webdriver.chrome.options import Options
-options = Options()
+"""options = Options()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
 
-driver = webdriver.Chrome(ChromeDriverManager().install())
+driver = webdriver.Chrome(ChromeDriverManager().install())"""
+import pytest
 
-try:
-    def test_login(emil, password):
-        driver.get("http://localhost:1667/#/")
 
-        navbar = driver.find_elements_by_class_name("ion-compose")
-        print(navbar)
+@pytest.fixture(scope='session')
+def browser():
+    driver = webdriver.Chrome()
+    driver.get("http://localhost:1667/#/")
+    return driver
 
-        element = driver.find_element_by_xpath("/html/body//a[contains(@href,'login')]")
-        print(element.is_enabled())
-        print(element.is_displayed())
 
-        element.click()
-        driver.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys(emil)
-        driver.find_element_by_xpath("//input[@type='password'][@placeholder='Password']").send_keys(password)
-        driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
+def test_login(browser):
+    emil = "tkata@gmail.com"
+    password = "Sunshine2046"
 
-        time.sleep(2)
 
-    test_login("tkata@gmail.com", "Sunshine2046")
+    time.sleep(2)
+    navbar = browser.find_elements_by_class_name("ion-compose")
+    #át lehet ezt alakítani, hogy kiírja a navban elemeit?
+    print(navbar)
 
-    def test_logout():
+    time.sleep(2)
 
-        logout = driver.find_element_by_xpath("//a [@active-class='active']")
-        print(logout.is_enabled())
-        print(logout.is_displayed())
-        logout.click()
-        time.sleep(2)
-        while True:
-            try:
-                logout.is_enabled()
-                print("Látható")
-            except:
-                print("Nem látható az oldalon")
-                break
+    element = browser.find_element_by_xpath("//a[@href='#/login']")
+    print(element.is_enabled())
+    print(element.is_displayed())
 
-    test_logout()
-finally:
-    pass
-    #driver.close()
+    element.click()
+    time.sleep(2)
+    browser.find_element_by_xpath("//fieldset[1]/input").send_keys(emil)
+    time.sleep(2)
+    browser.find_element_by_xpath("//fieldset[2]/input").send_keys(password)
+    time.sleep(2)
+    browser.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
+    time.sleep(2)
+    browser.find_element_by_xpath("//*[@id='app']/nav/div/ul/li[4]/a").click()
+
+def test_logout(browser):
+
+    logout = browser.find_element_by_xpath("//a [@active-class='active']")
+    print(logout.is_enabled())
+    print(logout.is_displayed())
+    logout.click()
+    time.sleep(2)
+    while True:
+        try:
+            logout.is_enabled()
+            print("Látható")
+        except:
+            print("Nem látható az oldalon")
+            break
