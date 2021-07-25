@@ -1,4 +1,9 @@
 [ {
+  "buildOrder" : 20,
+  "reportUrl" : "https://ArtuZi2.github.io/conduit/20/",
+  "reportName" : "Allure Report with history",
+  "data" : { }
+}, {
   "buildOrder" : 19,
   "reportUrl" : "https://ArtuZi2.github.io/conduit/19/",
   "reportName" : "Allure Report with history",
