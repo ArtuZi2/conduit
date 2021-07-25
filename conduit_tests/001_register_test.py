@@ -4,18 +4,18 @@ import time
 from selenium.webdriver.chrome.options import Options
 import random, string
 
-bro_driver = webdriver.Chrome(ChromeDriverManager().install(),)
+driver = webdriver.Chrome(ChromeDriverManager().install(),)
 
 
-def pytest_setup_selenium():
+"""def pytest_setup_selenium():
     options = Options()
     options.headless = True
     return {
         'executable_path': '/usr/bin/chromedriver',
         'chrome_options': options,
-    }
+    }"""
 
-"""import pytest
+import pytest
 #options = webdriver.ChromeOptions()
 options = Options()
 options.add_argument('--headless')
@@ -23,7 +23,7 @@ options.add_argument('--disable-gpu')
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 driver.get("http://localhost:1667/#/")
 
-print("Current session is {}".format(driver.session_id))
+"""print("Current session is {}".format(driver.session_id))
 driver.quit()
 try:
     driver.get("http://localhost:1667")
@@ -45,23 +45,23 @@ def test_register():
     username = "sun2"
     password = "Sunshine2046"
 
-    bro_driver.find_element_by_xpath("/html/body//a[contains(@href,'register')]").click()
-    bro_driver.find_element_by_xpath("//input[@type='text'][@placeholder='Username']").send_keys(username)
-    bro_driver.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys(generate_email())
+    driver.find_element_by_xpath("/html/body//a[contains(@href,'register')]").click()
+    driver.find_element_by_xpath("//input[@type='text'][@placeholder='Username']").send_keys(username)
+    driver.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys(generate_email())
     # if driver.find_element_by_class_name("swal-modal").is_displayed():
     #  a = driver.find_element_by_class_name("swal-button swal-button--confirm")
     #   a.click()
-    bro_driver.find_element_by_xpath("//input[@type='password'][@placeholder='Password']").send_keys(password)
+    driver.find_element_by_xpath("//input[@type='password'][@placeholder='Password']").send_keys(password)
 
-    bro_driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
+    driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
 
     time.sleep(5)
 
-    welcome = bro_driver.find_element_by_xpath("//div[contains(@class, 'swal-text')]").text
+    welcome = driver.find_element_by_xpath("//div[contains(@class, 'swal-text')]").text
     text = "Your registration was successful!"
     assert (text == welcome)
 
-    bro_driver.find_element_by_xpath("//button[contains(text(),'OK')]").click()
+    driver.find_element_by_xpath("//button[contains(text(),'OK')]").click()
 
     time.sleep(5)
 
@@ -83,7 +83,7 @@ def test_register():
 
     time.sleep(2)
 
-    bro_driver.find_element_by_xpath("//a [@active-class='active']").click()
+    driver.find_element_by_xpath("//a [@active-class='active']").click()
 
 
 #driver.close()
