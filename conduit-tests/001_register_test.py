@@ -5,26 +5,23 @@ from selenium.webdriver.chrome.options import Options
 import random, string
 import pytest
 #options = webdriver.ChromeOptions()
-#options.add_argument('--headless')
-#options.add_argument('--disable-gpu')
+options = Options()
+options.add_argument('--headless')
+options.add_argument('--disable-gpu')
+driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+driver.get("http://localhost:1667/#/")
 
-import os
-
-@pytest.fixture(scope='session')
-def driver():
-    options = Options()
-    options.add_argument('--headless')
-    options.add_argument('--disable-gpu')
-    driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
-    os.system('docker-compose up -d')
-    driver.get("http://localhost:1667/#/")
-    return driver
-
+"""print("Current session is {}".format(driver.session_id))
+driver.quit()
+try:
+    driver.get("http://localhost:1667")
+except Exception as e:
+    print(e.message)"""
 
 
 def test_register():
-    driver.get("http://localhost:1667/#/")
     time.sleep(2)
+
     def generate_email(prefix='tkata+', domain='gmail.com'):
         random_part = ''.join(random.choice(string.ascii_lowercase + string.digits)
                               for _ in range(10))
