@@ -6,15 +6,21 @@ from selenium.webdriver.chrome.options import Options
 import random, string
 from selenium.webdriver.chrome.options import Options
 
+options = webdriver.ChromeOptions()
+options.add_argument('--headless')
+driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+driver.get("http://localhost:1667")
 
-chrome_options = Options()
+
+
+"""chrome_options = Options()
 chrome_options.add_argument('--headless')
 chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--disable-dev-shm-usage')
 driver = webdriver.Chrome('C:/Users/Zitu/PycharmProjects/chromedriver.exe', chrome_options=chrome_options)
 driver.get('http://localhost:1667')
 
-"""driver = webdriver.Chrome(ChromeDriverManager().install(), )
+driver = webdriver.Chrome(ChromeDriverManager().install(), )
 
 
 def pytest_setup_selenium():
