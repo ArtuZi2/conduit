@@ -7,12 +7,19 @@ options = Options()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
-driver.get("http://localhost:1667/#/")
+#driver.get("http://localhost:1667/#/")
 #options.add_argument('--headless')
 #options.add_argument('--disable-gpu')
+import pytest
+
+@pytest.fixture(scope='session')
+def browser():
+    driver = webdriver.Chrome()
+    driver.get("http://localhost:1667/#/")
+    return driver
 
 
-def test_login():
+def test_login(browser):
     """time.sleep(2)
     navbar = driver.find_elements_by_class_name("ion-compose")
     #át lehet ezt alakítani, hogy kiírja a navban elemeit?
@@ -29,11 +36,11 @@ def test_login():
 
     element.click()
     time.sleep(2)
-    driver.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys(emil)
+    browser.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys(emil)
     time.sleep(2)
-    driver.find_element_by_xpath("//input[@type='password'][@placeholder='Password']").send_keys(password)
+    browser.find_element_by_xpath("//input[@type='password'][@placeholder='Password']").send_keys(password)
     time.sleep(2)
-    driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
+    browser.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
 
 
     time.sleep(2)
@@ -43,7 +50,7 @@ def test_login():
     #driver.find_element_by_xpath("//*[@id='app']/nav/div/ul/li[4]/a").click()
     #megjelen = driver.find_element_by_xpath("//*[@id='app']/nav/div/ul/li[4]/a")
     #print(megjelen)
-    driver.find_element_by_xpath("//*[@id='app']/nav/div/ul/li[4]/a").click()
+    browser.find_element_by_xpath("//*[@id='app']/nav/div/ul/li[4]/a").click()
     time.sleep(2)
     user_setting = driver.find_element_by_tag_name("h4")
     time.sleep(2)
@@ -55,4 +62,4 @@ def test_login():
     #driver.find_element_by_xpath("//a [@active-class='active']").click()
 
 
-driver.close()
+#driver.close()
