@@ -7,10 +7,10 @@ from selenium.webdriver.chrome.options import Options
 options = webdriver.ChromeOptions()
 options.add_argument('--headless')
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
-driver.get("http://localhost:1667")
 
 
 def test_login():
+    driver.get("http://localhost:1667")
     time.sleep(2)
     navbar = driver.find_elements_by_class_name("ion-compose")
     #át lehet ezt alakítani, hogy kiírja a navban elemeit?

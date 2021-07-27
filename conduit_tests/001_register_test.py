@@ -9,10 +9,10 @@ from selenium.webdriver.chrome.options import Options
 options = webdriver.ChromeOptions()
 options.add_argument('--headless')
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
-driver.get("http://localhost:1667")
 
 
 def test_register():
+    driver.get("http://localhost:1667")
     time.sleep(2)
 
     def generate_email(prefix='tkata+', domain='gmail.com'):

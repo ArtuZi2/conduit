@@ -31,24 +31,30 @@ def test_login():
 
     time.sleep(2)
 
+
 test_login()
+
 
 def test_save():
     settings = driver.find_element_by_xpath("//a[@href='#/settings']")
     settings.click()
     time.sleep(2)
-    datalist = []
+    data_list = []
     username = driver.find_element_by_xpath("//fieldset[2]/input")
     emil = driver.find_element_by_xpath("//fieldset[4]/input")
 
     table_dict = {'Username': username.text,
                   'Email': emil.text}
 
-    datalist.append(table_dict)
-    df = pd.DataFrame(datalist)
+    data_list.append(table_dict)
+    df = pd.DataFrame(data_list)
 
     # saving the dataframe to a csv
     df.to_csv('table.csv')
     driver.close()
+
+
 test_save()
+
+
 
