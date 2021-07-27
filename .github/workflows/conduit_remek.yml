@@ -29,7 +29,7 @@ jobs:
       run: |
           docker-compose up -d
     - name: Sleep for 45 seconds
-      run: sleep 45s
+      run: sleep 60s
       shell: bash
     - name: Test with pytest
       run: |
