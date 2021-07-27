@@ -1,6 +1,6 @@
 [ {
-  "buildOrder" : 15,
-  "reportUrl" : "https://ArtuZi2.github.io/conduit/15/",
+  "buildOrder" : 35,
+  "reportUrl" : "https://ArtuZi2.github.io/conduit/35/",
   "reportName" : "Allure Report with history",
   "data" : {
     "failed" : 0,
@@ -11,8 +11,8 @@
     "total" : 0
   }
 }, {
-  "buildOrder" : 14,
-  "reportUrl" : "https://ArtuZi2.github.io/conduit/14/",
+  "buildOrder" : 34,
+  "reportUrl" : "https://ArtuZi2.github.io/conduit/34/",
   "reportName" : "Allure Report with history",
   "data" : {
     "failed" : 0,
@@ -23,8 +23,32 @@
     "total" : 0
   }
 }, {
-  "buildOrder" : 13,
-  "reportUrl" : "https://ArtuZi2.github.io/conduit/13/",
+  "buildOrder" : 33,
+  "reportUrl" : "https://ArtuZi2.github.io/conduit/33/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "failed" : 0,
+    "broken" : 2,
+    "skipped" : 0,
+    "passed" : 0,
+    "unknown" : 0,
+    "total" : 2
+  }
+}, {
+  "buildOrder" : 32,
+  "reportUrl" : "https://ArtuZi2.github.io/conduit/32/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "failed" : 0,
+    "broken" : 2,
+    "skipped" : 0,
+    "passed" : 0,
+    "unknown" : 0,
+    "total" : 2
+  }
+}, {
+  "buildOrder" : 31,
+  "reportUrl" : "https://ArtuZi2.github.io/conduit/31/",
   "reportName" : "Allure Report with history",
   "data" : {
     "failed" : 0,
@@ -35,8 +59,44 @@
     "total" : 0
   }
 }, {
-  "buildOrder" : 12,
-  "reportUrl" : "https://ArtuZi2.github.io/conduit/12/",
+  "buildOrder" : 30,
+  "reportUrl" : "https://ArtuZi2.github.io/conduit/30/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "failed" : 0,
+    "broken" : 2,
+    "skipped" : 0,
+    "passed" : 0,
+    "unknown" : 0,
+    "total" : 2
+  }
+}, {
+  "buildOrder" : 29,
+  "reportUrl" : "https://ArtuZi2.github.io/conduit/29/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "failed" : 0,
+    "broken" : 1,
+    "skipped" : 0,
+    "passed" : 0,
+    "unknown" : 0,
+    "total" : 1
+  }
+}, {
+  "buildOrder" : 28,
+  "reportUrl" : "https://ArtuZi2.github.io/conduit/28/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "failed" : 0,
+    "broken" : 2,
+    "skipped" : 0,
+    "passed" : 0,
+    "unknown" : 0,
+    "total" : 2
+  }
+}, {
+  "buildOrder" : 27,
+  "reportUrl" : "https://ArtuZi2.github.io/conduit/27/",
   "reportName" : "Allure Report with history",
   "data" : {
     "failed" : 0,
@@ -47,8 +107,8 @@
     "total" : 0
   }
 }, {
-  "buildOrder" : 11,
-  "reportUrl" : "https://ArtuZi2.github.io/conduit/11/",
+  "buildOrder" : 26,
+  "reportUrl" : "https://ArtuZi2.github.io/conduit/26/",
   "reportName" : "Allure Report with history",
   "data" : {
     "failed" : 0,
@@ -59,8 +119,8 @@
     "total" : 0
   }
 }, {
-  "buildOrder" : 10,
-  "reportUrl" : "https://ArtuZi2.github.io/conduit/10/",
+  "buildOrder" : 25,
+  "reportUrl" : "https://ArtuZi2.github.io/conduit/25/",
   "reportName" : "Allure Report with history",
   "data" : {
     "failed" : 0,
@@ -71,56 +131,8 @@
     "total" : 0
   }
 }, {
-  "buildOrder" : 9,
-  "reportUrl" : "https://ArtuZi2.github.io/conduit/9/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "failed" : 0,
-    "broken" : 0,
-    "skipped" : 0,
-    "passed" : 0,
-    "unknown" : 0,
-    "total" : 0
-  }
-}, {
-  "buildOrder" : 8,
-  "reportUrl" : "https://ArtuZi2.github.io/conduit/8/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "failed" : 0,
-    "broken" : 0,
-    "skipped" : 0,
-    "passed" : 0,
-    "unknown" : 0,
-    "total" : 0
-  }
-}, {
-  "buildOrder" : 7,
-  "reportUrl" : "https://ArtuZi2.github.io/conduit/7/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "failed" : 0,
-    "broken" : 0,
-    "skipped" : 0,
-    "passed" : 0,
-    "unknown" : 0,
-    "total" : 0
-  }
-}, {
-  "buildOrder" : 6,
-  "reportUrl" : "https://ArtuZi2.github.io/conduit/6/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "failed" : 0,
-    "broken" : 0,
-    "skipped" : 0,
-    "passed" : 0,
-    "unknown" : 0,
-    "total" : 0
-  }
-}, {
-  "buildOrder" : 4,
-  "reportUrl" : "https://ArtuZi2.github.io/conduit/4/",
+  "buildOrder" : 24,
+  "reportUrl" : "https://ArtuZi2.github.io/conduit/24/",
   "reportName" : "Allure Report with history",
   "data" : {
     "failed" : 0,
