@@ -9,16 +9,10 @@ options.add_argument('--headless')
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 driver.get("http://localhost:1667")"""
 import pytest
+from fixture import browser
 
 
-@pytest.fixture(scope='session')
-def browser():
-    driver = webdriver.Chrome()
-    driver.get("http://localhost:1667/#/")
-    return driver
-
-
-def test_login(browser):
+def test_login(fixture.browser):
     time.sleep(2)
     navbar = browser.find_elements_by_class_name("ion-compose")
     #át lehet ezt alakítani, hogy kiírja a navban elemeit?
@@ -52,5 +46,5 @@ def test_login(browser):
 
     #driver.find_element_by_xpath("//a [@active-class='active']").click()
 
+    browser.close()
 
-#driver.close()

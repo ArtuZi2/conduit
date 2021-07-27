@@ -6,7 +6,7 @@ options = Options()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
 
-driver = webdriver.Chrome(ChromeDriverManager().install())
+driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
 
 def test_login():
@@ -39,8 +39,8 @@ def test_listazas():
         print(f'number of links found on the page: {titles_count}')
     finally:
         pass
-        #driver.close()
-        #driver.quit()
+        driver.close()
+        driver.quit()
 
-    driver.get("http://localhost:1667/#/")
+    #driver.get("http://localhost:1667/#/")
 test_listazas()

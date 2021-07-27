@@ -6,7 +6,7 @@ options = Options()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
 
-driver = webdriver.Chrome(ChromeDriverManager().install())
+driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
 
 def test_cookie1():
@@ -32,9 +32,13 @@ def test_cookie1():
     driver.get("http://localhost:1667/#/")
     time.sleep(2)
     print(driver.get_cookies())
+    time.sleep(2)
+    driver.close()
+    time.sleep(2)
 
 
 test_cookie1()
+
 
 
 

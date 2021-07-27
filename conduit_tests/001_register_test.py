@@ -66,5 +66,4 @@ def test_register():
 
     driver.find_element_by_xpath("//a [@active-class='active']").click()
 
-
-#driver.close()
+    driver.close()
