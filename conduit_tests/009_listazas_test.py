@@ -44,8 +44,6 @@ def test_listazas():
         driver.close()
         driver.quit()
 
-'#'driver.get("http://localhost:1667/#/")
-
 
 test_listazas()
 
