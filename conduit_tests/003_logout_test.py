@@ -3,8 +3,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 from selenium.webdriver.chrome.options import Options
 options = Options()
-options.add_argument('--headless')
-options.add_argument('--disable-gpu')
+#options.add_argument('--headless')
+#options.add_argument('--disable-gpu')
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
 
@@ -35,6 +35,9 @@ def test_login():
     time.sleep(2)
     driver.find_element_by_xpath("//*[@id='app']/nav/div/ul/li[4]/a").click()
 
+test_login()
+
+
 def test_logout():
 
     logout = driver.find_element_by_xpath("//a [@active-class='active']")
@@ -49,3 +52,4 @@ def test_logout():
         except:
             print("Nem látható az oldalon")
             break
+test_logout()

@@ -7,15 +7,10 @@ options.add_argument('--headless')
 options.add_argument('--disable-gpu')
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
-driver.get("http://localhost:1667/#/")
 
 
 def test_login(emil, password):
-
-    navbar = driver.find_elements_by_class_name("ion-compose")
-    print(navbar)
-
-    element = driver.find_element_by_xpath("/html/body//a[contains(@href,'login')]")
+    element = driver.find_element_by_xpath("a[@href='#/login']")
     print(element.is_enabled())
     print(element.is_displayed())
 
@@ -26,9 +21,11 @@ def test_login(emil, password):
 
     time.sleep(2)
 
+
 test_login("tkata@gmail.com", "Sunshine2046")
 
 continue_link = driver.find_element_by_xpath("//a[@href='#/editor']").click()
+
 
 def test_new_post(title, lead, szoveg, tag):
 
@@ -44,20 +41,21 @@ def test_new_post(title, lead, szoveg, tag):
     time.sleep(2)
     driver.find_element_by_xpath("//button[@class='btn btn-lg pull-xs-right btn-primary']").click()
 
+
 test_new_post("Spring", "About my favorite season", "Spring is my life.", "Spring\n")
 
 time.sleep(2)
+
 
 def test_delete_post():
     delete_button = driver.find_element_by_xpath("//button[@class='btn btn-outline-danger btn-sm']")
     delete_button.click()
     driver.find_elements_by_tag_name('button')[2].click()
 
+
 test_delete_post()
 
 time.sleep(2)
-
-
 
 driver.back()
 

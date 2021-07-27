@@ -26,7 +26,7 @@ def test_login(browser):
 
     time.sleep(2)
 
-    element = browser.find_element_by_xpath("//a[@href='#/register']")
+    element = browser.find_element_by_xpath("//a[@href='#/login']")
     print(element.is_enabled())
     print(element.is_displayed())
 

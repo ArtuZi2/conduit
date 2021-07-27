@@ -5,14 +5,6 @@ from selenium.webdriver.chrome.options import Options
 options = Options()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
-from selenium.webdriver.support.ui import Select
-from selenium.webdriver.support.ui import WebDriverWait
-import time
-import pandas as pd
-from selenium.webdriver.support.ui import Select
-from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.common.keys import Keys
-import csv
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
 
@@ -33,22 +25,22 @@ def test_login():
 
 test_login()
 
-def test_save():
-    settings = driver.find_element_by_xpath("//a[@href='#/settings']")
-    settings.click()
-    time.sleep(2)
-    datalist = []
-    username = driver.find_element_by_xpath("//fieldset[2]/input")
-    emil = driver.find_element_by_xpath("//fieldset[4]/input")
 
-    table_dict = {'Username': username.text,
-                  'Email': emil.text}
+def test_listazas():
+    titles = driver.find_elements_by_xpath('//*[@id="app"]/div/div[2]/div/div[1]/div[2]/div/div/div/a/h1')
 
-    datalist.append(table_dict)
-    df = pd.DataFrame(datalist)
+    try:
+        titles_count = 0
+        with open('titles.txt', 'w') as text_file:
+            for title in titles:
+                text_file.write(f'{title.text}\n')
+                titles_count += 1
 
-    # saving the dataframe to a csv
-    df.to_csv('table.csv')
-    driver.close()
-test_save()
+        print(f'number of links found on the page: {titles_count}')
+    finally:
+        pass
+        #driver.close()
+        #driver.quit()
 
+    driver.get("http://localhost:1667/#/")
+test_listazas()
