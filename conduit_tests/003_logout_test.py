@@ -35,6 +35,7 @@ def test_login():
     time.sleep(2)
     driver.find_element_by_xpath("//*[@id='app']/nav/div/ul/li[4]/a").click()
 
+
 test_login()
 
 
@@ -52,4 +53,7 @@ def test_logout():
         except:
             print("Nem látható az oldalon")
             break
+    driver.close()
+
+
 test_logout()
