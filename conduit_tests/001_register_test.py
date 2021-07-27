@@ -12,6 +12,9 @@ driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
 
 def test_register():
+    username = "sun2"
+    password = "Sunshine2046"
+
     driver.get("http://localhost:1667")
     time.sleep(2)
 
@@ -22,9 +25,6 @@ def test_register():
         return prefix + random_part + '@' + domain
 
     generate_email()
-
-    username = "sun2"
-    password = "Sunshine2046"
 
     driver.find_element_by_xpath("/html/body//a[contains(@href,'register')]").click()
     driver.find_element_by_xpath("//input[@type='text'][@placeholder='Username']").send_keys(username)

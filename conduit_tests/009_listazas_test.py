@@ -12,6 +12,7 @@ driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 def test_login():
     emil = "tkata@gmail.com"
     password = "Sunshine2046"
+
     driver.get("http://localhost:1667/#/")
     time.sleep(2)
     element = driver.find_element_by_xpath("//a[@href='#/login']")
@@ -22,6 +23,7 @@ def test_login():
     driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
 
     time.sleep(2)
+
 
 test_login()
 
@@ -42,5 +44,8 @@ def test_listazas():
         driver.close()
         driver.quit()
 
-    #driver.get("http://localhost:1667/#/")
+'#'driver.get("http://localhost:1667/#/")
+
+
 test_listazas()
+

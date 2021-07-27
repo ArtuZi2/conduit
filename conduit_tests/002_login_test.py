@@ -10,6 +10,9 @@ driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
 
 def test_login():
+    emil = "tkata@gmail.com"
+    password = "Sunshine2046"
+
     driver.get("http://localhost:1667")
     time.sleep(2)
     navbar = driver.find_elements_by_class_name("ion-compose")
@@ -21,9 +24,6 @@ def test_login():
     element = driver.find_element_by_xpath("//a[@href='#/login']")
     print(element.is_enabled())
     print(element.is_displayed())
-
-    emil = "tkata@gmail.com"
-    password = "Sunshine2046"
 
     element.click()
     time.sleep(2)
