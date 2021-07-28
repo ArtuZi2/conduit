@@ -3,8 +3,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 from selenium.webdriver.chrome.options import Options
 options = Options()
-options.add_argument('--headless')
-options.add_argument('--disable-gpu')
+#options.add_argument('--headless')
+#options.add_argument('--disable-gpu')
 
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
@@ -41,8 +41,8 @@ def test_listazas():
         print(f'number of links found on the page: {titles_count}')
     finally:
         pass
-        driver.close()
-        driver.quit()
+        #driver.close()
+        #driver.quit()
 
 
 test_listazas()
