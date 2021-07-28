@@ -40,11 +40,21 @@ def test_login():
 
     assert user == user_setting.text
 
-    #driver.find_element_by_xpath("//a [@active-class='active']").click()
+    driver.find_element_by_xpath("//a [@active-class='active']").click()
+
+    print("Current session is {}".format(driver.session_id))
+    driver.close()
+    try:
+        driver.get("https://www.google.com/")
+    except Exception as e:
+        print(e)
+
 
 test_login()
 
+
 extracted_data = []
+
 
 @pytest.mark.order(2)
 def test_pagin():
@@ -76,7 +86,13 @@ def test_pagin():
 
     # Comparing the number of the saved titles with number of the Article feed titles:
     assert int(len(article_title_list)) == int(article_count)
+
+    print("Current session is {}".format(driver.session_id))
     driver.close()
+    try:
+        driver.get("https://www.google.com/")
+    except Exception as e:
+        print(e)
 
 
 test_pagin()

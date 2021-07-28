@@ -8,6 +8,9 @@ options.add_argument('--disable-gpu')
 
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
+from selenium import webdriver
+from selenium.common.exceptions import InvalidSessionIdException
+
 
 def test_cookie1():
 
@@ -35,6 +38,13 @@ def test_cookie1():
     time.sleep(2)
     driver.close()
     time.sleep(2)
+
+    print("Current session is {}".format(driver.session_id))
+    driver.close()
+    try:
+        driver.get("https://www.google.com/")
+    except Exception as e:
+        print(e)
 
 
 test_cookie1()

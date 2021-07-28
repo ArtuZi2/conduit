@@ -26,6 +26,13 @@ def test_login():
 
     time.sleep(2)
 
+    print("Current session is {}".format(driver.session_id))
+    driver.close()
+    try:
+        driver.get("https://www.google.com/")
+    except Exception as e:
+        print(e)
+
 
 test_login()
 
@@ -34,18 +41,21 @@ test_login()
 def test_listazas():
     titles = driver.find_elements_by_xpath('//*[@id="app"]/div/div[2]/div/div[1]/div[2]/div/div/div/a/h1')
 
-    try:
-        titles_count = 0
-        with open('titles.txt', 'w') as text_file:
-            for title in titles:
-                text_file.write(f'{title.text}\n')
-                titles_count += 1
+    titles_count = 0
+    with open('titles.txt', 'w') as text_file:
+        for title in titles:
+            text_file.write(f'{title.text}\n')
+            titles_count += 1
 
         print(f'number of links found on the page: {titles_count}')
-    finally:
-        pass
+
+
+        print("Current session is {}".format(driver.session_id))
         driver.close()
-        driver.quit()
+        try:
+            driver.get("https://www.google.com/")
+        except Exception as e:
+            print(e)
 
 
 test_listazas()

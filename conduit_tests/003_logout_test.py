@@ -37,6 +37,13 @@ def test_login():
     time.sleep(2)
     driver.find_element_by_xpath("//*[@id='app']/nav/div/ul/li[4]/a").click()
 
+    print("Current session is {}".format(driver.session_id))
+    driver.close()
+    try:
+        driver.get("https://www.google.com/")
+    except Exception as e:
+        print(e)
+
 
 test_login()
 
@@ -56,7 +63,13 @@ def test_logout():
         except:
             print("Nem látható az oldalon")
             break
+
+    print("Current session is {}".format(driver.session_id))
     driver.close()
+    try:
+        driver.get("https://www.google.com/")
+    except Exception as e:
+        print(e)
 
 
 test_logout()
