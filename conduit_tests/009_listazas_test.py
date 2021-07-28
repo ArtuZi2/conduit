@@ -1,6 +1,7 @@
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import time
+import pytest
 from selenium.webdriver.chrome.options import Options
 options = Options()
 #options.add_argument('--headless')
@@ -9,6 +10,7 @@ options = Options()
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
 
+@pytest.mark.order(1)
 def test_login():
     emil = "tkata@gmail.com"
     password = "Sunshine2046"
@@ -28,6 +30,7 @@ def test_login():
 test_login()
 
 
+@pytest.mark.order(2)
 def test_listazas():
     titles = driver.find_elements_by_xpath('//*[@id="app"]/div/div[2]/div/div[1]/div[2]/div/div/div/a/h1')
 
@@ -41,8 +44,8 @@ def test_listazas():
         print(f'number of links found on the page: {titles_count}')
     finally:
         pass
-        #driver.close()
-        #driver.quit()
+        driver.close()
+        driver.quit()
 
 
 test_listazas()

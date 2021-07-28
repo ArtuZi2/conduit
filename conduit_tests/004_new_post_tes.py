@@ -9,13 +9,14 @@ options.add_argument('--headless')
 options.add_argument('--disable-gpu')
 import pytest
 
-driver = webdriver.Chrome(ChromeDriverManager().install())
+driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
 """@pytest.fixture(scope='session')
 def driver():
     driver = webdriver.Chrome()
     driver.get("http://localhost:1667/#/")
     return driver"""
+
 
 def test_login():
     navbar = driver.find_elements_by_class_name("ion-compose")

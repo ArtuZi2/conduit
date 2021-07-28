@@ -1,6 +1,7 @@
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import time
+import pytest
 from selenium.webdriver.chrome.options import Options
 options = Options()
 options.add_argument('--headless')
@@ -9,6 +10,7 @@ options.add_argument('--disable-gpu')
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
 
+@pytest.mark.order(1)
 def test_login():
     emil = "tkata@gmail.com"
     password = "Sunshine2046"
@@ -39,6 +41,7 @@ def test_login():
 test_login()
 
 
+@pytest.mark.order(2)
 def test_logout():
 
     logout = driver.find_element_by_xpath("//a [@active-class='active']")

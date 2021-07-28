@@ -7,8 +7,10 @@ options.add_argument('--headless')
 options.add_argument('--disable-gpu')
 import pprint
 
-driver = webdriver.Chrome(ChromeDriverManager().install())
+driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
+
+@pytest.mark.order(1)
 def test_login():
     emil = "tkata@gmail.com"
     password = "Sunshine2046"
@@ -42,6 +44,8 @@ test_login()
 
 extracted_data = []
 
+
+@pytest.mark.order(2)
 def test_pagin():
     article_title_list = []
     page_count = 1
@@ -72,5 +76,6 @@ def test_pagin():
     # Comparing the number of the saved titles with number of the Article feed titles:
     assert int(len(article_title_list)) == int(article_count)
     driver.close()
+
 
 test_pagin()
