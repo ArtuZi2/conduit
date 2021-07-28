@@ -6,6 +6,8 @@ options = Options()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
 import pprint
+import pytest_order
+import pytest
 
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
@@ -43,7 +45,6 @@ def test_login():
 test_login()
 
 extracted_data = []
-
 
 @pytest.mark.order(2)
 def test_pagin():
