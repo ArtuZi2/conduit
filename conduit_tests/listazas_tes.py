@@ -2,6 +2,7 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 import pytest
+import pytest_order
 from selenium.webdriver.chrome.options import Options
 options = Options()
 options.add_argument('--headless')

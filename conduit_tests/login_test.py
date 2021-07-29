@@ -3,14 +3,11 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 from selenium.webdriver.chrome.options import Options
-import register_test
 
 options = webdriver.ChromeOptions()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
-
-register_test.test_register()
 
 def test_login():
     emil = "tkata@gmail.com"
@@ -47,10 +44,10 @@ def test_login():
 
     driver.find_element_by_xpath("//a [@active-class='active']").click()
 
-    print("Current session is {}".format(driver.session_id))
+    """print("Current session is {}".format(driver.session_id))
     driver.close()
     try:
         driver.get("http://localhost:1667")
     except Exception as e:
-        print(e)
+        print(e)"""
 

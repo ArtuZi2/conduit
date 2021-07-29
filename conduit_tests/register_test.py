@@ -1,5 +1,4 @@
 from selenium import webdriver
-from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 from selenium.webdriver.chrome.options import Options
@@ -67,9 +66,9 @@ def test_register():
 
     driver.find_element_by_xpath("//a [@active-class='active']").click()
 
-    print("Current session is {}".format(driver.session_id))
+    """print("Current session is {}".format(driver.session_id))
     driver.close()
     try:
         driver.get("http://localhost:1667")
     except Exception as e:
-        print(e)
+        print(e)"""
