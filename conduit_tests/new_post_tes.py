@@ -55,6 +55,7 @@ def test_new_post():
     driver.find_element_by_xpath("//button[@class='btn btn-lg pull-xs-right btn-primary']").click()
 
 time.sleep(2)
+test_new_post()
 
 my_feed = driver.find_element_by_xpath("//a[@href='#/my-feed']")
 my_feed.click()

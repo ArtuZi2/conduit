@@ -45,7 +45,7 @@ def test_login():
     print("Current session is {}".format(driver.session_id))
     driver.close()
     try:
-        driver.get("https://www.google.com/")
+        driver.get("http://localhost:1667")
     except Exception as e:
         print(e)
 
@@ -74,8 +74,8 @@ def test_pagin():
             # Stop loop if no more page available
             break
 
-    print("The title-list of My Article: ", article_title_list)
-    print("Number of My article: ", len(article_title_list))
+    print("Titles: ", article_title_list)
+    print("Titles's number: ", len(article_title_list))
 
     # Writting to csv file:
     article_count = 0
@@ -90,7 +90,7 @@ def test_pagin():
     print("Current session is {}".format(driver.session_id))
     driver.close()
     try:
-        driver.get("https://www.google.com/")
+        driver.get("http://localhost:1667")
     except Exception as e:
         print(e)
 

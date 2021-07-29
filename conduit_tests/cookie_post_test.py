@@ -32,6 +32,7 @@ def test_cookie1():
 
     driver.get("https://www.python.org/")
     time.sleep(2)
+    driver.close()
     driver.get("http://localhost:1667/#/")
     time.sleep(2)
     print(driver.get_cookies())
@@ -41,8 +42,9 @@ def test_cookie1():
 
     print("Current session is {}".format(driver.session_id))
     driver.close()
+
     try:
-        driver.get("https://www.google.com/")
+        driver.get("http://localhost:1667")
     except Exception as e:
         print(e)
 
