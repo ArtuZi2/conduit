@@ -12,6 +12,7 @@ driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 from selenium import webdriver
 from selenium.common.exceptions import InvalidSessionIdException
 
+
 def test_register():
     username = "sun2"
     password = "Sunshine2046"
@@ -126,13 +127,13 @@ def test_cookie1():
     driver.close()
     time.sleep(2)
 
-    print("Current session is {}".format(driver.session_id))
+    """print("Current session is {}".format(driver.session_id))
     driver.close()
 
     try:
         driver.get("http://localhost:1667")
     except Exception as e:
-        print(e)
+        print(e)"""
 
 
 
