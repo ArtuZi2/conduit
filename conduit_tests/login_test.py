@@ -10,7 +10,7 @@ options.add_argument('--headless')
 options.add_argument('--disable-gpu')
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
-def test register_test()
+register_test.test_register()
 
 def test_login():
     emil = "tkata@gmail.com"
