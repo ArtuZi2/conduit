@@ -63,6 +63,7 @@ def test_register():
     time.sleep(2)
 
     driver.find_element_by_xpath("//a [@active-class='active']").click()
+    time.sleep(10)
 
 
 def test_login():
