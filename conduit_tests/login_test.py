@@ -44,6 +44,7 @@ def test_login():
     assert user == user_setting.text
 
     driver.find_element_by_xpath("//a [@active-class='active']").click()
+test_login()
 
     """print("Current session is {}".format(driver.session_id))
     driver.close()
