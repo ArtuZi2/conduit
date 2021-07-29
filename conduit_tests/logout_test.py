@@ -65,12 +65,12 @@ def test_logout():
             print("Nem látható az oldalon")
             break
 
-    print("Current session is {}".format(driver.session_id))
+    """print("Current session is {}".format(driver.session_id))
     driver.close()
     try:
         driver.get("http://localhost:1667")
     except Exception as e:
-        print(e)
+        print(e)"""
 
 
 test_logout()
