@@ -11,7 +11,7 @@ options.add_argument('--disable-gpu')
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
 
-@pytest.mark.order(1)
+#@pytest.mark.order(1)
 def test_login():
     emil = "tkata@gmail.com"
     password = "Sunshine2046"
@@ -49,7 +49,7 @@ def test_login():
 test_login()
 
 
-@pytest.mark.order(2)
+#@pytest.mark.order(2)
 def test_logout():
 
     logout = driver.find_element_by_xpath("//a [@active-class='active']")
