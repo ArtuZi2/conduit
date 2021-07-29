@@ -2,6 +2,7 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 from selenium.webdriver.chrome.options import Options
+import random, string
 options = webdriver.ChromeOptions()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
@@ -25,12 +26,16 @@ def test_register():
     generate_email()
 
     driver.find_element_by_xpath("/html/body//a[contains(@href,'register')]").click()
+    time.sleep(2)
     driver.find_element_by_xpath("//input[@type='text'][@placeholder='Username']").send_keys(username)
+    time.sleep(2)
     driver.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys(generate_email())
+    time.sleep(2)
     # if driver.find_element_by_class_name("swal-modal").is_displayed():
     #  a = driver.find_element_by_class_name("swal-button swal-button--confirm")
     #   a.click()
     driver.find_element_by_xpath("//input[@type='password'][@placeholder='Password']").send_keys(password)
+    time.sleep(2)
 
     driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
 
@@ -92,12 +97,12 @@ def test_login():
     time.sleep(2)
     driver.find_element_by_xpath("//*[@id='app']/nav/div/ul/li[4]/a").click()
 
-    print("Current session is {}".format(driver.session_id))
+    """print("Current session is {}".format(driver.session_id))
     driver.close()
     try:
         driver.get("http://localhost:1667")
     except Exception as e:
-        print(e)
+        print(e)"""
 
 
 test_login()
