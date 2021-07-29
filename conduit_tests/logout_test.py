@@ -103,12 +103,9 @@ def test_login():
         print(e)"""
 
 
-test_login()
-
-
 def test_logout():
 
-    logout = driver.find_element_by_xpath("//a [@active-class='active']")
+    logout = driver.find_element_by_xpath("//div/ul/li[5]/a")
     print(logout.is_enabled())
     print(logout.is_displayed())
     logout.click()
@@ -128,5 +125,3 @@ def test_logout():
     except Exception as e:
         print(e)"""
 
-
-test_logout()
