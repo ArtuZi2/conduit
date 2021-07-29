@@ -95,7 +95,8 @@ def test_login():
     time.sleep(2)
     driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
     time.sleep(2)
-    driver.find_element_by_xpath("//*[@id='app']/nav/div/ul/li[4]/a").click()
+    setting = driver.find_element_by_xpath("//nav/div/ul/li[4]/a")
+    setting.click()
 
     """print("Current session is {}".format(driver.session_id))
     driver.close()
