@@ -84,7 +84,6 @@ def test_save():
     data_list.append(table_dict)
     df = pd.DataFrame(data_list)
 
-    # saving the dataframe to a csv
     df.to_csv('table.csv')
 
 
