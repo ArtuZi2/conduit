@@ -35,7 +35,7 @@ def test_login():
     driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
     time.sleep(10)
     driver.find_element_by_xpath("//nav/div/ul/li[4]/a").click()
-    time.sleep(2)
+    time.sleep(10)
     user_setting = driver.find_element_by_tag_name("h4")
     time.sleep(2)
     print(user_setting.text)

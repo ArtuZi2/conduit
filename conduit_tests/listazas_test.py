@@ -1,14 +1,13 @@
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import time
-from selenium.webdriver.chrome.options import Options
 import random, string
+from selenium.webdriver.chrome.options import Options
 options = webdriver.ChromeOptions()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
 
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
-
 
 def test_register():
     username = "sun2"
@@ -26,16 +25,12 @@ def test_register():
     generate_email()
 
     driver.find_element_by_xpath("/html/body//a[contains(@href,'register')]").click()
-    time.sleep(2)
     driver.find_element_by_xpath("//input[@type='text'][@placeholder='Username']").send_keys(username)
-    time.sleep(2)
     driver.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys(generate_email())
-    time.sleep(2)
     # if driver.find_element_by_class_name("swal-modal").is_displayed():
     #  a = driver.find_element_by_class_name("swal-button swal-button--confirm")
     #   a.click()
     driver.find_element_by_xpath("//input[@type='password'][@placeholder='Password']").send_keys(password)
-    time.sleep(2)
 
     driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
 
@@ -68,7 +63,6 @@ def test_register():
     time.sleep(2)
 
     driver.find_element_by_xpath("//a [@active-class='active']").click()
-    time.sleep(10)
 
 
 def test_login():
@@ -77,52 +71,39 @@ def test_login():
 
     driver.get("http://localhost:1667/#/")
     time.sleep(2)
-    navbar = driver.find_elements_by_class_name("ion-compose")
-    #át lehet ezt alakítani, hogy kiírja a navban elemeit?
-    print(navbar)
-
-    time.sleep(2)
-
     element = driver.find_element_by_xpath("//a[@href='#/login']")
-    print(element.is_enabled())
-    print(element.is_displayed())
-
     element.click()
     time.sleep(2)
-    driver.find_element_by_xpath("//fieldset[1]/input").send_keys(emil)
-    time.sleep(2)
-    driver.find_element_by_xpath("//fieldset[2]/input").send_keys(password)
-    time.sleep(2)
+    driver.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys(emil)
+    driver.find_element_by_xpath("//input[@type='password'][@placeholder='Password']").send_keys(password)
     driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
 
+    time.sleep(2)
+
     """print("Current session is {}".format(driver.session_id))
     driver.close()
     try:
-        driver.get("http://localhost:1667")
+        driver.get("http://localhost:1667"
     except Exception as e:
         print(e)"""
 
 
-def test_logout():
+def test_listazas():
+    titles = driver.find_elements_by_xpath('//*[@id="app"]/div/div[2]/div/div[1]/div[2]/div/div/div/a/h1')
 
-    time.sleep(2)
-    logout = driver.find_element_by_xpath("//div/ul/li[5]/a")
-    print(logout.is_enabled())
-    print(logout.is_displayed())
-    logout.click()
-    time.sleep(2)
-    while True:
+    titles_count = 0
+    with open('titles.txt', 'w') as text_file:
+        for title in titles:
+            text_file.write(f'{title.text}\n')
+            titles_count += 1
+
+        print(f'number of links found on the page: {titles_count}')
+
+
+        """print("Current session is {}".format(driver.session_id))
+        driver.close()
         try:
-            logout.is_enabled()
-            print("Látható")
-        except:
-            print("Nem látható az oldalon")
-            break
-
-    """print("Current session is {}".format(driver.session_id))
-    driver.close()
-    try:
-        driver.get("http://localhost:1667")
-    except Exception as e:
-        print(e)"""
+            driver.get("http://localhost:1667")
+        except Exception as e:
+            print(e)"""
 
