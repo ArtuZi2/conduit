@@ -4,7 +4,7 @@ import time
 import pytest
 import pytest_order
 from selenium.webdriver.chrome.options import Options
-options = Options()
+options = webdriver.ChromeOptions()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
 
