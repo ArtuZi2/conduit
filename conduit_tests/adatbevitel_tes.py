@@ -43,34 +43,10 @@ def test_register():
 
     time.sleep(5)
 
-    welcome = driver.find_element_by_xpath("//div[contains(@class, 'swal-text')]").text
-    text = "Your registration was successful!"
-    assert (text == welcome)
-
     driver.find_element_by_xpath("//button[contains(text(),'OK')]").click()
-
     time.sleep(5)
-
-    # driver.find_element_by_xpath("//a[contains(@href, 'settings')]").click()
-
-    # appear_name = driver.find_elements_by_xpath("//a[@href]")
-
-    # megjelen_username = driver.find_element_by_xpath("//*[@id='app']/nav/div/ul/li[4]/a").text
-
-    # megjelen_username = driver.find_element_by_xpath("//a[contains(@href, '@sun2')]").text
-
-    megjelen_username = driver.find_element_by_xpath(f"//a[contains(@href, '@sun2')]").text
-    # driver.find_element_by_xpath("//fieldset[2]/input[@type='text']").send_keys("emma")
-
-    print(megjelen_username)
-    # print(username)
-
-    assert megjelen_username == username
-
-    time.sleep(2)
-
     driver.find_element_by_xpath("//a [@active-class='active']").click()
-    time.sleep(10)
+    time.sleep(2)
 
 
 def test_login():

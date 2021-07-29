@@ -2,7 +2,7 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 from selenium.webdriver.chrome.options import Options
-options = Options()
+options = webdriver.ChromeOptions()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
 from selenium.webdriver.support.ui import Select
@@ -14,12 +14,50 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.keys import Keys
 import csv
 
-driver = webdriver.Chrome(ChromeDriverManager().install())
+driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+
+
+def test_register():
+    username = "sun2"
+    password = "Sunshine2046"
+
+    driver.get("http://localhost:1667")
+    time.sleep(2)
+
+    def generate_email(prefix='tkata+', domain='gmail.com'):
+        random_part = ''.join(random.choice(string.ascii_lowercase + string.digits)
+                              for _ in range(10))
+
+        return prefix + random_part + '@' + domain
+
+    generate_email()
+
+    driver.find_element_by_xpath("/html/body//a[contains(@href,'register')]").click()
+    time.sleep(2)
+    driver.find_element_by_xpath("//input[@type='text'][@placeholder='Username']").send_keys(username)
+    time.sleep(2)
+    driver.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys(generate_email())
+    time.sleep(2)
+    # if driver.find_element_by_class_name("swal-modal").is_displayed():
+    #  a = driver.find_element_by_class_name("swal-button swal-button--confirm")
+    #   a.click()
+    driver.find_element_by_xpath("//input[@type='password'][@placeholder='Password']").send_keys(password)
+    time.sleep(2)
+
+    driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
+
+    time.sleep(5)
+
+    driver.find_element_by_xpath("//button[contains(text(),'OK')]").click()
+    time.sleep(5)
+    driver.find_element_by_xpath("//a [@active-class='active']").click()
+    time.sleep(2)
 
 
 def test_login():
     emil = "tkata@gmail.com"
     password = "Sunshine2046"
+
     driver.get("http://localhost:1667/#/")
     time.sleep(2)
     element = driver.find_element_by_xpath("//a[@href='#/login']")
@@ -30,9 +68,6 @@ def test_login():
     driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
 
     time.sleep(2)
-
-
-test_login()
 
 
 def test_save():
@@ -51,10 +86,6 @@ def test_save():
 
     # saving the dataframe to a csv
     df.to_csv('table.csv')
-    driver.close()
-
-
-test_save()
 
 
 
