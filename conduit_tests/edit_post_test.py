@@ -1,6 +1,7 @@
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import time
+import random, string
 from selenium.webdriver.chrome.options import Options
 options = webdriver.ChromeOptions()
 options.add_argument('--headless')
@@ -93,36 +94,28 @@ def test_login():
     driver.find_element_by_xpath("//fieldset[2]/input").send_keys(password)
     time.sleep(2)
     driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
+    time.sleep(10)
 
 
-def test_edit_post(title, lead, szoveg, tag):
-    title = "Winter"
-    lead = "About my favorite season"
-    szoveg = "Winter is the best."
-    tag = "Winter\n"
+def test_edit_emil():
+    settings_xpath = driver.find_element_by_xpath("//nav/div/ul/li[3]/a").click()
+    new_emil = "tkata2@gmail.com"
+    time.sleep(2)
+    emil_field = driver.find_element_by_xpath("//form/fieldset/fieldset[4]/input")
+    emil_field.clear()
+    time.sleep(2)
+    emil_field.send_keys(new_emil)
+    update_button = driver.find_element_by_xpath("//fieldset/button")
+    update_button.click()
+    time.sleep(2)
+    update_ok_button = driver.find_element_by_xpath("/html/body/div[2]/div/div[3]/div/button")
+    update_ok_button.click()
+    time.sleep(2)
+    assert new_emil == emil_field.text
 
     time.sleep(2)
-    driver.find_element_by_xpath("//fieldset[1]/input").clear()
-    time.sleep(2)
-    driver.find_element_by_xpath("//fieldset[1]/input").send_keys(title)
-    time.sleep(2)
-    driver.find_element_by_xpath("//fieldset[2]/input").clear()
-    time.sleep(2)
-    driver.find_element_by_xpath("//fieldset[2]/input").send_keys(lead)
-    time.sleep(2)
-    driver.find_element_by_xpath("//fieldset[3]/textarea").clear()
-    time.sleep(2)
-    driver.find_element_by_xpath("//fieldset[3]/textarea").send_keys(szoveg)
-    time.sleep(2)
-    driver.find_element_by_xpath("//fieldset[4]/div/div/ul/li/input").clear()
-    time.sleep(2)
-    driver.find_element_by_xpath("//fieldset[4]/div/div/ul/li/input").send_keys(tag)
-    time.sleep(2)
-    driver.find_element_by_xpath("//button[@class='btn btn-lg pull-xs-right btn-primary']").click()
 
-    driver.find_element_by_xpath("//*[@id='app']/div/div/div/div/form/button")
+    logout = driver.find_element_by_xpath("//div/ul/li[5]/a")
+    logout.click()
 
-#függvénybe tenni
-#dry, helyretenni az ismétléseket
-#tagek törlése
-#cikk ellenőrzése, hogy megjelenik-e a home és a my article oldalon
+
