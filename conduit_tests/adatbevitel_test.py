@@ -4,6 +4,7 @@ import time
 import csv
 import random, string
 from selenium.webdriver.chrome.options import Options
+import addfiles
 
 options = webdriver.ChromeOptions()
 options.add_argument('--headless')
@@ -77,7 +78,7 @@ def fill_table(xpath):
     return element
 
 
-with open('articles.csv', encoding='utf-8') as csv_table:
+with open('addfiles/articles.csv', encoding='utf-8') as csv_table:
     csv_reader = csv.reader(csv_table, delimiter=',')
     next(csv_reader)
     time.sleep(2)
@@ -87,7 +88,7 @@ with open('articles.csv', encoding='utf-8') as csv_table:
         fill_table("//fieldset/input").send_keys(row[0])
         time.sleep(2)
         fill_table("//fieldset[2]/input").send_keys(row[1])
-        time.sleep(2)
+        time.sleep(4)
         fill_table("//fieldset[3]/textarea").send_keys(row[2])
         time.sleep(2)
         driver.find_element_by_xpath("//div/div/div/div/form/button").click()
