@@ -67,9 +67,11 @@ def test_login():
 
 
 def fill_table(xpath):
-    time.sleep(2)
-    driver.find_element_by_xpath("//a[@href='#/editor']").click()
-    time.sleep(2)
+    time.sleep(5)
+    driver.get("http://localhost:1667/#/editor")
+    new_article = driver.find_element_by_xpath("//nav/div/ul/li[2]/a")
+    new_article.click()
+    time.sleep(5)
     element = driver.find_element_by_xpath(xpath)
     element.clear()
     return element
@@ -83,6 +85,9 @@ with open('articles.csv', encoding='utf-8') as csv_table:
     for row in csv_reader:
         print(row)
         fill_table("//fieldset/input").send_keys(row[0])
+        time.sleep(2)
         fill_table("//fieldset[2]/input").send_keys(row[1])
+        time.sleep(2)
         fill_table("//fieldset[3]/textarea").send_keys(row[2])
+        time.sleep(2)
         driver.find_element_by_xpath("//div/div/div/div/form/button").click()
