@@ -1,22 +1,12 @@
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import time
-import random, string
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.keys import Keys
 options = webdriver.ChromeOptions()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
 
-
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
-
-"""@pytest.fixture(scope='session')
-def driver():
-    driver = webdriver.Chrome()
-    driver.get("http://localhost:1667/#/")
-    return driver"""
-
 
 def test_register():
     username = "sun2"
@@ -34,12 +24,16 @@ def test_register():
     generate_email()
 
     driver.find_element_by_xpath("/html/body//a[contains(@href,'register')]").click()
+    time.sleep(2)
     driver.find_element_by_xpath("//input[@type='text'][@placeholder='Username']").send_keys(username)
+    time.sleep(2)
     driver.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys(generate_email())
+    time.sleep(2)
     # if driver.find_element_by_class_name("swal-modal").is_displayed():
     #  a = driver.find_element_by_class_name("swal-button swal-button--confirm")
     #   a.click()
     driver.find_element_by_xpath("//input[@type='password'][@placeholder='Password']").send_keys(password)
+    time.sleep(2)
 
     driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
 
@@ -72,62 +66,62 @@ def test_register():
     time.sleep(2)
 
     driver.find_element_by_xpath("//a [@active-class='active']").click()
-
-    """print("Current session is {}".format(driver.session_id))
-    driver.close()
-    try:
-        driver.get("http://localhost:1667")
-    except Exception as e:
-        print(e)"""
+    time.sleep(10)
 
 
 def test_login():
-    navbar = driver.find_elements_by_class_name("ion-compose")
-    print(navbar)
-
-    element = driver.find_element_by_xpath("/html/body//a[contains(@href,'login')]")
-    print(element.is_enabled())
-    print(element.is_displayed())
     emil = "tkata@gmail.com"
     password = "Sunshine2046"
 
+    driver.get("http://localhost:1667/#/")
+    time.sleep(2)
+    navbar = driver.find_elements_by_class_name("ion-compose")
+    #át lehet ezt alakítani, hogy kiírja a navban elemeit?
+    print(navbar)
+
+    time.sleep(2)
+
+    element = driver.find_element_by_xpath("//a[@href='#/login']")
+    print(element.is_enabled())
+    print(element.is_displayed())
+
     element.click()
     time.sleep(2)
-    driver.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys(emil)
-    driver.find_element_by_xpath("//input[@type='password'][@placeholder='Password']").send_keys(password)
+    driver.find_element_by_xpath("//fieldset[1]/input").send_keys(emil)
+    time.sleep(2)
+    driver.find_element_by_xpath("//fieldset[2]/input").send_keys(password)
+    time.sleep(2)
     driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
 
-    time.sleep(2)
 
-#New Article button
-    continue_link = driver.find_element_by_xpath("//a[@href='#/editor']").click()
-
-
-def test_new_post():
+def test_edit_post(title, lead, szoveg, tag):
+    title = "Winter"
+    lead = "About my favorite season"
+    szoveg = "Winter is the best."
+    tag = "Winter\n"
 
     time.sleep(2)
-    article = driver.find_element_by_xpath("//fieldset[1]/input")
-    article.send_keys("Spring")
-    time.sleep(3)
-    driver.find_element_by_xpath("//fieldset[2]/input").send_keys("About my favorite season")
+    driver.find_element_by_xpath("//fieldset[1]/input").clear()
     time.sleep(2)
-    driver.find_element_by_xpath("//fieldset[3]/textarea").send_keys("Spring is my life.")
+    driver.find_element_by_xpath("//fieldset[1]/input").send_keys(title)
     time.sleep(2)
-    driver.find_element_by_xpath("//fieldset[4]/div/div/ul/li/input").send_keys("Spring\n", "life\n", "season\n",
-                                                                                "favorite\n")
-    time.sleep(4)
+    driver.find_element_by_xpath("//fieldset[2]/input").clear()
+    time.sleep(2)
+    driver.find_element_by_xpath("//fieldset[2]/input").send_keys(lead)
+    time.sleep(2)
+    driver.find_element_by_xpath("//fieldset[3]/textarea").clear()
+    time.sleep(2)
+    driver.find_element_by_xpath("//fieldset[3]/textarea").send_keys(szoveg)
+    time.sleep(2)
+    driver.find_element_by_xpath("//fieldset[4]/div/div/ul/li/input").clear()
+    time.sleep(2)
+    driver.find_element_by_xpath("//fieldset[4]/div/div/ul/li/input").send_keys(tag)
+    time.sleep(2)
     driver.find_element_by_xpath("//button[@class='btn btn-lg pull-xs-right btn-primary']").click()
 
-    time.sleep(2)
+    driver.find_element_by_xpath("//*[@id='app']/div/div/div/div/form/button")
 
-    my_feed = driver.find_element_by_xpath("//a[@href='#/my-feed']")
-    my_feed.click()
-
-
-"""def test_delete_post():
-    delete_button = driver.find_element_by_xpath("//button[@class='btn btn-outline-danger btn-sm']")
-    delete_button.click()
-    driver.find_elements_by_tag_name('button')[2].click()"""
-
-
-#assert home és my article oldalon, hogy a cikk látható-e, kattintható-e, elérhető-e
+#függvénybe tenni
+#dry, helyretenni az ismétléseket
+#tagek törlése
+#cikk ellenőrzése, hogy megjelenik-e a home és a my article oldalon
