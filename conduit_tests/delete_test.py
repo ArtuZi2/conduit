@@ -118,8 +118,6 @@ def test_delete_post():
     article = driver.find_element_by_xpath("//fieldset[1]/input")
     assert article == "spring"
 
-    driver.close()
-
 
 
 #ellenőrizni, hogy kitörölte-e a cikket

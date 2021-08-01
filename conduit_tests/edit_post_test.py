@@ -8,6 +8,7 @@ options.add_argument('--disable-gpu')
 
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
+
 def test_register():
     username = "sun2"
     password = "Sunshine2046"
