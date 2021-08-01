@@ -1,4 +1,12 @@
 [ {
+  "buildOrder" : 71,
+  "reportUrl" : "https://ArtuZi2.github.io/conduit/71/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "run" : 0,
+    "retry" : 0
+  }
+}, {
   "buildOrder" : 70,
   "reportUrl" : "https://ArtuZi2.github.io/conduit/70/",
   "reportName" : "Allure Report with history",
@@ -145,14 +153,6 @@
 }, {
   "buildOrder" : 51,
   "reportUrl" : "https://ArtuZi2.github.io/conduit/51/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "run" : 0,
-    "retry" : 0
-  }
-}, {
-  "buildOrder" : 50,
-  "reportUrl" : "https://ArtuZi2.github.io/conduit/50/",
   "reportName" : "Allure Report with history",
   "data" : {
     "run" : 0,
