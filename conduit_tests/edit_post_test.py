@@ -94,7 +94,7 @@ def test_login():
     driver.find_element_by_xpath("//fieldset[2]/input").send_keys(password)
     time.sleep(2)
     driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
-    time.sleep(10)
+    time.sleep(5)
 
 
 def test_edit_emil():
@@ -117,5 +117,3 @@ def test_edit_emil():
 
     logout = driver.find_element_by_xpath("//div/ul/li[5]/a")
     logout.click()
-
-
