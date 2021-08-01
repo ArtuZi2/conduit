@@ -1,0 +1,94 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div>...</div> is not clickable at point (171, 569). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.107)",
+      "children" : [ {
+        "name" : "test_cookie1",
+        "uid" : "b065a4f608e9a23f",
+        "parentUid" : "71d7a59fe064668123ca16508cdad017",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627823105052,
+          "stop" : 1627823106246,
+          "duration" : 1194
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "71d7a59fe064668123ca16508cdad017"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"#/register\" class=\"nav-link\">...</a> is not clickable at point (713, 26). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.107)",
+      "children" : [ {
+        "name" : "test_edit_emil",
+        "uid" : "44b92760a061db36",
+        "parentUid" : "180388ed73ba85dd4aee057ecb5248d1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627823154776,
+          "stop" : 1627823155873,
+          "duration" : 1097
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "180388ed73ba85dd4aee057ecb5248d1"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id='app']/nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "children" : [ {
+        "name" : "test_login",
+        "uid" : "6e9fa48174d3fa16",
+        "parentUid" : "99950c156ea54f3e070ea9dd48d7098f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627823188844,
+          "stop" : 1627823199382,
+          "duration" : 10538
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "99950c156ea54f3e070ea9dd48d7098f"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "children" : [ {
+        "name" : "test_login",
+        "uid" : "4da531b1bc48116d",
+        "parentUid" : "9c1b045ddb5dfde1fbea6b72746123cb",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627823222964,
+          "stop" : 1627823243666,
+          "duration" : 20702
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9c1b045ddb5dfde1fbea6b72746123cb"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/ul/li[5]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "children" : [ {
+        "name" : "test_logout",
+        "uid" : "f8eacadcf803aae6",
+        "parentUid" : "c3979bda5b3c419227fd01b6a47e2c95",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627823287211,
+          "stop" : 1627823289229,
+          "duration" : 2018
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c3979bda5b3c419227fd01b6a47e2c95"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
