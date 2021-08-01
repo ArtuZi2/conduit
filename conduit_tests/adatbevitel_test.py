@@ -4,7 +4,6 @@ import time
 import csv
 import random, string
 from selenium.webdriver.chrome.options import Options
-import addfiles
 
 options = webdriver.ChromeOptions()
 options.add_argument('--headless')
@@ -78,7 +77,7 @@ def fill_table(xpath):
     return element
 
 
-with open('addfiles/articles.csv', encoding='utf-8') as csv_table:
+with open('_addfiles_/articles.csv', encoding='utf-8') as csv_table:
     csv_reader = csv.reader(csv_table, delimiter=',')
     next(csv_reader)
     time.sleep(2)
