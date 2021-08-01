@@ -120,21 +120,24 @@ def test_new_post():
 
     time.sleep(2)
     #home
-    driver.find_element_by_xpath("//*[@id='app']/nav/div/ul/li[1]/a").click()
+    driver.find_element_by_xpath("//nav/div/ul/li[1]/a").click()
 
     my_feed = driver.find_element_by_xpath("//a[@href='#/my-feed']")
     my_feed.click()
 
+    article_title = "Spring"
+    assert
 
-def test_listazas():
-    titles = driver.find_elements_by_xpath('//*[@id="app"]/div/div[2]/div/div[1]/div[2]/div/div/div/a/h1')
-    article = driver.find_element_by_xpath("//fieldset[1]/input")
+    def test_listazas():
+        titles = driver.find_elements_by_xpath('//*[@id="app"]/div/div[2]/div/div[1]/div[2]/div/div/div/a/h1')
 
-    titles_count = 0
-    for title in titles:
-        titles_count += 1
-    if title == article:
-        print(f'{title.text}\n')
+        titles_count = 0
+        with open('titles.txt', 'w') as text_file:
+            for title in titles:
+                text_file.write(f'{title.text}\n')
+                titles_count += 1
+
+            print(f'number of links found on the page: {titles_count}')
 
 
 
