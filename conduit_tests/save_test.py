@@ -9,7 +9,7 @@ options.add_argument('--disable-gpu')
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait
 import time
-import pandas as pd
+import pandas
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.keys import Keys
@@ -83,7 +83,7 @@ def test_save():
                   'Email': emil.text}
 
     data_list.append(table_dict)
-    df = pd.DataFrame(data_list)
+    df = pandas.DataFrame(data_list)
 
     df.to_csv('table.csv')
 
