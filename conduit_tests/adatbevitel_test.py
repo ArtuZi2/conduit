@@ -77,7 +77,7 @@ def fill_table(xpath):
     return element
 
 
-with open('_addfiles_/articles.csv', encoding='utf-8') as csv_table:
+with open('./articles.csv', encoding='utf-8') as csv_table:
     csv_reader = csv.reader(csv_table, delimiter=',')
     next(csv_reader)
     time.sleep(2)
