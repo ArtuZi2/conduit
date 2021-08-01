@@ -4,8 +4,8 @@ import time
 import random, string
 from selenium.webdriver.chrome.options import Options
 options = webdriver.ChromeOptions()
-options.add_argument('--headless')
-options.add_argument('--disable-gpu')
+#options.add_argument('--headless')
+#options.add_argument('--disable-gpu')
 
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
@@ -59,15 +59,8 @@ def test_login():
 
     driver.get("http://localhost:1667")
     time.sleep(2)
-    navbar = driver.find_elements_by_class_name("ion-compose")
-    #át lehet ezt alakítani, hogy kiírja a navban elemeit?
-    print(navbar)
-
-    time.sleep(2)
 
     element = driver.find_element_by_xpath("//a[@href='#/login']")
-    print(element.is_enabled())
-    print(element.is_displayed())
 
     element.click()
     time.sleep(2)
@@ -76,47 +69,37 @@ def test_login():
     driver.find_element_by_xpath("//fieldset[2]/input").send_keys(password)
     time.sleep(2)
     driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
-    time.sleep(10)
-    driver.find_element_by_xpath("//nav/div/ul/li[4]/a").click()
-    time.sleep(10)
-    user_setting = driver.find_element_by_tag_name("h4")
-    time.sleep(2)
-    print(user_setting.text)
-    user = "sun2"
-
-    assert user == user_setting.text
 
 
-def test_new_post(title, lead, szoveg, tag):
+def test_new_post():
 
-    title = "Spring"
-    lead = "About my favorite season"
-    szoveg = "Spring is my life."
-
+    #new_article
+    time.sleep(3)
+    driver.find_element_by_xpath("//a[@href='#/editor']").click()
     time.sleep(2)
     article = driver.find_element_by_xpath("//fieldset[1]/input")
-    article.send_keys(title)
+    article.send_keys("Autumn")
     time.sleep(3)
-    driver.find_element_by_xpath("//fieldset[2]/input").send_keys(lead)
+    driver.find_element_by_xpath("//fieldset[2]/input").send_keys("About my favorite season")
     time.sleep(2)
-    driver.find_element_by_xpath("//fieldset[3]/textarea").send_keys(szoveg)
-    time.sleep(2)
+    driver.find_element_by_xpath("//fieldset[3]/textarea").send_keys("Autumn is my life.")
+    time.sleep(4)
     driver.find_element_by_xpath("//button[@class='btn btn-lg pull-xs-right btn-primary']").click()
-
-    time.sleep(2)
 
 
 def test_delete_post():
-    delete_button = driver.find_element_by_xpath("//button[@class='btn btn-outline-danger btn-sm']")
+    time.sleep(3)
+    delete_button = driver.find_element_by_xpath("//div/div[1]/div/div/span/button/span")
     delete_button.click()
-    driver.find_elements_by_tag_name('button')[2].click()
 
     time.sleep(2)
 
     driver.back()
 
-    article = driver.find_element_by_xpath("//fieldset[1]/input")
-    assert article == "spring"
+    article_title = driver.find_element_by_xpath("//div/div[1]/div/h1")
+
+    article_title.is_enabled()
+    assert article_title == "Autumn"
 
 
 
