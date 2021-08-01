@@ -55,16 +55,8 @@ def test_login():
 
     driver.get("http://localhost:1667/#/")
     time.sleep(2)
-    navbar = driver.find_elements_by_class_name("ion-compose")
-    #át lehet ezt alakítani, hogy kiírja a navban elemeit?
-    print(navbar)
-
-    time.sleep(2)
 
     element = driver.find_element_by_xpath("//a[@href='#/login']")
-    print(element.is_enabled())
-    print(element.is_displayed())
-
     element.click()
     time.sleep(2)
     driver.find_element_by_xpath("//fieldset[1]/input").send_keys(emil)
@@ -76,7 +68,8 @@ def test_login():
 
 def fill_table(xpath):
     time.sleep(2)
-    driver.get("http://localhost:1667/#/editor")
+    driver.find_element_by_xpath("//a[@href='#/editor']").click()
+    time.sleep(2)
     element = driver.find_element_by_xpath(xpath)
     element.clear()
     return element
@@ -86,11 +79,10 @@ with open('articles.csv', encoding='utf-8') as csv_table:
     csv_reader = csv.reader(csv_table, delimiter=',')
     next(csv_reader)
     time.sleep(2)
-publish_button = driver.find_element_by_class_name("btn btn-lg pull-xs-right btn-primary")
 
-for row in csv_reader:
-    print(row)
-    fill_table("//fieldset/input").send_keys(row[0])
-    fill_table("//fieldset[2]/input").send_keys(row[1])
-    fill_table("//fieldset[3]/textarea").send_keys(row[2])
-    publish_button.click()
+    for row in csv_reader:
+        print(row)
+        fill_table("//fieldset/input").send_keys(row[0])
+        fill_table("//fieldset[2]/input").send_keys(row[1])
+        fill_table("//fieldset[3]/textarea").send_keys(row[2])
+        driver.find_element_by_xpath("//div/div/div/div/form/button").click()
