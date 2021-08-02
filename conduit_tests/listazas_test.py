@@ -105,7 +105,7 @@ def test_listazas():
 
 
 
-        """print("Current session is {}".format(driver.session_id))
+    """print("Current session is {}".format(driver.session_id))
         driver.close()
         try:
             driver.get("http://localhost:1667")
