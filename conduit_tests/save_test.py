@@ -9,7 +9,6 @@ options.add_argument('--disable-gpu')
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait
 import time
-import pandas
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.keys import Keys
