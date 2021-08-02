@@ -1,0 +1,2296 @@
+{
+  "0e6d6539e73cdf937d492b63deb9ec7e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 6,
+      "unknown" : 0,
+      "total" : 6
+    },
+    "items" : [ {
+      "uid" : "27a4b0e9a3d96027",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/98//#testresult/27a4b0e9a3d96027",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627917260012,
+        "stop" : 1627917275534,
+        "duration" : 15522
+      }
+    }, {
+      "uid" : "b934185a8f13450b",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/90//#testresult/b934185a8f13450b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627893827842,
+        "stop" : 1627893843285,
+        "duration" : 15443
+      }
+    }, {
+      "uid" : "5714bd085cb18f02",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/89//#testresult/5714bd085cb18f02",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627857393151,
+        "stop" : 1627857408710,
+        "duration" : 15559
+      }
+    }, {
+      "uid" : "4b51246c6e84b304",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/79//#testresult/4b51246c6e84b304",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627826064299,
+        "stop" : 1627826079817,
+        "duration" : 15518
+      }
+    }, {
+      "uid" : "175569dea4609301",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/77//#testresult/175569dea4609301",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627823139246,
+        "stop" : 1627823154774,
+        "duration" : 15528
+      }
+    }, {
+      "uid" : "753c6d584614a14f",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/76//#testresult/753c6d584614a14f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627823059641,
+        "stop" : 1627823080079,
+        "duration" : 20438
+      }
+    } ]
+  },
+  "747b1c4db74a1f1ca35b7545d75ee3f9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4ad31e34e88209c9",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/98//#testresult/4ad31e34e88209c9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627917425350,
+        "stop" : 1627917440386,
+        "duration" : 15036
+      }
+    } ]
+  },
+  "309b595be433d889b53dae81fb330355" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 10,
+      "unknown" : 0,
+      "total" : 10
+    },
+    "items" : [ {
+      "uid" : "361b25bac22f6603",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/98//#testresult/361b25bac22f6603",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627917192606,
+        "stop" : 1627917203152,
+        "duration" : 10546
+      }
+    }, {
+      "uid" : "68bc160f9990a95f",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/90//#testresult/68bc160f9990a95f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627893760827,
+        "stop" : 1627893771286,
+        "duration" : 10459
+      }
+    }, {
+      "uid" : "4c0e8a21584cd8ca",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/89//#testresult/4c0e8a21584cd8ca",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627857325467,
+        "stop" : 1627857336016,
+        "duration" : 10549
+      }
+    }, {
+      "uid" : "dc8bfa6f84bdf2d1",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/79//#testresult/dc8bfa6f84bdf2d1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627825997051,
+        "stop" : 1627826007548,
+        "duration" : 10497
+      }
+    }, {
+      "uid" : "fd51cb4d875aa35d",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/77//#testresult/fd51cb4d875aa35d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627823094490,
+        "stop" : 1627823105050,
+        "duration" : 10560
+      }
+    }, {
+      "uid" : "655ba2fb69b8d10a",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/76//#testresult/655ba2fb69b8d10a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627823015055,
+        "stop" : 1627823025490,
+        "duration" : 10435
+      }
+    }, {
+      "uid" : "73351acacad68ee8",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/75//#testresult/73351acacad68ee8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627819802692,
+        "stop" : 1627819813260,
+        "duration" : 10568
+      }
+    }, {
+      "uid" : "cd3785220055db17",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/70//#testresult/cd3785220055db17",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627582043002,
+        "stop" : 1627582053525,
+        "duration" : 10523
+      }
+    }, {
+      "uid" : "4c8aef6f85f41c76",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/68//#testresult/4c8aef6f85f41c76",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580904914,
+        "stop" : 1627580915440,
+        "duration" : 10526
+      }
+    }, {
+      "uid" : "941ca9365f029356",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/67//#testresult/941ca9365f029356",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580780546,
+        "stop" : 1627580790994,
+        "duration" : 10448
+      }
+    } ]
+  },
+  "49d3ddeb0a3fdcced230392a8f5ab967" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 6,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 6
+    },
+    "items" : [ {
+      "uid" : "59a1a4905eb4a3dc",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/98//#testresult/59a1a4905eb4a3dc",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"#/register\" class=\"nav-link\">...</a> is not clickable at point (713, 26). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627917275536,
+        "stop" : 1627917276623,
+        "duration" : 1087
+      }
+    }, {
+      "uid" : "2b060a4b2b58cdd7",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/90//#testresult/2b060a4b2b58cdd7",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"#/register\" class=\"nav-link\">...</a> is not clickable at point (713, 26). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627893843287,
+        "stop" : 1627893844376,
+        "duration" : 1089
+      }
+    }, {
+      "uid" : "a00cc29fa5887c1d",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/89//#testresult/a00cc29fa5887c1d",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"#/register\" class=\"nav-link\">...</a> is not clickable at point (713, 26). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627857408713,
+        "stop" : 1627857409766,
+        "duration" : 1053
+      }
+    }, {
+      "uid" : "94045911c205f5f1",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/79//#testresult/94045911c205f5f1",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"#/register\" class=\"nav-link\">...</a> is not clickable at point (713, 26). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627826079820,
+        "stop" : 1627826080905,
+        "duration" : 1085
+      }
+    }, {
+      "uid" : "44b92760a061db36",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/77//#testresult/44b92760a061db36",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"#/register\" class=\"nav-link\">...</a> is not clickable at point (713, 26). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627823154776,
+        "stop" : 1627823155873,
+        "duration" : 1097
+      }
+    }, {
+      "uid" : "65a7e9da63c5202e",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/76//#testresult/65a7e9da63c5202e",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"#/register\" class=\"nav-link\">...</a> is not clickable at point (713, 26). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627823080081,
+        "stop" : 1627823081165,
+        "duration" : 1084
+      }
+    } ]
+  },
+  "faa4b5229aa947a4873c1e7a9e6e2c81" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 12,
+      "unknown" : 0,
+      "total" : 12
+    },
+    "items" : [ {
+      "uid" : "b7e695263b906aff",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/98//#testresult/b7e695263b906aff",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627917322322,
+        "stop" : 1627917337306,
+        "duration" : 14984
+      }
+    }, {
+      "uid" : "ab99a0a0ac816b4a",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/90//#testresult/ab99a0a0ac816b4a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627893889704,
+        "stop" : 1627893904486,
+        "duration" : 14782
+      }
+    }, {
+      "uid" : "405db358d675f624",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/89//#testresult/405db358d675f624",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627857455652,
+        "stop" : 1627857470786,
+        "duration" : 15134
+      }
+    }, {
+      "uid" : "d38de09b3f4b9296",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/79//#testresult/d38de09b3f4b9296",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627826126617,
+        "stop" : 1627826141540,
+        "duration" : 14923
+      }
+    }, {
+      "uid" : "6cc28f8067e36582",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/77//#testresult/6cc28f8067e36582",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627823201529,
+        "stop" : 1627823216458,
+        "duration" : 14929
+      }
+    }, {
+      "uid" : "aef940541ffeb057",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/76//#testresult/aef940541ffeb057",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627823126665,
+        "stop" : 1627823141542,
+        "duration" : 14877
+      }
+    }, {
+      "uid" : "92402f65677e67d1",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/75//#testresult/92402f65677e67d1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627819860187,
+        "stop" : 1627819875263,
+        "duration" : 15076
+      }
+    }, {
+      "uid" : "9187c44b7528e4a1",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/70//#testresult/9187c44b7528e4a1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627582100364,
+        "stop" : 1627582115267,
+        "duration" : 14903
+      }
+    }, {
+      "uid" : "48b0c3a663c9a2aa",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/68//#testresult/48b0c3a663c9a2aa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580962371,
+        "stop" : 1627580977398,
+        "duration" : 15027
+      }
+    }, {
+      "uid" : "2596f05f747190ca",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/67//#testresult/2596f05f747190ca",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580837675,
+        "stop" : 1627580852469,
+        "duration" : 14794
+      }
+    }, {
+      "uid" : "e2d6c7851b75c1bd",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/66//#testresult/e2d6c7851b75c1bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580235043,
+        "stop" : 1627580249807,
+        "duration" : 14764
+      }
+    }, {
+      "uid" : "35fee222922939a3",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/65//#testresult/35fee222922939a3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580090580,
+        "stop" : 1627580105343,
+        "duration" : 14763
+      }
+    } ]
+  },
+  "a130164b2e9837cf49191b525c18d6e6" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "items" : [ {
+      "uid" : "e9a011af8c7a8c81",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/98//#testresult/e9a011af8c7a8c81",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627917212463,
+        "stop" : 1627917220906,
+        "duration" : 8443
+      }
+    }, {
+      "uid" : "a4485448baa33f6f",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/90//#testresult/a4485448baa33f6f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627893780428,
+        "stop" : 1627893788825,
+        "duration" : 8397
+      }
+    }, {
+      "uid" : "65c8f8c5d75b8872",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/89//#testresult/65c8f8c5d75b8872",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627857345352,
+        "stop" : 1627857353899,
+        "duration" : 8547
+      }
+    }, {
+      "uid" : "447f54b223917e21",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/79//#testresult/447f54b223917e21",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627826016711,
+        "stop" : 1627826025177,
+        "duration" : 8466
+      }
+    } ]
+  },
+  "ddac4a6bab5010ab5798ff476f81fd4c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 12,
+      "unknown" : 0,
+      "total" : 12
+    },
+    "items" : [ {
+      "uid" : "a1cc1e3a6754cd22",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/98//#testresult/a1cc1e3a6754cd22",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627917337308,
+        "stop" : 1627917343762,
+        "duration" : 6454
+      }
+    }, {
+      "uid" : "92ddb2ae72b66afa",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/90//#testresult/92ddb2ae72b66afa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627893904488,
+        "stop" : 1627893910891,
+        "duration" : 6403
+      }
+    }, {
+      "uid" : "f8d6c715c14981a3",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/89//#testresult/f8d6c715c14981a3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627857470794,
+        "stop" : 1627857477294,
+        "duration" : 6500
+      }
+    }, {
+      "uid" : "7795e0d021fd45c1",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/79//#testresult/7795e0d021fd45c1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627826141542,
+        "stop" : 1627826147955,
+        "duration" : 6413
+      }
+    }, {
+      "uid" : "e1922fc593d72494",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/77//#testresult/e1922fc593d72494",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627823216460,
+        "stop" : 1627823222948,
+        "duration" : 6488
+      }
+    }, {
+      "uid" : "e7ab5d98bf2b6bc2",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/76//#testresult/e7ab5d98bf2b6bc2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627823141544,
+        "stop" : 1627823147962,
+        "duration" : 6418
+      }
+    }, {
+      "uid" : "c486471e515eede4",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/75//#testresult/c486471e515eede4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627819875265,
+        "stop" : 1627819881727,
+        "duration" : 6462
+      }
+    }, {
+      "uid" : "2b027476f55cbfeb",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/70//#testresult/2b027476f55cbfeb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627582115269,
+        "stop" : 1627582121744,
+        "duration" : 6475
+      }
+    }, {
+      "uid" : "2c8f4db2e6e49191",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/68//#testresult/2c8f4db2e6e49191",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580977400,
+        "stop" : 1627580983881,
+        "duration" : 6481
+      }
+    }, {
+      "uid" : "d23fb52514b00d52",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/67//#testresult/d23fb52514b00d52",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580852471,
+        "stop" : 1627580858879,
+        "duration" : 6408
+      }
+    }, {
+      "uid" : "f9f4353ecab85a00",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/66//#testresult/f9f4353ecab85a00",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580249808,
+        "stop" : 1627580256196,
+        "duration" : 6388
+      }
+    }, {
+      "uid" : "ae40d89a25ebb3dd",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/65//#testresult/ae40d89a25ebb3dd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580105345,
+        "stop" : 1627580111720,
+        "duration" : 6375
+      }
+    } ]
+  },
+  "8719ea422aee97b4fc697a6c991c9239" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 13,
+      "unknown" : 0,
+      "total" : 13
+    },
+    "items" : [ {
+      "uid" : "7dcae8c118456abe",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/98//#testresult/7dcae8c118456abe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627917364647,
+        "stop" : 1627917397727,
+        "duration" : 33080
+      }
+    }, {
+      "uid" : "ae468222f13c2e25",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/90//#testresult/ae468222f13c2e25",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627893931539,
+        "stop" : 1627893964346,
+        "duration" : 32807
+      }
+    }, {
+      "uid" : "5b440a81ac97dafb",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/89//#testresult/5b440a81ac97dafb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627857498295,
+        "stop" : 1627857531459,
+        "duration" : 33164
+      }
+    }, {
+      "uid" : "1f2c7b875e66fa6d",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/79//#testresult/1f2c7b875e66fa6d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627826168840,
+        "stop" : 1627826201828,
+        "duration" : 32988
+      }
+    }, {
+      "uid" : "4b31fcf13934d60f",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/77//#testresult/4b31fcf13934d60f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627823243708,
+        "stop" : 1627823276655,
+        "duration" : 32947
+      }
+    }, {
+      "uid" : "fb83d3606802ad5b",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/76//#testresult/fb83d3606802ad5b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627823168804,
+        "stop" : 1627823201725,
+        "duration" : 32921
+      }
+    }, {
+      "uid" : "8836aba4e7e61daf",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/75//#testresult/8836aba4e7e61daf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627819902555,
+        "stop" : 1627819935482,
+        "duration" : 32927
+      }
+    }, {
+      "uid" : "8508f7249814fd3a",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/70//#testresult/8508f7249814fd3a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627582142522,
+        "stop" : 1627582175452,
+        "duration" : 32930
+      }
+    }, {
+      "uid" : "9f9a02ceea383451",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/68//#testresult/9f9a02ceea383451",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627581004794,
+        "stop" : 1627581037867,
+        "duration" : 33073
+      }
+    }, {
+      "uid" : "da30c3c74541afc9",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/67//#testresult/da30c3c74541afc9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580879574,
+        "stop" : 1627580912396,
+        "duration" : 32822
+      }
+    }, {
+      "uid" : "de40ca0fd842e8a",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/66//#testresult/de40ca0fd842e8a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580276869,
+        "stop" : 1627580309679,
+        "duration" : 32810
+      }
+    }, {
+      "uid" : "6a6a124982f819e5",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/65//#testresult/6a6a124982f819e5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580132413,
+        "stop" : 1627580165193,
+        "duration" : 32780
+      }
+    }, {
+      "uid" : "9b03e3bf903d42d3",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/64//#testresult/9b03e3bf903d42d3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627579293730,
+        "stop" : 1627579326534,
+        "duration" : 32804
+      }
+    } ]
+  },
+  "e22c3ed700d9e7652e90487b90b26d5b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 12,
+      "unknown" : 0,
+      "total" : 12
+    },
+    "items" : [ {
+      "uid" : "24b43e4f821538fe",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/98//#testresult/24b43e4f821538fe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627917343765,
+        "stop" : 1627917343778,
+        "duration" : 13
+      }
+    }, {
+      "uid" : "923501b6dd0daa3c",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/90//#testresult/923501b6dd0daa3c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627893910893,
+        "stop" : 1627893910905,
+        "duration" : 12
+      }
+    }, {
+      "uid" : "5fde9427d93fe9be",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/89//#testresult/5fde9427d93fe9be",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627857477296,
+        "stop" : 1627857477309,
+        "duration" : 13
+      }
+    }, {
+      "uid" : "5c7da4f06c2255c4",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/79//#testresult/5c7da4f06c2255c4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627826147958,
+        "stop" : 1627826147970,
+        "duration" : 12
+      }
+    }, {
+      "uid" : "d0c76ab4db0167a2",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/77//#testresult/d0c76ab4db0167a2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627823222950,
+        "stop" : 1627823222962,
+        "duration" : 12
+      }
+    }, {
+      "uid" : "1e020d54f3a0a746",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/76//#testresult/1e020d54f3a0a746",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627823147964,
+        "stop" : 1627823147975,
+        "duration" : 11
+      }
+    }, {
+      "uid" : "34b6d27325a6f5a",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/75//#testresult/34b6d27325a6f5a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627819881729,
+        "stop" : 1627819881745,
+        "duration" : 16
+      }
+    }, {
+      "uid" : "35172237045a51d3",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/70//#testresult/35172237045a51d3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627582121746,
+        "stop" : 1627582121758,
+        "duration" : 12
+      }
+    }, {
+      "uid" : "481b0691d135fa7a",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/68//#testresult/481b0691d135fa7a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580983882,
+        "stop" : 1627580983895,
+        "duration" : 13
+      }
+    }, {
+      "uid" : "8298d5af007f2a40",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/67//#testresult/8298d5af007f2a40",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580858882,
+        "stop" : 1627580858894,
+        "duration" : 12
+      }
+    }, {
+      "uid" : "12d66259a519b674",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/66//#testresult/12d66259a519b674",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580256198,
+        "stop" : 1627580256212,
+        "duration" : 14
+      }
+    }, {
+      "uid" : "dfbc2af275e53b2e",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/65//#testresult/dfbc2af275e53b2e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580111722,
+        "stop" : 1627580111734,
+        "duration" : 12
+      }
+    } ]
+  },
+  "e1503b77ef1f929ffde9cf1fe91e955e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 14,
+      "unknown" : 0,
+      "total" : 14
+    },
+    "items" : [ {
+      "uid" : "6b698ab1f8cc47b9",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/98//#testresult/6b698ab1f8cc47b9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627917410324,
+        "stop" : 1627917425348,
+        "duration" : 15024
+      }
+    }, {
+      "uid" : "c8b75a9ec2ca2b98",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/90//#testresult/c8b75a9ec2ca2b98",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627893976855,
+        "stop" : 1627893991605,
+        "duration" : 14750
+      }
+    }, {
+      "uid" : "83f0dc84b1404d48",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/89//#testresult/83f0dc84b1404d48",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627857544129,
+        "stop" : 1627857559253,
+        "duration" : 15124
+      }
+    }, {
+      "uid" : "1f13b76f899433c0",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/79//#testresult/1f13b76f899433c0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627826214414,
+        "stop" : 1627826229385,
+        "duration" : 14971
+      }
+    }, {
+      "uid" : "5c9afe5e973ce3b1",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/77//#testresult/5c9afe5e973ce3b1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627823289273,
+        "stop" : 1627823304197,
+        "duration" : 14924
+      }
+    }, {
+      "uid" : "a672462411feb061",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/76//#testresult/a672462411feb061",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627823214213,
+        "stop" : 1627823229123,
+        "duration" : 14910
+      }
+    }, {
+      "uid" : "1d5e163a4f8ee7b2",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/75//#testresult/1d5e163a4f8ee7b2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627819948093,
+        "stop" : 1627819963060,
+        "duration" : 14967
+      }
+    }, {
+      "uid" : "4301a58d4289f466",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/70//#testresult/4301a58d4289f466",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627582188037,
+        "stop" : 1627582202938,
+        "duration" : 14901
+      }
+    }, {
+      "uid" : "5e0b0b3ca7732e76",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/68//#testresult/5e0b0b3ca7732e76",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627581050456,
+        "stop" : 1627581065493,
+        "duration" : 15037
+      }
+    }, {
+      "uid" : "b85a0650650d9c03",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/67//#testresult/b85a0650650d9c03",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580924888,
+        "stop" : 1627580939702,
+        "duration" : 14814
+      }
+    }, {
+      "uid" : "5f07fe7b3f16685b",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/66//#testresult/5f07fe7b3f16685b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580322177,
+        "stop" : 1627580336955,
+        "duration" : 14778
+      }
+    }, {
+      "uid" : "d8c930ff0785898b",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/65//#testresult/d8c930ff0785898b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580177684,
+        "stop" : 1627580192444,
+        "duration" : 14760
+      }
+    }, {
+      "uid" : "fe1329c3e3802334",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/64//#testresult/fe1329c3e3802334",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627579337010,
+        "stop" : 1627579351746,
+        "duration" : 14736
+      }
+    }, {
+      "uid" : "7536fbe912b26fb4",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/54//#testresult/7536fbe912b26fb4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627567590377,
+        "stop" : 1627567605659,
+        "duration" : 15282
+      }
+    } ]
+  },
+  "918272e303268363572dd0231d373e92" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 11,
+      "unknown" : 0,
+      "total" : 12
+    },
+    "items" : [ {
+      "uid" : "ec8bd70615cf9adc",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/98//#testresult/ec8bd70615cf9adc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627917276662,
+        "stop" : 1627917309675,
+        "duration" : 33013
+      }
+    }, {
+      "uid" : "993e39690f2d51d3",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/90//#testresult/993e39690f2d51d3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627893844407,
+        "stop" : 1627893877172,
+        "duration" : 32765
+      }
+    }, {
+      "uid" : "70dcc76741460ea4",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/89//#testresult/70dcc76741460ea4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627857409806,
+        "stop" : 1627857442926,
+        "duration" : 33120
+      }
+    }, {
+      "uid" : "80e6706b2d6a5e54",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/79//#testresult/80e6706b2d6a5e54",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627826080942,
+        "stop" : 1627826113972,
+        "duration" : 33030
+      }
+    }, {
+      "uid" : "8baed5b740ff8e71",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/77//#testresult/8baed5b740ff8e71",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627823155913,
+        "stop" : 1627823188842,
+        "duration" : 32929
+      }
+    }, {
+      "uid" : "b0104c0cb7d414ba",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/76//#testresult/b0104c0cb7d414ba",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627823081196,
+        "stop" : 1627823114109,
+        "duration" : 32913
+      }
+    }, {
+      "uid" : "41f0af5c1535ec61",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/75//#testresult/41f0af5c1535ec61",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627819814529,
+        "stop" : 1627819847518,
+        "duration" : 32989
+      }
+    }, {
+      "uid" : "37dec7fb412ba4ed",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/70//#testresult/37dec7fb412ba4ed",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627582054788,
+        "stop" : 1627582087718,
+        "duration" : 32930
+      }
+    }, {
+      "uid" : "a032f7c85839c2c4",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/68//#testresult/a032f7c85839c2c4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580916679,
+        "stop" : 1627580949748,
+        "duration" : 33069
+      }
+    }, {
+      "uid" : "548e1ac0d5d7270f",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/67//#testresult/548e1ac0d5d7270f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580792266,
+        "stop" : 1627580825120,
+        "duration" : 32854
+      }
+    }, {
+      "uid" : "b7ff2f76a69a579",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/66//#testresult/b7ff2f76a69a579",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580189371,
+        "stop" : 1627580222422,
+        "duration" : 33051
+      }
+    }, {
+      "uid" : "a57d62b12dc4146c",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/65//#testresult/a57d62b12dc4146c",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'random' is not defined",
+      "time" : {
+        "start" : 1627580075364,
+        "stop" : 1627580077952,
+        "duration" : 2588
+      }
+    } ]
+  },
+  "0b4ac2b75f1bbe38a9c8d5e30f704597" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "items" : [ {
+      "uid" : "51bea0a18c90140e",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/98//#testresult/51bea0a18c90140e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627917204415,
+        "stop" : 1627917212461,
+        "duration" : 8046
+      }
+    }, {
+      "uid" : "63bb283172ce0243",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/90//#testresult/63bb283172ce0243",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627893772571,
+        "stop" : 1627893780427,
+        "duration" : 7856
+      }
+    }, {
+      "uid" : "f08eda892fab28a",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/89//#testresult/f08eda892fab28a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627857337274,
+        "stop" : 1627857345349,
+        "duration" : 8075
+      }
+    }, {
+      "uid" : "2a2a18c68e4dbd0c",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/79//#testresult/2a2a18c68e4dbd0c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627826008792,
+        "stop" : 1627826016709,
+        "duration" : 7917
+      }
+    } ]
+  },
+  "368b2ef7673faa254dcbea315693be38" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 12,
+      "unknown" : 0,
+      "total" : 12
+    },
+    "items" : [ {
+      "uid" : "51ec8aad878a78b1",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/98//#testresult/51ec8aad878a78b1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627917320222,
+        "stop" : 1627917322320,
+        "duration" : 2098
+      }
+    }, {
+      "uid" : "8f749ceb3f0e9567",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/90//#testresult/8f749ceb3f0e9567",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627893887610,
+        "stop" : 1627893889701,
+        "duration" : 2091
+      }
+    }, {
+      "uid" : "f58414f77e3f9083",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/89//#testresult/f58414f77e3f9083",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627857453543,
+        "stop" : 1627857455650,
+        "duration" : 2107
+      }
+    }, {
+      "uid" : "1edbbd9eb6f0ec9b",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/79//#testresult/1edbbd9eb6f0ec9b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627826124514,
+        "stop" : 1627826126615,
+        "duration" : 2101
+      }
+    }, {
+      "uid" : "9ab1a4eb52247258",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/77//#testresult/9ab1a4eb52247258",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627823199425,
+        "stop" : 1627823201527,
+        "duration" : 2102
+      }
+    }, {
+      "uid" : "52ec5a5fc8532ef",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/76//#testresult/52ec5a5fc8532ef",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627823124571,
+        "stop" : 1627823126663,
+        "duration" : 2092
+      }
+    }, {
+      "uid" : "39af9425c3e9b0af",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/75//#testresult/39af9425c3e9b0af",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627819858082,
+        "stop" : 1627819860185,
+        "duration" : 2103
+      }
+    }, {
+      "uid" : "5371f8680199a7bd",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/70//#testresult/5371f8680199a7bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627582098261,
+        "stop" : 1627582100361,
+        "duration" : 2100
+      }
+    }, {
+      "uid" : "5f9990d9592a1c2b",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/68//#testresult/5f9990d9592a1c2b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580960267,
+        "stop" : 1627580962369,
+        "duration" : 2102
+      }
+    }, {
+      "uid" : "a77b81682548088d",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/67//#testresult/a77b81682548088d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580835577,
+        "stop" : 1627580837672,
+        "duration" : 2095
+      }
+    }, {
+      "uid" : "8e8127b73dff290",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/66//#testresult/8e8127b73dff290",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580232948,
+        "stop" : 1627580235040,
+        "duration" : 2092
+      }
+    }, {
+      "uid" : "4f177d8bfff2bbc5",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/65//#testresult/4f177d8bfff2bbc5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580088489,
+        "stop" : 1627580090578,
+        "duration" : 2089
+      }
+    } ]
+  },
+  "35ab2e73d8cca75ba42f9f2132e79bf2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 13,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 13
+    },
+    "items" : [ {
+      "uid" : "5e84bb1ba91d6546",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/98//#testresult/5e84bb1ba91d6546",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/ul/li[5]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627917408269,
+        "stop" : 1627917410286,
+        "duration" : 2017
+      }
+    }, {
+      "uid" : "266e90b6b1268081",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/90//#testresult/266e90b6b1268081",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/ul/li[5]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627893974804,
+        "stop" : 1627893976821,
+        "duration" : 2017
+      }
+    }, {
+      "uid" : "911c61e3185896a2",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/89//#testresult/911c61e3185896a2",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/ul/li[5]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627857542061,
+        "stop" : 1627857544081,
+        "duration" : 2020
+      }
+    }, {
+      "uid" : "3ae5a7e686657271",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/79//#testresult/3ae5a7e686657271",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/ul/li[5]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627826212357,
+        "stop" : 1627826214375,
+        "duration" : 2018
+      }
+    }, {
+      "uid" : "f8eacadcf803aae6",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/77//#testresult/f8eacadcf803aae6",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/ul/li[5]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627823287211,
+        "stop" : 1627823289229,
+        "duration" : 2018
+      }
+    }, {
+      "uid" : "627a74ab5af505a6",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/76//#testresult/627a74ab5af505a6",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/ul/li[5]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627823212164,
+        "stop" : 1627823214180,
+        "duration" : 2016
+      }
+    }, {
+      "uid" : "d23c6b90447690cb",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/75//#testresult/d23c6b90447690cb",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/ul/li[5]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627819946030,
+        "stop" : 1627819948050,
+        "duration" : 2020
+      }
+    }, {
+      "uid" : "bd3f27e0469677d0",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/70//#testresult/bd3f27e0469677d0",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/ul/li[5]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627582185975,
+        "stop" : 1627582187996,
+        "duration" : 2021
+      }
+    }, {
+      "uid" : "d6596c07294d21c8",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/68//#testresult/d6596c07294d21c8",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/ul/li[5]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627581048396,
+        "stop" : 1627581050415,
+        "duration" : 2019
+      }
+    }, {
+      "uid" : "3d8e8f88c73b1428",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/67//#testresult/3d8e8f88c73b1428",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/ul/li[5]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627580922837,
+        "stop" : 1627580924854,
+        "duration" : 2017
+      }
+    }, {
+      "uid" : "ecfa37c40dbc323d",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/66//#testresult/ecfa37c40dbc323d",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/ul/li[5]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627580320126,
+        "stop" : 1627580322143,
+        "duration" : 2017
+      }
+    }, {
+      "uid" : "23689e5416054e15",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/65//#testresult/23689e5416054e15",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/ul/li[5]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627580175634,
+        "stop" : 1627580177651,
+        "duration" : 2017
+      }
+    }, {
+      "uid" : "d4f972596a7d3104",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/64//#testresult/d4f972596a7d3104",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/ul/li[5]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627579336966,
+        "stop" : 1627579336979,
+        "duration" : 13
+      }
+    } ]
+  },
+  "ea50ed5f05e090f25516e1f42727a91e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 12,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 12
+    },
+    "items" : [ {
+      "uid" : "ec56d59e35113fea",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/98//#testresult/ec56d59e35113fea",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id='app']/nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627917309677,
+        "stop" : 1627917320183,
+        "duration" : 10506
+      }
+    }, {
+      "uid" : "ec6a95edfff68e29",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/90//#testresult/ec6a95edfff68e29",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id='app']/nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627893877174,
+        "stop" : 1627893887575,
+        "duration" : 10401
+      }
+    }, {
+      "uid" : "f71c58dc53177630",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/89//#testresult/f71c58dc53177630",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id='app']/nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627857442929,
+        "stop" : 1627857453498,
+        "duration" : 10569
+      }
+    }, {
+      "uid" : "d6cf235a86af12a3",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/79//#testresult/d6cf235a86af12a3",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id='app']/nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627826113975,
+        "stop" : 1627826124475,
+        "duration" : 10500
+      }
+    }, {
+      "uid" : "6e9fa48174d3fa16",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/77//#testresult/6e9fa48174d3fa16",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id='app']/nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627823188844,
+        "stop" : 1627823199382,
+        "duration" : 10538
+      }
+    }, {
+      "uid" : "3735fb6765039671",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/76//#testresult/3735fb6765039671",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id='app']/nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627823114111,
+        "stop" : 1627823124538,
+        "duration" : 10427
+      }
+    }, {
+      "uid" : "9b65cd5dad4d8b5a",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/75//#testresult/9b65cd5dad4d8b5a",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id='app']/nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627819847521,
+        "stop" : 1627819858038,
+        "duration" : 10517
+      }
+    }, {
+      "uid" : "cc30cd24c27b1fae",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/70//#testresult/cc30cd24c27b1fae",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id='app']/nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627582087720,
+        "stop" : 1627582098221,
+        "duration" : 10501
+      }
+    }, {
+      "uid" : "edeb659f70cbf98c",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/68//#testresult/edeb659f70cbf98c",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id='app']/nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627580949751,
+        "stop" : 1627580960228,
+        "duration" : 10477
+      }
+    }, {
+      "uid" : "d1b7433948808765",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/67//#testresult/d1b7433948808765",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id='app']/nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627580825122,
+        "stop" : 1627580835546,
+        "duration" : 10424
+      }
+    }, {
+      "uid" : "91d10b25b187477c",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/66//#testresult/91d10b25b187477c",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id='app']/nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627580222425,
+        "stop" : 1627580232864,
+        "duration" : 10439
+      }
+    }, {
+      "uid" : "2aff59f39182799c",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/65//#testresult/2aff59f39182799c",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id='app']/nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627580078029,
+        "stop" : 1627580088443,
+        "duration" : 10414
+      }
+    } ]
+  },
+  "5ad892a56ef04fc85d2fbe03a8972d70" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c9b6353dbf104a3d",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/98//#testresult/c9b6353dbf104a3d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627917440388,
+        "stop" : 1627917446869,
+        "duration" : 6481
+      }
+    } ]
+  },
+  "c8c804fec3e7780e715b96a89446c4fd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 6,
+      "unknown" : 0,
+      "total" : 6
+    },
+    "items" : [ {
+      "uid" : "c49d260d28d5450e",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/98//#testresult/c49d260d28d5450e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627917227020,
+        "stop" : 1627917260009,
+        "duration" : 32989
+      }
+    }, {
+      "uid" : "5d35af021305c200",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/90//#testresult/5d35af021305c200",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627893794930,
+        "stop" : 1627893827840,
+        "duration" : 32910
+      }
+    }, {
+      "uid" : "88cb607dbda3f83d",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/89//#testresult/88cb607dbda3f83d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627857360026,
+        "stop" : 1627857393149,
+        "duration" : 33123
+      }
+    }, {
+      "uid" : "bb3ee85de1ffd843",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/79//#testresult/bb3ee85de1ffd843",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627826031296,
+        "stop" : 1627826064296,
+        "duration" : 33000
+      }
+    }, {
+      "uid" : "c6aa60a2f1132147",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/77//#testresult/c6aa60a2f1132147",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627823106339,
+        "stop" : 1627823139244,
+        "duration" : 32905
+      }
+    }, {
+      "uid" : "d076631a144b0f8",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/76//#testresult/d076631a144b0f8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627823026729,
+        "stop" : 1627823059639,
+        "duration" : 32910
+      }
+    } ]
+  },
+  "76deb69d53dcefd7ae887750f6002cb7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 10,
+      "unknown" : 0,
+      "total" : 10
+    },
+    "items" : [ {
+      "uid" : "aafa7e19878e24cf",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/98//#testresult/aafa7e19878e24cf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627917159297,
+        "stop" : 1627917192600,
+        "duration" : 33303
+      }
+    }, {
+      "uid" : "d11480e9983eb921",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/90//#testresult/d11480e9983eb921",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627893727807,
+        "stop" : 1627893760824,
+        "duration" : 33017
+      }
+    }, {
+      "uid" : "55499cbefff0565f",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/89//#testresult/55499cbefff0565f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627857291028,
+        "stop" : 1627857325464,
+        "duration" : 34436
+      }
+    }, {
+      "uid" : "bd074bb8c53d9e40",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/79//#testresult/bd074bb8c53d9e40",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627825963889,
+        "stop" : 1627825997048,
+        "duration" : 33159
+      }
+    }, {
+      "uid" : "dd6af2544b2f108c",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/77//#testresult/dd6af2544b2f108c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627823060472,
+        "stop" : 1627823094448,
+        "duration" : 33976
+      }
+    }, {
+      "uid" : "f36afc5be33249a4",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/76//#testresult/f36afc5be33249a4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627822981697,
+        "stop" : 1627823015043,
+        "duration" : 33346
+      }
+    }, {
+      "uid" : "252769e84710ea47",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/75//#testresult/252769e84710ea47",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627819768223,
+        "stop" : 1627819802681,
+        "duration" : 34458
+      }
+    }, {
+      "uid" : "bc06aaff57010327",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/70//#testresult/bc06aaff57010327",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627582005030,
+        "stop" : 1627582042962,
+        "duration" : 37932
+      }
+    }, {
+      "uid" : "8adf7800a976f85a",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/68//#testresult/8adf7800a976f85a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580871617,
+        "stop" : 1627580904910,
+        "duration" : 33293
+      }
+    }, {
+      "uid" : "99faa8d397b715fc",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/67//#testresult/99faa8d397b715fc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580747479,
+        "stop" : 1627580780534,
+        "duration" : 33055
+      }
+    } ]
+  },
+  "5a17bdb91ba35982fbf4b65aa98c97e7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 4,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "items" : [ {
+      "uid" : "28fbeb187e83f456",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/33//#testresult/28fbeb187e83f456",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
+      "time" : {
+        "start" : 1627247057817,
+        "stop" : 1627247057817,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "6ff9c8f7fbf8829f",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/32//#testresult/6ff9c8f7fbf8829f",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
+      "time" : {
+        "start" : 1627246775943,
+        "stop" : 1627246775943,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a0d74ba86af5929a",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/30//#testresult/a0d74ba86af5929a",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
+      "time" : {
+        "start" : 1627244288431,
+        "stop" : 1627244288431,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "fe48a02b3718340f",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/28//#testresult/fe48a02b3718340f",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1627241624154,
+        "stop" : 1627241626158,
+        "duration" : 2004
+      }
+    } ]
+  },
+  "caf7a84e672c3438830952084b7a1f32" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9eea5fc1d307a8ea",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/98//#testresult/9eea5fc1d307a8ea",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627917446871,
+        "stop" : 1627917446883,
+        "duration" : 12
+      }
+    } ]
+  },
+  "dd94f0e6f2d6612497b0fda791b9efaa" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 4,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "items" : [ {
+      "uid" : "ff94ea3d5d8608c4",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/98//#testresult/ff94ea3d5d8608c4",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/div[1]/div/div/span/button/span\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627917223965,
+        "stop" : 1627917226983,
+        "duration" : 3018
+      }
+    }, {
+      "uid" : "2d620c65cbed34cd",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/90//#testresult/2d620c65cbed34cd",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/div[1]/div/div/span/button/span\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627893791879,
+        "stop" : 1627893794898,
+        "duration" : 3019
+      }
+    }, {
+      "uid" : "7c9f0692a3a7a27d",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/89//#testresult/7c9f0692a3a7a27d",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/div[1]/div/div/span/button/span\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627857356960,
+        "stop" : 1627857359981,
+        "duration" : 3021
+      }
+    }, {
+      "uid" : "cef783e719b38147",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/79//#testresult/cef783e719b38147",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/div[1]/div/div/span/button/span\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627826028246,
+        "stop" : 1627826031261,
+        "duration" : 3015
+      }
+    } ]
+  },
+  "700a86c4acc51925b41a4144397480e4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 10,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 10
+    },
+    "items" : [ {
+      "uid" : "c782311039119bd7",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/98//#testresult/c782311039119bd7",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div>...</div> is not clickable at point (171, 569). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627917203154,
+        "stop" : 1627917204327,
+        "duration" : 1173
+      }
+    }, {
+      "uid" : "79e5b8bc285b5c5",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/90//#testresult/79e5b8bc285b5c5",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div>...</div> is not clickable at point (171, 569). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627893771287,
+        "stop" : 1627893772488,
+        "duration" : 1201
+      }
+    }, {
+      "uid" : "1cc464eaa74935d1",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/89//#testresult/1cc464eaa74935d1",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div>...</div> is not clickable at point (171, 569). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627857336019,
+        "stop" : 1627857337174,
+        "duration" : 1155
+      }
+    }, {
+      "uid" : "e286739c41955456",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/79//#testresult/e286739c41955456",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div>...</div> is not clickable at point (171, 569). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627826007553,
+        "stop" : 1627826008705,
+        "duration" : 1152
+      }
+    }, {
+      "uid" : "b065a4f608e9a23f",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/77//#testresult/b065a4f608e9a23f",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div>...</div> is not clickable at point (171, 569). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627823105052,
+        "stop" : 1627823106246,
+        "duration" : 1194
+      }
+    }, {
+      "uid" : "d948cbca056e7c1b",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/76//#testresult/d948cbca056e7c1b",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div>...</div> is not clickable at point (171, 569). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627823025492,
+        "stop" : 1627823026648,
+        "duration" : 1156
+      }
+    }, {
+      "uid" : "9d28753c05ae4b8f",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/75//#testresult/9d28753c05ae4b8f",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div>...</div> is not clickable at point (171, 569). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627819813262,
+        "stop" : 1627819814419,
+        "duration" : 1157
+      }
+    }, {
+      "uid" : "9870cd4ea0f7cb98",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/70//#testresult/9870cd4ea0f7cb98",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div>...</div> is not clickable at point (171, 569). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627582053527,
+        "stop" : 1627582054693,
+        "duration" : 1166
+      }
+    }, {
+      "uid" : "c3f513c0c99b51e0",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/68//#testresult/c3f513c0c99b51e0",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div>...</div> is not clickable at point (171, 569). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627580915446,
+        "stop" : 1627580916586,
+        "duration" : 1140
+      }
+    }, {
+      "uid" : "7af9e1b7b80abaf9",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/67//#testresult/7af9e1b7b80abaf9",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div>...</div> is not clickable at point (171, 569). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627580790997,
+        "stop" : 1627580792177,
+        "duration" : 1180
+      }
+    } ]
+  },
+  "e72a560570e7f6eb8ad09bf5ef1d3e61" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 4,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "items" : [ {
+      "uid" : "4bc03bfaf5bc0f48",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/98//#testresult/4bc03bfaf5bc0f48",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href='#/editor']\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627917220908,
+        "stop" : 1627917223927,
+        "duration" : 3019
+      }
+    }, {
+      "uid" : "a99275328b9d85b3",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/90//#testresult/a99275328b9d85b3",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href='#/editor']\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627893788828,
+        "stop" : 1627893791847,
+        "duration" : 3019
+      }
+    }, {
+      "uid" : "4da807797baeb3a5",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/89//#testresult/4da807797baeb3a5",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href='#/editor']\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627857353901,
+        "stop" : 1627857356921,
+        "duration" : 3020
+      }
+    }, {
+      "uid" : "a387a09268754d93",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/79//#testresult/a387a09268754d93",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href='#/editor']\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627826025189,
+        "stop" : 1627826028210,
+        "duration" : 3021
+      }
+    } ]
+  },
+  "789c0a1c0066bfba8dda39f0150db086" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 13,
+      "unknown" : 0,
+      "total" : 13
+    },
+    "items" : [ {
+      "uid" : "6dca7279fce53257",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/98//#testresult/6dca7279fce53257",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627917397730,
+        "stop" : 1627917408266,
+        "duration" : 10536
+      }
+    }, {
+      "uid" : "af9d622d3bc1d6da",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/90//#testresult/af9d622d3bc1d6da",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627893964348,
+        "stop" : 1627893974802,
+        "duration" : 10454
+      }
+    }, {
+      "uid" : "2ec9dfef25bef5fe",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/89//#testresult/2ec9dfef25bef5fe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627857531462,
+        "stop" : 1627857542056,
+        "duration" : 10594
+      }
+    }, {
+      "uid" : "6590b76f3335199a",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/79//#testresult/6590b76f3335199a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627826201830,
+        "stop" : 1627826212354,
+        "duration" : 10524
+      }
+    }, {
+      "uid" : "c32a8eec9abb2820",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/77//#testresult/c32a8eec9abb2820",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627823276658,
+        "stop" : 1627823287208,
+        "duration" : 10550
+      }
+    }, {
+      "uid" : "7b5ff8fa5f18c64b",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/76//#testresult/7b5ff8fa5f18c64b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627823201727,
+        "stop" : 1627823212161,
+        "duration" : 10434
+      }
+    }, {
+      "uid" : "4cf38522a5165135",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/75//#testresult/4cf38522a5165135",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627819935484,
+        "stop" : 1627819946028,
+        "duration" : 10544
+      }
+    }, {
+      "uid" : "3849425507e814a9",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/70//#testresult/3849425507e814a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627582175455,
+        "stop" : 1627582185970,
+        "duration" : 10515
+      }
+    }, {
+      "uid" : "ef3d291539fe3930",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/68//#testresult/ef3d291539fe3930",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627581037870,
+        "stop" : 1627581048391,
+        "duration" : 10521
+      }
+    }, {
+      "uid" : "db45c58f2b894cf6",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/67//#testresult/db45c58f2b894cf6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580912398,
+        "stop" : 1627580922833,
+        "duration" : 10435
+      }
+    }, {
+      "uid" : "b8668d4a9db42b4b",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/66//#testresult/b8668d4a9db42b4b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580309680,
+        "stop" : 1627580320124,
+        "duration" : 10444
+      }
+    }, {
+      "uid" : "f50ea07f43187cf8",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/65//#testresult/f50ea07f43187cf8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627580165195,
+        "stop" : 1627580175633,
+        "duration" : 10438
+      }
+    }, {
+      "uid" : "e8ff463ffb9d7af9",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/64//#testresult/e8ff463ffb9d7af9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627579326536,
+        "stop" : 1627579336964,
+        "duration" : 10428
+      }
+    } ]
+  },
+  "e0f8ee00dc90d4121c8297c944e617ca" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 14,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 14
+    },
+    "items" : [ {
+      "uid" : "901d46e07e1fffc9",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/98//#testresult/901d46e07e1fffc9",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627917343780,
+        "stop" : 1627917364605,
+        "duration" : 20825
+      }
+    }, {
+      "uid" : "c550eeda476ce01b",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/90//#testresult/c550eeda476ce01b",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627893910906,
+        "stop" : 1627893931505,
+        "duration" : 20599
+      }
+    }, {
+      "uid" : "bc558efb3b47812d",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/89//#testresult/bc558efb3b47812d",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627857477312,
+        "stop" : 1627857498249,
+        "duration" : 20937
+      }
+    }, {
+      "uid" : "1f33740b4a07bf5e",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/79//#testresult/1f33740b4a07bf5e",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627826147973,
+        "stop" : 1627826168801,
+        "duration" : 20828
+      }
+    }, {
+      "uid" : "4da531b1bc48116d",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/77//#testresult/4da531b1bc48116d",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627823222964,
+        "stop" : 1627823243666,
+        "duration" : 20702
+      }
+    }, {
+      "uid" : "c16ca65adaaec306",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/76//#testresult/c16ca65adaaec306",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627823147977,
+        "stop" : 1627823168772,
+        "duration" : 20795
+      }
+    }, {
+      "uid" : "19a4d6a3bade9d9b",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/75//#testresult/19a4d6a3bade9d9b",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627819881748,
+        "stop" : 1627819902517,
+        "duration" : 20769
+      }
+    }, {
+      "uid" : "8117585d2b327ea3",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/70//#testresult/8117585d2b327ea3",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627582121760,
+        "stop" : 1627582142484,
+        "duration" : 20724
+      }
+    }, {
+      "uid" : "7015e0d17ef7a5ba",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/68//#testresult/7015e0d17ef7a5ba",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627580983898,
+        "stop" : 1627581004752,
+        "duration" : 20854
+      }
+    }, {
+      "uid" : "e8b61243eb85159e",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/67//#testresult/e8b61243eb85159e",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627580858896,
+        "stop" : 1627580879544,
+        "duration" : 20648
+      }
+    }, {
+      "uid" : "2f3822f097c87ebb",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/66//#testresult/2f3822f097c87ebb",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627580256216,
+        "stop" : 1627580276836,
+        "duration" : 20620
+      }
+    }, {
+      "uid" : "6193b059a4424e82",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/65//#testresult/6193b059a4424e82",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627580111736,
+        "stop" : 1627580132380,
+        "duration" : 20644
+      }
+    }, {
+      "uid" : "83ca59e125cf3f53",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/64//#testresult/83ca59e125cf3f53",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627579272885,
+        "stop" : 1627579293648,
+        "duration" : 20763
+      }
+    }, {
+      "uid" : "f834d7f018feafb4",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/54//#testresult/f834d7f018feafb4",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id='app']/nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "time" : {
+        "start" : 1627567575947,
+        "stop" : 1627567590280,
+        "duration" : 14333
+      }
+    } ]
+  },
+  "f128a609521e75aa79e1c2e446cac2b4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 5,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 5
+    },
+    "items" : [ {
+      "uid" : "e1eba965c041bba1",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/33//#testresult/e1eba965c041bba1",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body//a[contains(@href,'register')]\"}\n  (Session info: headless chrome=91.0.4472.164)",
+      "time" : {
+        "start" : 1627247055703,
+        "stop" : 1627247057720,
+        "duration" : 2017
+      }
+    }, {
+      "uid" : "43ef57bff8e03824",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/32//#testresult/43ef57bff8e03824",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body//a[contains(@href,'register')]\"}\n  (Session info: headless chrome=91.0.4472.164)",
+      "time" : {
+        "start" : 1627246773749,
+        "stop" : 1627246775830,
+        "duration" : 2081
+      }
+    }, {
+      "uid" : "73218e93351d6365",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/30//#testresult/73218e93351d6365",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body//a[contains(@href,'register')]\"}\n  (Session info: headless chrome=91.0.4472.164)",
+      "time" : {
+        "start" : 1627244286284,
+        "stop" : 1627244288301,
+        "duration" : 2017
+      }
+    }, {
+      "uid" : "90e5e3c61e1b37ba",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/29//#testresult/90e5e3c61e1b37ba",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body//a[contains(@href,'register')]\"}\n  (Session info: headless chrome=91.0.4472.164)",
+      "time" : {
+        "start" : 1627241879548,
+        "stop" : 1627241881572,
+        "duration" : 2024
+      }
+    }, {
+      "uid" : "4082236acc703487",
+      "reportUrl" : "https://ArtuZi2.github.io/conduit/28//#testresult/4082236acc703487",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body//a[contains(@href,'register')]\"}\n  (Session info: headless chrome=91.0.4472.164)",
+      "time" : {
+        "start" : 1627241622053,
+        "stop" : 1627241624071,
+        "duration" : 2018
+      }
+    } ]
+  }
+}
