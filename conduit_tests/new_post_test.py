@@ -51,24 +51,6 @@ def test_register():
 
     driver.find_element_by_xpath("//button[contains(text(),'OK')]").click()
 
-    time.sleep(5)
-
-    # driver.find_element_by_xpath("//a[contains(@href, 'settings')]").click()
-
-    # appear_name = driver.find_elements_by_xpath("//a[@href]")
-
-    # megjelen_username = driver.find_element_by_xpath("//*[@id='app']/nav/div/ul/li[4]/a").text
-
-    # megjelen_username = driver.find_element_by_xpath("//a[contains(@href, '@sun2')]").text
-
-    megjelen_username = driver.find_element_by_xpath(f"//a[contains(@href, '@sun2')]").text
-    # driver.find_element_by_xpath("//fieldset[2]/input[@type='text']").send_keys("emma")
-
-    print(megjelen_username)
-    # print(username)
-
-    assert megjelen_username == username
-
     time.sleep(2)
 
     driver.find_element_by_xpath("//a [@active-class='active']").click()
@@ -82,12 +64,10 @@ def test_register():
 
 
 def test_login():
-    navbar = driver.find_elements_by_class_name("ion-compose")
-    print(navbar)
+    driver.get("http://localhost:1667")
+    time.sleep(2)
 
-    element = driver.find_element_by_xpath("/html/body//a[contains(@href,'login')]")
-    print(element.is_enabled())
-    print(element.is_displayed())
+    element = driver.find_element_by_xpath("//div/nav/div/ul/li[2]/a")
     emil = "tkata@gmail.com"
     password = "Sunshine2046"
 
@@ -103,8 +83,36 @@ def test_login():
     driver.find_element_by_xpath("//a[@href='#/editor']").click()
 
 
-def test_new_post():
+def home():
 
+    driver.find_element_by_xpath("//nav/div/ul/li[1]/a").click()
+    time.sleep(2)
+
+    my_feed = driver.find_element_by_xpath("//div/div/div/div/div/div/ul/li/a")
+    my_feed.click()
+
+
+def test_check1():
+    time.sleep(2)
+    titles = driver.find_elements_by_xpath('//*[@id="app"]/div/div[2]/div/div[1]/div[2]/div/div/div/a/h1')
+
+    titles_list1 = []
+
+    titles_count1 = 0
+    time.sleep(2)
+    with open('titles1.txt', 'w') as text_file:
+        for title in titles:
+            text_file.write(f'{title.text}\n')
+            titles_count1 += 1
+            titles_list1.append(title)
+
+    print(f'number of links found on the page: {titles_count1}')
+    print(len(titles))
+    print(len(titles_list1))
+
+
+def test_new_post():
+    driver.get("http://localhost:1667/#/editor")
     time.sleep(2)
     article = driver.find_element_by_xpath("//fieldset[1]/input")
     article.send_keys("Spring")
@@ -119,25 +127,39 @@ def test_new_post():
     driver.find_element_by_xpath("//button[@class='btn btn-lg pull-xs-right btn-primary']").click()
 
     time.sleep(2)
-    #home
-    driver.find_element_by_xpath("//nav/div/ul/li[1]/a").click()
 
-    my_feed = driver.find_element_by_xpath("//a[@href='#/my-feed']")
+
+def home():
+
+    driver.find_element_by_xpath("//nav/div/ul/li[1]/a").click()
+    time.sleep(2)
+
+    my_feed = driver.find_element_by_xpath("//div/div/div/div/div/div/ul/li/a")
     my_feed.click()
 
-    article_title = "Spring"
-    assert
 
-    def test_listazas():
-        titles = driver.find_elements_by_xpath('//*[@id="app"]/div/div[2]/div/div[1]/div[2]/div/div/div/a/h1')
+time.sleep(2)
 
-        titles_count = 0
-        with open('titles.txt', 'w') as text_file:
-            for title in titles:
-                text_file.write(f'{title.text}\n')
-                titles_count += 1
 
-            print(f'number of links found on the page: {titles_count}')
+def test_check2():
+    time.sleep(2)
+    titles = driver.find_elements_by_xpath('//*[@id="app"]/div/div[2]/div/div[1]/div[2]/div/div/div/a/h1')
+
+    titles_list2 = []
+
+    titles_count2 = 0
+    time.sleep(2)
+    with open('titles.txt', 'w') as text_file:
+        for title in titles:
+            text_file.write(f'{title.text}\n')
+            titles_count2 += 1
+            titles_list2.append(title)
+
+    print(f'number of links found on the page: {titles_count2}')
+    print(len(titles))
+    print(len(titles_list2))
+
+    assert len(titles) == len(titles_list2)
 
 
 
@@ -145,6 +167,3 @@ def test_new_post():
     delete_button = driver.find_element_by_xpath("//button[@class='btn btn-outline-danger btn-sm']")
     delete_button.click()
     driver.find_elements_by_tag_name('button')[2].click()"""
-
-
-#assert home és my article oldalon, hogy a cikk látható-e, kattintható-e, elérhető-e
