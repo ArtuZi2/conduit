@@ -91,13 +91,18 @@ def test_login():
 def test_listazas():
     titles = driver.find_elements_by_xpath('//*[@id="app"]/div/div[2]/div/div[1]/div[2]/div/div/div/a/h1')
 
+    title_list = []
+
     titles_count = 0
     with open('titles.txt', 'w') as text_file:
         for title in titles:
             text_file.write(f'{title.text}\n')
             titles_count += 1
+            title_list.append(title)
+    assert len(titles) == len(title_list)
 
         print(f'number of links found on the page: {titles_count}')
+
 
 
         """print("Current session is {}".format(driver.session_id))

@@ -4,8 +4,8 @@ import time
 import random, string
 from selenium.webdriver.chrome.options import Options
 options = webdriver.ChromeOptions()
-#options.add_argument('--headless')
-#options.add_argument('--disable-gpu')
+options.add_argument('--headless')
+options.add_argument('--disable-gpu')
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait
 import time
@@ -94,7 +94,6 @@ def test_login():
         driver.get("http://localhost:1667"
     except Exception as e:
         print(e)"""
-test_login()
 
 
 def test_save():
@@ -109,7 +108,6 @@ def test_save():
             titles_count += 1
             title_list.append(title)
     assert len(titles) == len(title_list)
-test_save()
 
 
 """def test_save():
