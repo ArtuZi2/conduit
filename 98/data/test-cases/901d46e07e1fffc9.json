@@ -1,0 +1,218 @@
+{
+  "uid" : "901d46e07e1fffc9",
+  "name" : "test_login",
+  "fullName" : "conduit_tests.login_test#test_login",
+  "historyId" : "e0f8ee00dc90d4121c8297c944e617ca",
+  "time" : {
+    "start" : 1627917343780,
+    "stop" : 1627917364605,
+    "duration" : 20825
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+  "statusTrace" : "def test_login():\n        emil = \"tkata@gmail.com\"\n        password = \"Sunshine2046\"\n    \n        driver.get(\"http://localhost:1667\")\n        time.sleep(2)\n        navbar = driver.find_elements_by_class_name(\"ion-compose\")\n        #át lehet ezt alakítani, hogy kiírja a navban elemeit?\n        print(navbar)\n    \n        time.sleep(2)\n    \n        element = driver.find_element_by_xpath(\"//a[@href='#/login']\")\n        print(element.is_enabled())\n        print(element.is_displayed())\n    \n        element.click()\n        time.sleep(2)\n        driver.find_element_by_xpath(\"//fieldset[1]/input\").send_keys(emil)\n        time.sleep(2)\n        driver.find_element_by_xpath(\"//fieldset[2]/input\").send_keys(password)\n        time.sleep(2)\n        driver.find_element_by_xpath(\"//button[@class='btn btn-lg btn-primary pull-xs-right']\").click()\n        time.sleep(10)\n>       driver.find_element_by_xpath(\"//nav/div/ul/li[4]/a\").click()\n\nconduit_tests/login_test.py:37: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/opt/hostedtoolcache/Python/3.9.6/x64/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py:394: in find_element_by_xpath\n    return self.find_element(by=By.XPATH, value=xpath)\n/opt/hostedtoolcache/Python/3.9.6/x64/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py:976: in find_element\n    return self.execute(Command.FIND_ELEMENT, {\n/opt/hostedtoolcache/Python/3.9.6/x64/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py:321: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x7f335f58ccd0>\nresponse = {'status': 404, 'value': '{\"value\":{\"error\":\"no such element\",\"message\":\"no such element: Unable to locate element: {\\...wn>\\\\n#15 0x55ddc04dde58 \\\\u003Cunknown>\\\\n#16 0x55ddc04f7dfd \\\\u003Cunknown>\\\\n#17 0x7fb1d83e6609 start_thread\\\\n\"}}'}\n\n    def check_response(self, response):\n        \"\"\"\n        Checks that a JSON response from the WebDriver does not have an error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get('status', None)\n        if status is None or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get('value', None)\n            if value_json and isinstance(value_json, basestring):\n                import json\n                try:\n                    value = json.loads(value_json)\n                    if len(value.keys()) == 1:\n                        value = value['value']\n                    status = value.get('error', None)\n                    if status is None:\n                        status = value[\"status\"]\n                        message = value[\"value\"]\n                        if not isinstance(message, basestring):\n                            value = message\n                            message = message.get('message')\n                    else:\n                        message = value.get('message', None)\n                except ValueError:\n                    pass\n    \n        exception_class = ErrorInResponseException\n        if status in ErrorCode.NO_SUCH_ELEMENT:\n            exception_class = NoSuchElementException\n        elif status in ErrorCode.NO_SUCH_FRAME:\n            exception_class = NoSuchFrameException\n        elif status in ErrorCode.NO_SUCH_WINDOW:\n            exception_class = NoSuchWindowException\n        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:\n            exception_class = StaleElementReferenceException\n        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:\n            exception_class = ElementNotVisibleException\n        elif status in ErrorCode.INVALID_ELEMENT_STATE:\n            exception_class = InvalidElementStateException\n        elif status in ErrorCode.INVALID_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER:\n            exception_class = InvalidSelectorException\n        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:\n            exception_class = ElementNotSelectableException\n        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:\n            exception_class = ElementNotInteractableException\n        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:\n            exception_class = InvalidCookieDomainException\n        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:\n            exception_class = UnableToSetCookieException\n        elif status in ErrorCode.TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.SCRIPT_TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.UNKNOWN_ERROR:\n            exception_class = WebDriverException\n        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:\n            exception_class = UnexpectedAlertPresentException\n        elif status in ErrorCode.NO_ALERT_OPEN:\n            exception_class = NoAlertPresentException\n        elif status in ErrorCode.IME_NOT_AVAILABLE:\n            exception_class = ImeNotAvailableException\n        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:\n            exception_class = ImeActivationFailedException\n        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:\n            exception_class = MoveTargetOutOfBoundsException\n        elif status in ErrorCode.JAVASCRIPT_ERROR:\n            exception_class = JavascriptException\n        elif status in ErrorCode.SESSION_NOT_CREATED:\n            exception_class = SessionNotCreatedException\n        elif status in ErrorCode.INVALID_ARGUMENT:\n            exception_class = InvalidArgumentException\n        elif status in ErrorCode.NO_SUCH_COOKIE:\n            exception_class = NoSuchCookieException\n        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:\n            exception_class = ScreenshotException\n        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:\n            exception_class = ElementClickInterceptedException\n        elif status in ErrorCode.INSECURE_CERTIFICATE:\n            exception_class = InsecureCertificateException\n        elif status in ErrorCode.INVALID_COORDINATES:\n            exception_class = InvalidCoordinatesException\n        elif status in ErrorCode.INVALID_SESSION_ID:\n            exception_class = InvalidSessionIdException\n        elif status in ErrorCode.UNKNOWN_METHOD:\n            exception_class = UnknownMethodException\n        else:\n            exception_class = WebDriverException\n        if value == '' or value is None:\n            value = response['value']\n        if isinstance(value, basestring):\n            if exception_class == ErrorInResponseException:\n                raise exception_class(response, value)\n            raise exception_class(value)\n        if message == \"\" and 'message' in value:\n            message = value['message']\n    \n        screen = None\n        if 'screen' in value:\n            screen = value['screen']\n    \n        stacktrace = None\n        if 'stackTrace' in value and value['stackTrace']:\n            stacktrace = []\n            try:\n                for frame in value['stackTrace']:\n                    line = self._value_or_default(frame, 'lineNumber', '')\n                    file = self._value_or_default(frame, 'fileName', '<anonymous>')\n                    if line:\n                        file = \"%s:%s\" % (file, line)\n                    meth = self._value_or_default(frame, 'methodName', '<anonymous>')\n                    if 'className' in frame:\n                        meth = \"%s.%s\" % (frame['className'], meth)\n                    msg = \"    at %s (%s)\"\n                    msg = msg % (meth, file)\n                    stacktrace.append(msg)\n            except TypeError:\n                pass\n        if exception_class == ErrorInResponseException:\n            raise exception_class(response, message)\n        elif exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if 'data' in value:\n                alert_text = value['data'].get('text')\n            elif 'alert' in value:\n                alert_text = value['alert'].get('text')\n            raise exception_class(message, screen, stacktrace, alert_text)\n>       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\nE         (Session info: headless chrome=92.0.4515.107)\n\n/opt/hostedtoolcache/Python/3.9.6/x64/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py:242: NoSuchElementException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+    "statusTrace" : "def test_login():\n        emil = \"tkata@gmail.com\"\n        password = \"Sunshine2046\"\n    \n        driver.get(\"http://localhost:1667\")\n        time.sleep(2)\n        navbar = driver.find_elements_by_class_name(\"ion-compose\")\n        #át lehet ezt alakítani, hogy kiírja a navban elemeit?\n        print(navbar)\n    \n        time.sleep(2)\n    \n        element = driver.find_element_by_xpath(\"//a[@href='#/login']\")\n        print(element.is_enabled())\n        print(element.is_displayed())\n    \n        element.click()\n        time.sleep(2)\n        driver.find_element_by_xpath(\"//fieldset[1]/input\").send_keys(emil)\n        time.sleep(2)\n        driver.find_element_by_xpath(\"//fieldset[2]/input\").send_keys(password)\n        time.sleep(2)\n        driver.find_element_by_xpath(\"//button[@class='btn btn-lg btn-primary pull-xs-right']\").click()\n        time.sleep(10)\n>       driver.find_element_by_xpath(\"//nav/div/ul/li[4]/a\").click()\n\nconduit_tests/login_test.py:37: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/opt/hostedtoolcache/Python/3.9.6/x64/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py:394: in find_element_by_xpath\n    return self.find_element(by=By.XPATH, value=xpath)\n/opt/hostedtoolcache/Python/3.9.6/x64/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py:976: in find_element\n    return self.execute(Command.FIND_ELEMENT, {\n/opt/hostedtoolcache/Python/3.9.6/x64/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py:321: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x7f335f58ccd0>\nresponse = {'status': 404, 'value': '{\"value\":{\"error\":\"no such element\",\"message\":\"no such element: Unable to locate element: {\\...wn>\\\\n#15 0x55ddc04dde58 \\\\u003Cunknown>\\\\n#16 0x55ddc04f7dfd \\\\u003Cunknown>\\\\n#17 0x7fb1d83e6609 start_thread\\\\n\"}}'}\n\n    def check_response(self, response):\n        \"\"\"\n        Checks that a JSON response from the WebDriver does not have an error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get('status', None)\n        if status is None or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get('value', None)\n            if value_json and isinstance(value_json, basestring):\n                import json\n                try:\n                    value = json.loads(value_json)\n                    if len(value.keys()) == 1:\n                        value = value['value']\n                    status = value.get('error', None)\n                    if status is None:\n                        status = value[\"status\"]\n                        message = value[\"value\"]\n                        if not isinstance(message, basestring):\n                            value = message\n                            message = message.get('message')\n                    else:\n                        message = value.get('message', None)\n                except ValueError:\n                    pass\n    \n        exception_class = ErrorInResponseException\n        if status in ErrorCode.NO_SUCH_ELEMENT:\n            exception_class = NoSuchElementException\n        elif status in ErrorCode.NO_SUCH_FRAME:\n            exception_class = NoSuchFrameException\n        elif status in ErrorCode.NO_SUCH_WINDOW:\n            exception_class = NoSuchWindowException\n        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:\n            exception_class = StaleElementReferenceException\n        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:\n            exception_class = ElementNotVisibleException\n        elif status in ErrorCode.INVALID_ELEMENT_STATE:\n            exception_class = InvalidElementStateException\n        elif status in ErrorCode.INVALID_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER:\n            exception_class = InvalidSelectorException\n        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:\n            exception_class = ElementNotSelectableException\n        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:\n            exception_class = ElementNotInteractableException\n        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:\n            exception_class = InvalidCookieDomainException\n        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:\n            exception_class = UnableToSetCookieException\n        elif status in ErrorCode.TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.SCRIPT_TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.UNKNOWN_ERROR:\n            exception_class = WebDriverException\n        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:\n            exception_class = UnexpectedAlertPresentException\n        elif status in ErrorCode.NO_ALERT_OPEN:\n            exception_class = NoAlertPresentException\n        elif status in ErrorCode.IME_NOT_AVAILABLE:\n            exception_class = ImeNotAvailableException\n        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:\n            exception_class = ImeActivationFailedException\n        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:\n            exception_class = MoveTargetOutOfBoundsException\n        elif status in ErrorCode.JAVASCRIPT_ERROR:\n            exception_class = JavascriptException\n        elif status in ErrorCode.SESSION_NOT_CREATED:\n            exception_class = SessionNotCreatedException\n        elif status in ErrorCode.INVALID_ARGUMENT:\n            exception_class = InvalidArgumentException\n        elif status in ErrorCode.NO_SUCH_COOKIE:\n            exception_class = NoSuchCookieException\n        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:\n            exception_class = ScreenshotException\n        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:\n            exception_class = ElementClickInterceptedException\n        elif status in ErrorCode.INSECURE_CERTIFICATE:\n            exception_class = InsecureCertificateException\n        elif status in ErrorCode.INVALID_COORDINATES:\n            exception_class = InvalidCoordinatesException\n        elif status in ErrorCode.INVALID_SESSION_ID:\n            exception_class = InvalidSessionIdException\n        elif status in ErrorCode.UNKNOWN_METHOD:\n            exception_class = UnknownMethodException\n        else:\n            exception_class = WebDriverException\n        if value == '' or value is None:\n            value = response['value']\n        if isinstance(value, basestring):\n            if exception_class == ErrorInResponseException:\n                raise exception_class(response, value)\n            raise exception_class(value)\n        if message == \"\" and 'message' in value:\n            message = value['message']\n    \n        screen = None\n        if 'screen' in value:\n            screen = value['screen']\n    \n        stacktrace = None\n        if 'stackTrace' in value and value['stackTrace']:\n            stacktrace = []\n            try:\n                for frame in value['stackTrace']:\n                    line = self._value_or_default(frame, 'lineNumber', '')\n                    file = self._value_or_default(frame, 'fileName', '<anonymous>')\n                    if line:\n                        file = \"%s:%s\" % (file, line)\n                    meth = self._value_or_default(frame, 'methodName', '<anonymous>')\n                    if 'className' in frame:\n                        meth = \"%s.%s\" % (frame['className'], meth)\n                    msg = \"    at %s (%s)\"\n                    msg = msg % (meth, file)\n                    stacktrace.append(msg)\n            except TypeError:\n                pass\n        if exception_class == ErrorInResponseException:\n            raise exception_class(response, message)\n        elif exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if 'data' in value:\n                alert_text = value['data'].get('text')\n            elif 'alert' in value:\n                alert_text = value['alert'].get('text')\n            raise exception_class(message, screen, stacktrace, alert_text)\n>       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\nE         (Session info: headless chrome=92.0.4515.107)\n\n/opt/hostedtoolcache/Python/3.9.6/x64/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py:242: NoSuchElementException",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "fde26acdb653c961",
+      "name" : "stdout",
+      "source" : "fde26acdb653c961.txt",
+      "type" : "text/plain",
+      "size" : 299
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "conduit_tests"
+  }, {
+    "name" : "suite",
+    "value" : "login_test"
+  }, {
+    "name" : "host",
+    "value" : "fv-az74-58"
+  }, {
+    "name" : "thread",
+    "value" : "3768-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "conduit_tests.login_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 14,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 14
+      },
+      "items" : [ {
+        "uid" : "c550eeda476ce01b",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/90//#testresult/c550eeda476ce01b",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+        "time" : {
+          "start" : 1627893910906,
+          "stop" : 1627893931505,
+          "duration" : 20599
+        }
+      }, {
+        "uid" : "bc558efb3b47812d",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/89//#testresult/bc558efb3b47812d",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+        "time" : {
+          "start" : 1627857477312,
+          "stop" : 1627857498249,
+          "duration" : 20937
+        }
+      }, {
+        "uid" : "1f33740b4a07bf5e",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/79//#testresult/1f33740b4a07bf5e",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+        "time" : {
+          "start" : 1627826147973,
+          "stop" : 1627826168801,
+          "duration" : 20828
+        }
+      }, {
+        "uid" : "4da531b1bc48116d",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/77//#testresult/4da531b1bc48116d",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+        "time" : {
+          "start" : 1627823222964,
+          "stop" : 1627823243666,
+          "duration" : 20702
+        }
+      }, {
+        "uid" : "c16ca65adaaec306",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/76//#testresult/c16ca65adaaec306",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+        "time" : {
+          "start" : 1627823147977,
+          "stop" : 1627823168772,
+          "duration" : 20795
+        }
+      }, {
+        "uid" : "19a4d6a3bade9d9b",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/75//#testresult/19a4d6a3bade9d9b",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+        "time" : {
+          "start" : 1627819881748,
+          "stop" : 1627819902517,
+          "duration" : 20769
+        }
+      }, {
+        "uid" : "8117585d2b327ea3",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/70//#testresult/8117585d2b327ea3",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+        "time" : {
+          "start" : 1627582121760,
+          "stop" : 1627582142484,
+          "duration" : 20724
+        }
+      }, {
+        "uid" : "7015e0d17ef7a5ba",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/68//#testresult/7015e0d17ef7a5ba",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+        "time" : {
+          "start" : 1627580983898,
+          "stop" : 1627581004752,
+          "duration" : 20854
+        }
+      }, {
+        "uid" : "e8b61243eb85159e",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/67//#testresult/e8b61243eb85159e",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+        "time" : {
+          "start" : 1627580858896,
+          "stop" : 1627580879544,
+          "duration" : 20648
+        }
+      }, {
+        "uid" : "2f3822f097c87ebb",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/66//#testresult/2f3822f097c87ebb",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+        "time" : {
+          "start" : 1627580256216,
+          "stop" : 1627580276836,
+          "duration" : 20620
+        }
+      }, {
+        "uid" : "6193b059a4424e82",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/65//#testresult/6193b059a4424e82",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+        "time" : {
+          "start" : 1627580111736,
+          "stop" : 1627580132380,
+          "duration" : 20644
+        }
+      }, {
+        "uid" : "83ca59e125cf3f53",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/64//#testresult/83ca59e125cf3f53",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+        "time" : {
+          "start" : 1627579272885,
+          "stop" : 1627579293648,
+          "duration" : 20763
+        }
+      }, {
+        "uid" : "f834d7f018feafb4",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/54//#testresult/f834d7f018feafb4",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id='app']/nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+        "time" : {
+          "start" : 1627567575947,
+          "stop" : 1627567590280,
+          "duration" : 14333
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "901d46e07e1fffc9.json",
+  "parameterValues" : [ ]
+}
