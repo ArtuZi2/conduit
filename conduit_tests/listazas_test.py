@@ -101,7 +101,7 @@ def test_listazas():
             title_list.append(title)
     assert len(titles) == len(title_list)
 
-        print(f'number of links found on the page: {titles_count}')
+    print(f'number of links found on the page: {titles_count}')
 
 
 
