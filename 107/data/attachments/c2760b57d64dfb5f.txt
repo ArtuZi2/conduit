@@ -1,0 +1,3 @@
+True
+True
+[{'domain': 'localhost', 'httpOnly': False, 'name': 'drash_sess', 'path': '/', 'secure': False, 'value': 'null'}]
