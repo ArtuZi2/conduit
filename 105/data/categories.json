@@ -1,0 +1,158 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div>...</div> is not clickable at point (171, 569). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.107)",
+      "children" : [ {
+        "name" : "test_cookie1",
+        "uid" : "f0471cbea104f202",
+        "parentUid" : "71d7a59fe064668123ca16508cdad017",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627989407319,
+          "stop" : 1627989408497,
+          "duration" : 1178
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "71d7a59fe064668123ca16508cdad017"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href='#/editor']\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "children" : [ {
+        "name" : "test_new_post",
+        "uid" : "b2e93dcdf443992a",
+        "parentUid" : "4bc00b15f4f48e61dc95d175902a2cca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627989425022,
+          "stop" : 1627989428041,
+          "duration" : 3019
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login",
+        "uid" : "336726baec97298a",
+        "parentUid" : "4bc00b15f4f48e61dc95d175902a2cca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627989624799,
+          "stop" : 1627989631338,
+          "duration" : 6539
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4bc00b15f4f48e61dc95d175902a2cca"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/div[1]/div/div/span/button/span\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "children" : [ {
+        "name" : "test_delete_post",
+        "uid" : "d665155016934dd4",
+        "parentUid" : "14804c4837572af3eb65a6b4c3098dd3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627989428079,
+          "stop" : 1627989431098,
+          "duration" : 3019
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "14804c4837572af3eb65a6b4c3098dd3"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"#/register\" class=\"nav-link\">...</a> is not clickable at point (713, 26). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.107)",
+      "children" : [ {
+        "name" : "test_edit_emil",
+        "uid" : "d77603970a49974c",
+        "parentUid" : "180388ed73ba85dd4aee057ecb5248d1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627989479750,
+          "stop" : 1627989480850,
+          "duration" : 1100
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "180388ed73ba85dd4aee057ecb5248d1"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id='app']/nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "children" : [ {
+        "name" : "test_login",
+        "uid" : "4329bef0517a7ced",
+        "parentUid" : "99950c156ea54f3e070ea9dd48d7098f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627989513946,
+          "stop" : 1627989524467,
+          "duration" : 10521
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "99950c156ea54f3e070ea9dd48d7098f"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "children" : [ {
+        "name" : "test_login",
+        "uid" : "97ca01910791f92c",
+        "parentUid" : "9c1b045ddb5dfde1fbea6b72746123cb",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627989548150,
+          "stop" : 1627989569007,
+          "duration" : 20857
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9c1b045ddb5dfde1fbea6b72746123cb"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/ul/li[5]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "children" : [ {
+        "name" : "test_logout",
+        "uid" : "76c5126efe10f87",
+        "parentUid" : "c3979bda5b3c419227fd01b6a47e2c95",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627989612696,
+          "stop" : 1627989614713,
+          "duration" : 2017
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c3979bda5b3c419227fd01b6a47e2c95"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button type=\"submit\" class=\"btn btn-lg pull-xs-right btn-primary\">...</button> is not clickable at point (592, 497). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.107)",
+      "children" : [ {
+        "name" : "test_new_post",
+        "uid" : "ed4b1a2e9f6becfa",
+        "parentUid" : "4b29244595ddb9b34f80f982870b2ab7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627989635397,
+          "stop" : 1627989649969,
+          "duration" : 14572
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4b29244595ddb9b34f80f982870b2ab7"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
