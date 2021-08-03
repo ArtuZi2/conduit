@@ -116,7 +116,7 @@ def test_pagin():
     page_count = 1
 
     while True:
-        time.sleep(2)
+        time.sleep(5)
         article_titles = driver.find_elements_by_xpath('//*[@id="app"]//a/h1')
         for article in article_titles:
             article_title_list.append(article.text)
@@ -128,6 +128,8 @@ def test_pagin():
 
     print("Titles: ", article_title_list)
     print("Titles's number: ", len(article_title_list))
+
+    time.sleep(5)
 
     article_count = 0
     with open('titles.csv', 'w', encoding='utf-8') as file:

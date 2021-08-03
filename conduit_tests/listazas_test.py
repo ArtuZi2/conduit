@@ -96,6 +96,7 @@ def test_listazas():
     titles_count = 0
     with open('titles.txt', 'w') as text_file:
         for title in titles:
+            time.sleep(5)
             text_file.write(f'{title.text}\n')
             titles_count += 1
             title_list.append(title)
