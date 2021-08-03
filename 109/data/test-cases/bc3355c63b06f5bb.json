@@ -1,0 +1,53 @@
+{
+  "uid" : "bc3355c63b06f5bb",
+  "name" : "test_save",
+  "fullName" : "conduit_tests.save_09_test#test_save",
+  "historyId" : "5bee84e5647122b7497fa515ca7bd78a",
+  "time" : {
+    "start" : 1628008520004,
+    "stop" : 1628008520016,
+    "duration" : 12
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "conduit_tests"
+  }, {
+    "name" : "suite",
+    "value" : "save_09_test"
+  }, {
+    "name" : "host",
+    "value" : "fv-az39-465"
+  }, {
+    "name" : "thread",
+    "value" : "3708-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "conduit_tests.save_09_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bc3355c63b06f5bb.json",
+  "parameterValues" : [ ]
+}

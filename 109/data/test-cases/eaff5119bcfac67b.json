@@ -1,0 +1,53 @@
+{
+  "uid" : "eaff5119bcfac67b",
+  "name" : "test_login",
+  "fullName" : "conduit_tests.listazas_10_test#test_login",
+  "historyId" : "f50d78e5130448ef86ec0038f76d975a",
+  "time" : {
+    "start" : 1628008372455,
+    "stop" : 1628008378858,
+    "duration" : 6403
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "conduit_tests"
+  }, {
+    "name" : "suite",
+    "value" : "listazas_10_test"
+  }, {
+    "name" : "host",
+    "value" : "fv-az39-465"
+  }, {
+    "name" : "thread",
+    "value" : "3708-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "conduit_tests.listazas_10_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "eaff5119bcfac67b.json",
+  "parameterValues" : [ ]
+}

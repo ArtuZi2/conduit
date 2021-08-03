@@ -1,0 +1,69 @@
+{
+  "uid" : "cdb792da2888879c",
+  "name" : "test_register",
+  "fullName" : "conduit_tests.listazas_10_test#test_register",
+  "historyId" : "623201f930ae6e8e4ea0f0cde8db18bf",
+  "time" : {
+    "start" : 1628008357665,
+    "stop" : 1628008372453,
+    "duration" : 14788
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "af5fad38bb301e4",
+      "name" : "stdout",
+      "source" : "af5fad38bb301e4.txt",
+      "type" : "text/plain",
+      "size" : 5
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "conduit_tests"
+  }, {
+    "name" : "suite",
+    "value" : "listazas_10_test"
+  }, {
+    "name" : "host",
+    "value" : "fv-az39-465"
+  }, {
+    "name" : "thread",
+    "value" : "3708-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "conduit_tests.listazas_10_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cdb792da2888879c.json",
+  "parameterValues" : [ ]
+}
