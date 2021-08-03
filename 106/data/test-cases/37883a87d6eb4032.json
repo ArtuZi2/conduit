@@ -1,0 +1,127 @@
+{
+  "uid" : "37883a87d6eb4032",
+  "name" : "test_register",
+  "fullName" : "conduit_tests.delete_test#test_register",
+  "historyId" : "0b4ac2b75f1bbe38a9c8d5e30f704597",
+  "time" : {
+    "start" : 1627990482933,
+    "stop" : 1627990490905,
+    "duration" : 7972
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "conduit_tests"
+  }, {
+    "name" : "suite",
+    "value" : "delete_test"
+  }, {
+    "name" : "host",
+    "value" : "fv-az83-989"
+  }, {
+    "name" : "thread",
+    "value" : "3635-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "conduit_tests.delete_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 8
+      },
+      "items" : [ {
+        "uid" : "da97c1c0fc47f92",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/105//#testresult/da97c1c0fc47f92",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627989408576,
+          "stop" : 1627989416542,
+          "duration" : 7966
+        }
+      }, {
+        "uid" : "705a701c29f854f",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/104//#testresult/705a701c29f854f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627925528125,
+          "stop" : 1627925535843,
+          "duration" : 7718
+        }
+      }, {
+        "uid" : "aea3f26265c62179",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/103//#testresult/aea3f26265c62179",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627924637387,
+          "stop" : 1627924645424,
+          "duration" : 8037
+        }
+      }, {
+        "uid" : "51bea0a18c90140e",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/98//#testresult/51bea0a18c90140e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627917204415,
+          "stop" : 1627917212461,
+          "duration" : 8046
+        }
+      }, {
+        "uid" : "63bb283172ce0243",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/90//#testresult/63bb283172ce0243",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627893772571,
+          "stop" : 1627893780427,
+          "duration" : 7856
+        }
+      }, {
+        "uid" : "f08eda892fab28a",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/89//#testresult/f08eda892fab28a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627857337274,
+          "stop" : 1627857345349,
+          "duration" : 8075
+        }
+      }, {
+        "uid" : "2a2a18c68e4dbd0c",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/79//#testresult/2a2a18c68e4dbd0c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627826008792,
+          "stop" : 1627826016709,
+          "duration" : 7917
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "37883a87d6eb4032.json",
+  "parameterValues" : [ ]
+}
