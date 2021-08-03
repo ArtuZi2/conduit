@@ -31,6 +31,16 @@ jobs:
     - name: Sleep for 75 seconds
       run: sleep 75s
       shell: bash
+    - name: Collect docker logs
+      uses: jwalton/gh-docker-logs@v1
+      with:
+        dest: './logs'
+
+    - name: Archive execution artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: docker-logs
+        path: './logs'
     - name: Test with pytest
       run: |
           pytest --alluredir=allure-results
