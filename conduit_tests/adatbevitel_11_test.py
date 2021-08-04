@@ -69,8 +69,6 @@ def test_login():
 time.sleep(2)
 
 driver.get("http://localhost:1667/#/editor")
-#new_article = driver.find_element_by_xpath("//nav/div/ul/li[2]/a")
-#new_article.click()
 time.sleep(5)
 
 
@@ -100,8 +98,5 @@ with open('conduit_tests/articles.csv', encoding='utf-8') as csv_table:
         time.sleep(2)
         driver.get("http://localhost:1667/#/editor")
         time.sleep(2)
-
-
-#fill_article(xpath)
 
 
