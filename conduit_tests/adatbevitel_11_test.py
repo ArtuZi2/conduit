@@ -83,7 +83,7 @@ def fill_article(xpath):
 publish_button = driver.find_element_by_xpath("//div/div/div/div/form/button")
 
 
-with open('articles.csv', encoding='utf-8') as csv_table:
+with open('conduit_tests/articles.csv', encoding='utf-8') as csv_table:
     csv_reader = csv.reader(csv_table, delimiter=',')
     next(csv_reader)
     time.sleep(2)
