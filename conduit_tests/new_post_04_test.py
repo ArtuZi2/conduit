@@ -72,7 +72,7 @@ def test_login():
     password = "Sunshine2046"
 
     element.click()
-    time.sleep(2)
+    time.sleep(5)
     driver.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys(emil)
     driver.find_element_by_xpath("//input[@type='password'][@placeholder='Password']").send_keys(password)
     driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
@@ -86,20 +86,20 @@ def test_login():
 def home():
 
     driver.find_element_by_xpath("//nav/div/ul/li[1]/a").click()
-    time.sleep(2)
+    time.sleep(5)
 
     my_feed = driver.find_element_by_xpath("//div/div/div/div/div/div/ul/li/a")
     my_feed.click()
 
 
 def test_check1():
-    time.sleep(2)
+    time.sleep(5)
     titles = driver.find_elements_by_xpath('//*[@id="app"]/div/div[2]/div/div[1]/div[2]/div/div/div/a/h1')
 
     titles_list1 = []
 
     titles_count1 = 0
-    time.sleep(2)
+    time.sleep(5)
     with open('titles1.txt', 'w') as text_file:
         for title in titles:
             text_file.write(f'{title.text}\n')
@@ -113,26 +113,26 @@ def test_check1():
 
 def test_new_post():
     driver.get("http://localhost:1667/#/editor")
-    time.sleep(2)
+    time.sleep(5)
     article = driver.find_element_by_xpath("//fieldset[1]/input")
     article.send_keys("Spring")
-    time.sleep(3)
+    time.sleep(5)
     driver.find_element_by_xpath("//fieldset[2]/input").send_keys("About my favorite season")
-    time.sleep(2)
+    time.sleep(5)
     driver.find_element_by_xpath("//fieldset[3]/textarea").send_keys("Spring is my life.")
-    time.sleep(2)
+    time.sleep(5)
     driver.find_element_by_xpath("//fieldset[4]/div/div/ul/li/input").send_keys("Spring\n", "life\n", "season\n",
                                                                                 "favorite\n")
-    time.sleep(4)
+    time.sleep(5)
     driver.find_element_by_xpath("//button[@class='btn btn-lg pull-xs-right btn-primary']").click()
 
-    time.sleep(2)
+    time.sleep(5)
 
 
 def home():
 
     driver.find_element_by_xpath("//nav/div/ul/li[1]/a").click()
-    time.sleep(2)
+    time.sleep(5)
 
     my_feed = driver.find_element_by_xpath("//div/div/div/div/div/div/ul/li/a")
     my_feed.click()
@@ -142,13 +142,13 @@ time.sleep(2)
 
 
 def test_check2():
-    time.sleep(2)
+    time.sleep(5)
     titles = driver.find_elements_by_xpath('//*[@id="app"]/div/div[2]/div/div[1]/div[2]/div/div/div/a/h1')
 
     titles_list2 = []
 
     titles_count2 = 0
-    time.sleep(2)
+    time.sleep(5)
     with open('titles.txt', 'w') as text_file:
         for title in titles:
             text_file.write(f'{title.text}\n')

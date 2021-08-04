@@ -27,17 +27,17 @@ def test_login():
     print(element.is_displayed())
 
     element.click()
-    time.sleep(2)
+    time.sleep(5)
     driver.find_element_by_xpath("//fieldset[1]/input").send_keys(emil)
-    time.sleep(2)
+    time.sleep(5)
     driver.find_element_by_xpath("//fieldset[2]/input").send_keys(password)
-    time.sleep(2)
+    time.sleep(5)
     driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
-    time.sleep(10)
+    time.sleep(5)
     driver.find_element_by_xpath("//nav/div/ul/li[4]/a").click()
-    time.sleep(10)
+    time.sleep(5)
     user_setting = driver.find_element_by_tag_name("h4")
-    time.sleep(2)
+    time.sleep(5)
     print(user_setting.text)
     user = "sun2"
 

@@ -66,28 +66,42 @@ def test_login():
     driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
 
 
-def fill_table(xpath):
-    time.sleep(5)
-    driver.get("http://localhost:1667/#/editor")
-    new_article = driver.find_element_by_xpath("//nav/div/ul/li[2]/a")
-    new_article.click()
-    time.sleep(5)
+time.sleep(2)
+
+driver.get("http://localhost:1667/#/editor")
+#new_article = driver.find_element_by_xpath("//nav/div/ul/li[2]/a")
+#new_article.click()
+time.sleep(5)
+
+
+def fill_article(xpath):
     element = driver.find_element_by_xpath(xpath)
     element.clear()
     return element
 
 
-with open('articles.csv', 'r', encoding='utf-8') as csv_table:
+publish_button = driver.find_element_by_xpath("//div/div/div/div/form/button")
+
+
+with open('articles.csv', encoding='utf-8') as csv_table:
     csv_reader = csv.reader(csv_table, delimiter=',')
     next(csv_reader)
     time.sleep(2)
 
     for row in csv_reader:
         print(row)
-        fill_table("//fieldset/input").send_keys(row[0])
+        fill_article("//fieldset/input").send_keys(row[0])
         time.sleep(2)
-        fill_table("//fieldset[2]/input").send_keys(row[1])
-        time.sleep(4)
-        fill_table("//fieldset[3]/textarea").send_keys(row[2])
+        fill_article("//fieldset[2]/input").send_keys(row[1])
         time.sleep(2)
-        driver.find_element_by_xpath("//div/div/div/div/form/button").click()
+        fill_article("//form/fieldset/fieldset[3]/textarea").send_keys(row[2])
+        time.sleep(2)
+        publish_button.click()
+        time.sleep(2)
+        driver.get("http://localhost:1667/#/editor")
+        time.sleep(2)
+
+
+#fill_article(xpath)
+
+
