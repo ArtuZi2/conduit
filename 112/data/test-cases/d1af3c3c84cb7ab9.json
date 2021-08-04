@@ -1,0 +1,98 @@
+{
+  "uid" : "d1af3c3c84cb7ab9",
+  "name" : "test_check1",
+  "fullName" : "conduit_tests.new_post_04_test#test_check1",
+  "historyId" : "0f52beae5d1a40197afe52a41b86ade3",
+  "time" : {
+    "start" : 1628080768130,
+    "stop" : 1628080778150,
+    "duration" : 10020
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "edd77522b9241dd1",
+      "name" : "stdout",
+      "source" : "edd77522b9241dd1.txt",
+      "type" : "text/plain",
+      "size" : 41
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "conduit_tests"
+  }, {
+    "name" : "suite",
+    "value" : "new_post_04_test"
+  }, {
+    "name" : "host",
+    "value" : "fv-az33-674"
+  }, {
+    "name" : "thread",
+    "value" : "3698-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "conduit_tests.new_post_04_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "26f937ebe3209f61",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/111//#testresult/26f937ebe3209f61",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628079391582,
+          "stop" : 1628079401605,
+          "duration" : 10023
+        }
+      }, {
+        "uid" : "dc688dcf87757c3d",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/109//#testresult/dc688dcf87757c3d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628008461222,
+          "stop" : 1628008465237,
+          "duration" : 4015
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d1af3c3c84cb7ab9.json",
+  "parameterValues" : [ ]
+}
