@@ -1,0 +1,73 @@
+{
+  "uid" : "d647ff44635a57ca",
+  "name" : "test_save",
+  "fullName" : "conduit_tests.save_09_test#test_save",
+  "historyId" : "5bee84e5647122b7497fa515ca7bd78a",
+  "time" : {
+    "start" : 1628079474934,
+    "stop" : 1628079474947,
+    "duration" : 13
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "conduit_tests"
+  }, {
+    "name" : "suite",
+    "value" : "save_09_test"
+  }, {
+    "name" : "host",
+    "value" : "fv-az77-166"
+  }, {
+    "name" : "thread",
+    "value" : "3665-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "conduit_tests.save_09_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "bc3355c63b06f5bb",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/109//#testresult/bc3355c63b06f5bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628008520004,
+          "stop" : 1628008520016,
+          "duration" : 12
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d647ff44635a57ca.json",
+  "parameterValues" : [ ]
+}

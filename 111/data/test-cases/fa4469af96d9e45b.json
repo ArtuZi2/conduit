@@ -1,0 +1,89 @@
+{
+  "uid" : "fa4469af96d9e45b",
+  "name" : "test_login",
+  "fullName" : "conduit_tests.cookie_post_07_test#test_login",
+  "historyId" : "c9c17a2a5bf3fe920aacfbb884e4de43",
+  "time" : {
+    "start" : 1628079124852,
+    "stop" : 1628079135391,
+    "duration" : 10539
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6248ff21280fba4c",
+      "name" : "stdout",
+      "source" : "6248ff21280fba4c.txt",
+      "type" : "text/plain",
+      "size" : 299
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "conduit_tests"
+  }, {
+    "name" : "suite",
+    "value" : "cookie_post_07_test"
+  }, {
+    "name" : "host",
+    "value" : "fv-az77-166"
+  }, {
+    "name" : "thread",
+    "value" : "3665-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "conduit_tests.cookie_post_07_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "9829057c20e9ebe9",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/109//#testresult/9829057c20e9ebe9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628008220800,
+          "stop" : 1628008231246,
+          "duration" : 10446
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "fa4469af96d9e45b.json",
+  "parameterValues" : [ ]
+}
