@@ -1,0 +1,59 @@
+{
+  "uid" : "df59c8df39e35701",
+  "name" : "test_register",
+  "fullName" : "conduit_tests.login_02_test#test_register",
+  "historyId" : "04a0652585d1e02d892a1ff702a019d3",
+  "time" : {
+    "start" : 1628172139362,
+    "stop" : 1628172141827,
+    "duration" : 2465
+  },
+  "status" : "broken",
+  "statusMessage" : "NameError: name 'random' is not defined",
+  "statusTrace" : "def test_register():\n        username = \"sun2\"\n        password = \"Sunshine2046\"\n    \n        driver.get(\"http://localhost:1667\")\n        time.sleep(2)\n    \n        def generate_email(prefix='tkata+', domain='gmail.com'):\n            random_part = ''.join(random.choice(string.ascii_lowercase + string.digits)\n                                  for _ in range(10))\n    \n            return prefix + random_part + '@' + domain\n    \n>       generate_email()\n\nconduit_tests/login_02_test.py:26: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nconduit_tests/login_02_test.py:21: in generate_email\n    random_part = ''.join(random.choice(string.ascii_lowercase + string.digits)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n.0 = <range_iterator object at 0x7fb1ececf240>\n\n>   random_part = ''.join(random.choice(string.ascii_lowercase + string.digits)\n                          for _ in range(10))\nE   NameError: name 'random' is not defined\n\nconduit_tests/login_02_test.py:21: NameError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "conduit_tests"
+  }, {
+    "name" : "suite",
+    "value" : "login_02_test"
+  }, {
+    "name" : "host",
+    "value" : "fv-az74-744"
+  }, {
+    "name" : "thread",
+    "value" : "3791-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "conduit_tests.login_02_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "df59c8df39e35701.json",
+  "parameterValues" : [ ]
+}
