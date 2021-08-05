@@ -10,6 +10,8 @@ options.add_argument('--headless')
 options.add_argument('--disable-gpu')
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
+#regisztráció random email címmel
+
 
 def test_register():
     username = "sun2"
@@ -46,20 +48,11 @@ def test_register():
 
     time.sleep(5)
 
-    # driver.find_element_by_xpath("//a[contains(@href, 'settings')]").click()
-
-    # appear_name = driver.find_elements_by_xpath("//a[@href]")
-
-    # megjelen_username = driver.find_element_by_xpath("//*[@id='app']/nav/div/ul/li[4]/a").text
-
-    # megjelen_username = driver.find_element_by_xpath("//a[contains(@href, '@sun2')]").text
-
     megjelen_username = driver.find_element_by_xpath(f"//a[contains(@href, '@sun2')]").text
-    # driver.find_element_by_xpath("//fieldset[2]/input[@type='text']").send_keys("emma")
 
     print(megjelen_username)
     # print(username)
-
+    #felhasználónév összahasonlítása a bevitt felhasználónévvel
     assert megjelen_username == username
 
     time.sleep(2)
