@@ -112,6 +112,7 @@ def test_check1():
 
 
 def test_new_post():
+    time.sleep(2)
     driver.get("http://localhost:1667/#/editor")
     time.sleep(5)
     article = driver.find_element_by_xpath("//fieldset[1]/input")
