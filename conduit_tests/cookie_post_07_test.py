@@ -105,7 +105,7 @@ def test_cookie1():
 
     time.sleep(1)
 
-    cookies = driver.find_element_by_xpath("//*[@id='cookie-policy-panel']/div/div[2]")
+    cookies = driver.find_element_by_xpath("//div/div[2]/button[2]/div")
 
     print(cookies.is_displayed())
     print(cookies.is_enabled())
