@@ -7,7 +7,6 @@ from selenium.webdriver.chrome.options import Options
 options = webdriver.ChromeOptions()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
-
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
 
@@ -31,6 +30,22 @@ def test_register():
     driver.find_element_by_xpath("//input[@type='text'][@placeholder='Username']").send_keys(username)
     time.sleep(2)
     driver.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys(generate_email())
+
+    # if driver.find_element_by_class_name("swal-modal").is_displayed():
+    #  a = driver.find_element_by_class_name("swal-button swal-button--confirm")
+    #   a.click()
+
+    # belépés
+    driver.find_element_by_xpath("//input[@type='password'][@placeholder='Password']").send_keys(password)
+
+    driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
+
+    time.sleep(5)
+    welcome = driver.find_element_by_xpath("//div[contains(@class, 'swal-text')]").text
+    text = "Your registration was successful!"
+    assert (text == welcome)
+
+    driver.find_element_by_xpath("//button[contains(text(),'OK')]").click()
 
     time.sleep(5)
     driver.find_element_by_xpath("//a [@active-class='active']").click()

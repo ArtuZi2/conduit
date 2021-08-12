@@ -1,10 +1,8 @@
 from selenium import webdriver
-from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 import random, string
 from selenium.webdriver.chrome.options import Options
-
 options = webdriver.ChromeOptions()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
