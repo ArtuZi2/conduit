@@ -98,22 +98,22 @@ def test_login():
 
 
 def test_edit_emil():
-    settings_xpath = driver.find_element_by_xpath("//nav/div/ul/li[3]/a").click()
+    driver.find_element_by_xpath("//nav/div/ul/li[3]/a").click()
     new_emil = "tkata2@gmail.com"
-    time.sleep(5)
+    time.sleep(8)
     emil_field = driver.find_element_by_xpath("//form/fieldset/fieldset[4]/input")
     emil_field.clear()
-    time.sleep(5)
+    time.sleep(8)
     emil_field.send_keys(new_emil)
     update_button = driver.find_element_by_xpath("//fieldset/button")
     update_button.click()
-    time.sleep(5)
+    time.sleep(8)
     update_ok_button = driver.find_element_by_xpath("/html/body/div[2]/div/div[3]/div/button")
     update_ok_button.click()
-    time.sleep(5)
+    time.sleep(8)
     assert new_emil == emil_field.text
 
-    time.sleep(5)
+    time.sleep(8)
 
     logout = driver.find_element_by_xpath("//div/ul/li[5]/a")
     logout.click()
