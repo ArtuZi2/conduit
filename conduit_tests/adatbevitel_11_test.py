@@ -39,7 +39,6 @@ def test_register():
 
 
 def test_login():
-    driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
     emil = "tkata@gmail.com"
     password = "Sunshine2046"
 
