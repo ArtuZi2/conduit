@@ -32,7 +32,7 @@ def test_register():
     #   a.click()
     driver.find_element_by_xpath("//input[@type='password'][@placeholder='Password']").send_keys(password)
 
-    driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
+    driver.find_element_by_xpath("//div/div/div/div/form/button]").click()
 
     time.sleep(5)
 

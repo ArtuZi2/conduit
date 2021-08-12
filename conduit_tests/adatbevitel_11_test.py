@@ -66,14 +66,13 @@ def test_login():
     time.sleep(2)
     driver.find_element_by_xpath("//fieldset[2]/input").send_keys(password)
     time.sleep(2)
-    driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
+    driver.find_element_by_xpath("//div/div/div/div/form/button").click()
 
-    time.sleep(3)
-    driver.get("http://localhost:1667/#/editor")
     time.sleep(5)
 
 
 def fill_article(xpath):
+    driver.get("http://localhost:1667/#/editor")
     element = driver.find_element_by_xpath(xpath)
     element.clear()
     time.sleep(2)
@@ -83,7 +82,7 @@ def fill_article(xpath):
 
 time.sleep(3)
 
-with open('conduit_tests/articles.csv', encoding='utf-8') as csv_table:
+with open('articles.csv', encoding='utf-8') as csv_table:
     csv_reader = csv.reader(csv_table, delimiter=',')
     next(csv_reader)
     time.sleep(2)
@@ -95,7 +94,7 @@ with open('conduit_tests/articles.csv', encoding='utf-8') as csv_table:
         time.sleep(5)
         fill_article("//form/fieldset/fieldset[3]/textarea").send_keys(row[2])
         time.sleep(5)
-        driver.find_element_by_xpath("//*[@id='app']/div/div/div/div/form/button").click()
+        driver.find_element_by_xpath("//div/div/div/div/form/button").click()
         time.sleep(5)
         driver.get("http://localhost:1667/#/editor")
         time.sleep(5)
