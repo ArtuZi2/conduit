@@ -39,28 +39,10 @@ def test_register():
     # if driver.find_element_by_class_name("swal-modal").is_displayed():
     #  a = driver.find_element_by_class_name("swal-button swal-button--confirm")
     #   a.click()
-    driver.find_element_by_xpath("//input[@type='password'][@placeholder='Password']").send_keys(password)
-
-    driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
-
-    time.sleep(5)
-
-    welcome = driver.find_element_by_xpath("//div[contains(@class, 'swal-text')]").text
-    text = "Your registration was successful!"
-    assert (text == welcome)
-
-    driver.find_element_by_xpath("//button[contains(text(),'OK')]").click()
 
     time.sleep(2)
 
     driver.find_element_by_xpath("//a [@active-class='active']").click()
-
-    """print("Current session is {}".format(driver.session_id))
-    driver.close()
-    try:
-        driver.get("http://localhost:1667")
-    except Exception as e:
-        print(e)"""
 
 
 def test_login():
@@ -77,9 +59,9 @@ def test_login():
     driver.find_element_by_xpath("//input[@type='password'][@placeholder='Password']").send_keys(password)
     driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
 
-    time.sleep(2)
+    time.sleep(5)
 
-#New Article button
+# New Article button
     driver.find_element_by_xpath("//a[@href='#/editor']").click()
 
 
@@ -139,7 +121,7 @@ def home():
     my_feed.click()
 
 
-time.sleep(2)
+time.sleep(5)
 
 
 def test_check2():
@@ -161,10 +143,3 @@ def test_check2():
     print(len(titles_list2))
 
     assert len(titles) == len(titles_list2)
-
-
-
-"""def test_delete_post():
-    delete_button = driver.find_element_by_xpath("//button[@class='btn btn-outline-danger btn-sm']")
-    delete_button.click()
-    driver.find_elements_by_tag_name('button')[2].click()"""

@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import time
+import random, string
 from selenium.webdriver.chrome.options import Options
 
 options = webdriver.ChromeOptions()
@@ -100,7 +101,7 @@ def test_login():
 
     assert user == user_setting.text
     time.sleep(3)
-
+    #navbar elemeinek megjelenítése belépés után
     driver.get("http://localhost:1667/#/")
 
     div = driver.find_element_by_class_name("nav-item")
@@ -112,4 +113,3 @@ def test_login():
         print(text)
 
     assert user == list2[3].text
-
