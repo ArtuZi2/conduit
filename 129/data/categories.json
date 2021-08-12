@@ -1,0 +1,201 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button type=\"submit\" class=\"btn btn-lg pull-xs-right btn-primary\">...</button> is not clickable at point (592, 497). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_adatbevitel",
+        "uid" : "880d2d1dd29c252",
+        "parentUid" : "582940588fe53d2671e67493d1e5bbb8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628805219716,
+          "stop" : 1628805250138,
+          "duration" : 30422
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_new_post",
+        "uid" : "bcf0708fbccb4751",
+        "parentUid" : "582940588fe53d2671e67493d1e5bbb8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628805559053,
+          "stop" : 1628805587569,
+          "duration" : 28516
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "582940588fe53d2671e67493d1e5bbb8"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a [@active-class='active']\"}\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_register",
+        "uid" : "b74b0928d3ebcaca",
+        "parentUid" : "5562eb583e3b2d591086b34574e91fed",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628805250220,
+          "stop" : 1628805258876,
+          "duration" : 8656
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register",
+        "uid" : "72538bbc6fac2c6",
+        "parentUid" : "5562eb583e3b2d591086b34574e91fed",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628805531694,
+          "stop" : 1628805536420,
+          "duration" : 4726
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5562eb583e3b2d591086b34574e91fed"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href='#/editor']\"}\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_new_post",
+        "uid" : "71cc81f0f5081c",
+        "parentUid" : "a0087cd691aa890338943397c6b33a89",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628805307984,
+          "stop" : 1628805311004,
+          "duration" : 3020
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login",
+        "uid" : "c46d0d7ef4492233",
+        "parentUid" : "a0087cd691aa890338943397c6b33a89",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628805536460,
+          "stop" : 1628805548983,
+          "duration" : 12523
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a0087cd691aa890338943397c6b33a89"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/div[1]/div/div/span/button/span\"}\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_delete_post",
+        "uid" : "919ca01db7d82f5c",
+        "parentUid" : "62a50969967c315c7663112443d30396",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628805311054,
+          "stop" : 1628805319083,
+          "duration" : 8029
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "62a50969967c315c7663112443d30396"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"#/register\" class=\"nav-link\">...</a> is not clickable at point (713, 26). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_edit_emil",
+        "uid" : "a8279965724d34bd",
+        "parentUid" : "fed6ec46835102c468ac25ba3f0f9439",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628805367574,
+          "stop" : 1628805368638,
+          "duration" : 1064
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fed6ec46835102c468ac25ba3f0f9439"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id='app']/nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_login",
+        "uid" : "5cdf7d5fc090d049",
+        "parentUid" : "3b4e0cb180e1b4de631712660d7558ed",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628805401640,
+          "stop" : 1628805424135,
+          "duration" : 22495
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3b4e0cb180e1b4de631712660d7558ed"
+    }, {
+      "name" : "selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div/div/div/div/form/button] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div/div/div/div/form/button]' is not a valid XPath expression.\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_register",
+        "uid" : "3be739ba16775107",
+        "parentUid" : "e6955dd3fe9c24e64b19cf9e92399807",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628805455720,
+          "stop" : 1628805458426,
+          "duration" : 2706
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e6955dd3fe9c24e64b19cf9e92399807"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_login",
+        "uid" : "5c0958760e888fa6",
+        "parentUid" : "9459d39975a8a1dfb1116e04e5b1e436",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628805458466,
+          "stop" : 1628805483066,
+          "duration" : 24600
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9459d39975a8a1dfb1116e04e5b1e436"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/ul/li[5]/a\"}\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_logout",
+        "uid" : "ef5877178bf62b07",
+        "parentUid" : "b28cb77f322781ac0f3c858edfe45c7a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628805526634,
+          "stop" : 1628805531655,
+          "duration" : 5021
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b28cb77f322781ac0f3c858edfe45c7a"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
