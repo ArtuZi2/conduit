@@ -81,7 +81,7 @@ def fill_article(xpath):
 
 time.sleep(3)
 
-with open('conduit_test/articles.csv', encoding='utf-8') as csv_table:
+with open('./articles.csv', encoding='utf-8') as csv_table:
     csv_reader = csv.reader(csv_table, delimiter=',')
     next(csv_reader)
     time.sleep(5)
@@ -97,5 +97,3 @@ with open('conduit_test/articles.csv', encoding='utf-8') as csv_table:
         time.sleep(5)
         driver.get("http://localhost:1667/#/editor")
         time.sleep(5)
-
-
