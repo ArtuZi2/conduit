@@ -32,24 +32,14 @@ def test_register():
     driver.find_element_by_xpath("//input[@type='text'][@placeholder='Username']").send_keys(username)
     time.sleep(2)
     driver.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys(generate_email())
-    time.sleep(2)
-    # if driver.find_element_by_class_name("swal-modal").is_displayed():
-    #  a = driver.find_element_by_class_name("swal-button swal-button--confirm")
-    #   a.click()
-    driver.find_element_by_xpath("//input[@type='password'][@placeholder='Password']").send_keys(password)
-    time.sleep(2)
 
-    driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
-
-    time.sleep(5)
-
-    driver.find_element_by_xpath("//button[contains(text(),'OK')]").click()
     time.sleep(5)
     driver.find_element_by_xpath("//a [@active-class='active']").click()
     time.sleep(2)
 
 
 def test_login():
+    driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
     emil = "tkata@gmail.com"
     password = "Sunshine2046"
 
@@ -65,16 +55,15 @@ def test_login():
     time.sleep(2)
     driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
 
-
-time.sleep(2)
-
-driver.get("http://localhost:1667/#/editor")
-time.sleep(5)
+    time.sleep(2)
+    driver.get("http://localhost:1667/#/editor")
+    time.sleep(5)
 
 
 def fill_article(xpath):
     element = driver.find_element_by_xpath(xpath)
     element.clear()
+    time.sleep(2)
     return element
 
 
@@ -89,14 +78,14 @@ with open('conduit_tests/articles.csv', encoding='utf-8') as csv_table:
     for row in csv_reader:
         print(row)
         fill_article("//fieldset/input").send_keys(row[0])
-        time.sleep(2)
+        time.sleep(5)
         fill_article("//fieldset[2]/input").send_keys(row[1])
-        time.sleep(2)
+        time.sleep(5)
         fill_article("//form/fieldset/fieldset[3]/textarea").send_keys(row[2])
-        time.sleep(2)
+        time.sleep(5)
         publish_button.click()
-        time.sleep(2)
+        time.sleep(5)
         driver.get("http://localhost:1667/#/editor")
-        time.sleep(2)
+        time.sleep(5)
 
 
