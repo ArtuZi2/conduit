@@ -4,6 +4,7 @@ import time
 import csv
 import random, string
 from selenium.webdriver.chrome.options import Options
+
 options = webdriver.ChromeOptions()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
@@ -72,28 +73,28 @@ def test_login():
     driver.get("http://localhost:1667/#/editor")
 
 
-def fill_article(xpath):
-    element = driver.find_element_by_xpath(xpath)
-    element.clear()
-    time.sleep(2)
-    return element
+def test_adatbevitel():
+    def fill_article(xpath):
+        element = driver.find_element_by_xpath(xpath)
+        element.clear()
+        time.sleep(2)
+        return element
 
+    time.sleep(3)
 
-time.sleep(3)
-
-with open('./articles.csv', encoding='utf-8') as csv_table:
-    csv_reader = csv.reader(csv_table, delimiter=',')
-    next(csv_reader)
-    time.sleep(5)
-    for row in csv_reader:
-        print(row)
-        fill_article("//fieldset/input").send_keys(row[0])
+    with open('./articles.csv', encoding='utf-8') as csv_table:
+        csv_reader = csv.reader(csv_table, delimiter=',')
+        next(csv_reader)
         time.sleep(5)
-        fill_article("//fieldset[2]/input").send_keys(row[1])
-        time.sleep(5)
-        fill_article("//form/fieldset/fieldset[3]/textarea").send_keys(row[2])
-        time.sleep(5)
-        driver.find_element_by_xpath("//div/div/div/div/form/button").click()
-        time.sleep(5)
-        driver.get("http://localhost:1667/#/editor")
-        time.sleep(5)
+        for row in csv_reader:
+            print(row)
+            fill_article("//fieldset/input").send_keys(row[0])
+            time.sleep(5)
+            fill_article("//fieldset[2]/input").send_keys(row[1])
+            time.sleep(5)
+            fill_article("//form/fieldset/fieldset[3]/textarea").send_keys(row[2])
+            time.sleep(5)
+            driver.find_element_by_xpath("//div/div/div/div/form/button").click()
+            time.sleep(5)
+            driver.get("http://localhqost:1667/#/editor")
+            time.sleep(5)
