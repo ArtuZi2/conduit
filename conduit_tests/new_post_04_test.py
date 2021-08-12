@@ -42,7 +42,7 @@ def test_register():
 
     time.sleep(2)
 
-    driver.find_element_by_xpath("//a [@active-class='active']").click()
+    driver.find_element_by_xpath("//a[@active-class='active']").click()
 
 
 def test_login():
@@ -62,7 +62,7 @@ def test_login():
     time.sleep(5)
 
 # New Article button
-    driver.find_element_by_xpath("//a[@href='#/editor']").click()
+    driver.find_element_by_xpath("//nav/div/ul/li[2]/a").click()
 
 
 def home():
@@ -76,7 +76,7 @@ def home():
 
 def test_check1():
     time.sleep(5)
-    titles = driver.find_elements_by_xpath('//*[@id="app"]/div/div[2]/div/div[1]/div[2]/div/div/div/a/h1')
+    titles = driver.find_elements_by_xpath('//div/div[2]/div/div[1]/div[2]/div/div/div/a/h1')
 
     titles_list1 = []
 
@@ -107,7 +107,7 @@ def test_new_post():
     driver.find_element_by_xpath("//fieldset[4]/div/div/ul/li/input").send_keys("Spring\n", "life\n", "season\n",
                                                                                 "favorite\n")
     time.sleep(5)
-    driver.find_element_by_xpath("//button[@class='btn btn-lg pull-xs-right btn-primary']").click()
+    driver.find_element_by_xpath("//div/div/div/div/form/button").click()
 
     time.sleep(5)
 

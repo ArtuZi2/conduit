@@ -67,7 +67,7 @@ def test_login():
     driver.find_element_by_xpath("//fieldset[1]/input").send_keys(emil)
     time.sleep(2)
     driver.find_element_by_xpath("//fieldset[2]/input").send_keys(password)
-    time.sleep(2)
+    time.sleep(5)
     driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
 
 
@@ -89,7 +89,7 @@ def test_new_post():
 
 def test_delete_post():
     time.sleep(8)
-    delete_button = driver.find_element_by_xpath("//div/div[1]/div/div/span/button/span")
+    delete_button = driver.find_element_by_xpath("//div/div[1]/div/div/span/button")
     delete_button.click()
 
     time.sleep(2)

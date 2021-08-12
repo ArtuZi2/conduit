@@ -25,7 +25,7 @@ def test_register():
 
     generate_email()
 
-    driver.find_element_by_xpath("/html/body//a[contains(@href,'register')]").click()
+    driver.find_element_by_xpath("//a[contains(@href,'register')]").click()
     time.sleep(2)
     driver.find_element_by_xpath("//input[@type='text'][@placeholder='Username']").send_keys(username)
     time.sleep(2)

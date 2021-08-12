@@ -94,18 +94,11 @@ def test_login():
     driver.find_element_by_xpath("//fieldset[2]/input").send_keys(password)
     time.sleep(2)
     driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
-
-    """print("Current session is {}".format(driver.session_id))
-    driver.close()
-    try:
-        driver.get("http://localhost:1667")
-    except Exception as e:
-        print(e)"""
+    time.sleep(3)
 
 
 def test_logout():
 
-    time.sleep(5)
     logout = driver.find_element_by_xpath("//div/ul/li[5]/a")
     print(logout.is_enabled())
     print(logout.is_displayed())

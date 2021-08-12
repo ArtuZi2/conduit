@@ -32,7 +32,7 @@ def test_register():
     #   a.click()
     driver.find_element_by_xpath("//input[@type='password'][@placeholder='Password']").send_keys(password)
 
-    driver.find_element_by_xpath("//div/div/div/div/form/button]").click()
+    driver.find_element_by_xpath("//div/div/div/div/form/button").click()
 
     time.sleep(5)
 
@@ -70,10 +70,13 @@ def test_login():
     driver.get("http://localhost:1667")
     time.sleep(2)
     div = driver.find_element_by_class_name("nav-item")
+    time.sleep(2)
     navbar_items = div.find_elements_by_xpath("//div/nav/div/ul/li/a")
-    list = []
+
+    lista = []
     for i in navbar_items:
-        list.append(i)
+        time.sleep(2)
+        lista.append(i)
         print(i.text)
 
     time.sleep(2)
