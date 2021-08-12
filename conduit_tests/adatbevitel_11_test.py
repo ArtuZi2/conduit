@@ -62,7 +62,7 @@ def fill_article(xpath):
     element = driver.find_element_by_xpath(xpath)
     element.clear()
     time.sleep(2)
-    driver.find_element_by_xpath("//div/div/div/div/form/button").click()
+    publish_button = driver.find_element_by_xpath("//div/div/div/div/form/button").click()
     return element
 
 
@@ -80,7 +80,7 @@ with open('conduit_tests/articles.csv', encoding='utf-8') as csv_table:
         time.sleep(5)
         fill_article("//form/fieldset/fieldset[3]/textarea").send_keys(row[2])
         time.sleep(5)
-        publish_button.click()
+        driver.find_element_by_xpath("//*[@id='app']/div/div/div/div/form/button").click()
         time.sleep(5)
         driver.get("http://localhost:1667/#/editor")
         time.sleep(5)
