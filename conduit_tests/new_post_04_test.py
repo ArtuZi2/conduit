@@ -65,7 +65,7 @@ def test_login():
     driver.find_element_by_xpath("//nav/div/ul/li[2]/a").click()
 
 
-def home():
+def test_home():
 
     driver.find_element_by_xpath("//nav/div/ul/li[1]/a").click()
     time.sleep(5)
@@ -112,7 +112,7 @@ def test_new_post():
     time.sleep(5)
 
 
-def home():
+def test_home():
 
     driver.find_element_by_xpath("//nav/div/ul/li[1]/a").click()
     time.sleep(5)
