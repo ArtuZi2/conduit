@@ -1,0 +1,5 @@
+True
+True
+[{'domain': 'localhost', 'httpOnly': False, 'name': 'drash_sess', 'path': '/', 'secure': False, 'value': 'null'}]
+[{'domain': 'localhost', 'httpOnly': False, 'name': 'vue-cookie-accept-decline-cookie-policy-panel', 'path': '/', 'secure': False, 'value': 'accept'}, {'domain': 'localhost', 'httpOnly': False, 'name': 'drash_sess', 'path': '/', 'secure': False, 'value': 'null'}]
+[{'domain': 'localhost', 'httpOnly': False, 'name': 'drash_sess', 'path': '/', 'secure': False, 'value': 'null'}]
