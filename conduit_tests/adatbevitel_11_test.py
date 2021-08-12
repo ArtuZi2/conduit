@@ -4,7 +4,6 @@ import time
 import csv
 import random, string
 from selenium.webdriver.chrome.options import Options
-
 options = webdriver.ChromeOptions()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
@@ -63,14 +62,13 @@ def fill_article(xpath):
     element = driver.find_element_by_xpath(xpath)
     element.clear()
     time.sleep(2)
+    driver.find_element_by_xpath("//div/div/div/div/form/button").click()
     return element
 
 
 time.sleep(3)
 
-publish_button = driver.find_element_by_xpath("//div/div/div/div/form/button")
-
-with open('articles.csv', encoding='utf-8') as csv_table:
+with open('conduit_tests/articles.csv', encoding='utf-8') as csv_table:
     csv_reader = csv.reader(csv_table, delimiter=',')
     next(csv_reader)
     time.sleep(2)
