@@ -96,5 +96,5 @@ def test_adatbevitel():
             time.sleep(5)
             driver.find_element_by_xpath("//div/div/div/div/form/button").click()
             time.sleep(5)
-            driver.get("http://localhqost:1667/#/editor")
+            driver.get("http://localhost:1667/#/editor")
             time.sleep(5)
