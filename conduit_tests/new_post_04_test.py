@@ -38,11 +38,13 @@ def test_register():
     driver.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys(generate_email())
     # if driver.find_element_by_class_name("swal-modal").is_displayed():
     #  a = driver.find_element_by_class_name("swal-button swal-button--confirm")
+    driver.find_element_by_xpath("//div/div/div/div/form/button").click()
     #   a.click()
 
     time.sleep(2)
 
-    driver.find_element_by_xpath("//a[@active-class='active']").click()
+    driver.find_element_by_xpath("//nav/div/ul/li[5]/a").click()
+    time.sleep(5)
 
 
 def test_login():

@@ -38,8 +38,9 @@ def test_register():
 
     # belépés
     driver.find_element_by_xpath("//input[@type='password'][@placeholder='Password']").send_keys(password)
+    time.sleep(5)
 
-    driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
+    driver.find_element_by_xpath("//div/div/div/div/form/button").click()
 
     time.sleep(5)
     welcome = driver.find_element_by_xpath("//div[contains(@class, 'swal-text')]").text

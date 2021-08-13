@@ -34,7 +34,7 @@ def test_register():
     time.sleep(2)
     driver.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys(generate_email())
     time.sleep(2)
-    driver.find_element_by_xpath("//a [@active-class='active']").click()
+    driver.find_element_by_xpath("//a[@active-class='active']").click()
     time.sleep(10)
 
 

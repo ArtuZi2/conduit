@@ -85,14 +85,14 @@ def test_new_post():
     driver.find_element_by_xpath("//fieldset[3]/textarea").send_keys("Autumn is my life.")
     time.sleep(4)
     driver.find_element_by_xpath("//button[@class='btn btn-lg pull-xs-right btn-primary']").click()
+    time.sleep(5)
 
 
 def test_delete_post():
-    time.sleep(8)
     delete_button = driver.find_element_by_xpath("//div/div[1]/div/div/span/button")
     delete_button.click()
 
-    time.sleep(2)
+    time.sleep(5)
 
     driver.back()
     time.sleep(5)
