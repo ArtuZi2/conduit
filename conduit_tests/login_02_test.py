@@ -4,8 +4,8 @@ import time
 import random, string
 from selenium.webdriver.chrome.options import Options
 options = webdriver.ChromeOptions()
-options.add_argument('--headless')
-options.add_argument('--disable-gpu')
+#options.add_argument('--headless')
+#options.add_argument('--disable-gpu')
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
 
@@ -92,7 +92,7 @@ def test_login():
     driver.find_element_by_xpath("//fieldset[2]/input").send_keys(password)
     time.sleep(5)
     driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
-    time.sleep(5)
+    time.sleep(10)
     driver.find_element_by_xpath("//nav/div/ul/li[4]/a").click()
     time.sleep(5)
     user_setting = driver.find_element_by_tag_name("h4")
