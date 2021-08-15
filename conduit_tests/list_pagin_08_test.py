@@ -88,17 +88,6 @@ def test_login():
     driver.find_element_by_xpath("//fieldset[2]/input").send_keys(password)
     time.sleep(5)
     driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
-    time.sleep(5)
-    driver.find_element_by_xpath("//nav/div/ul/li[4]/a").click()
-    time.sleep(5)
-    user_setting = driver.find_element_by_tag_name("h4")
-    time.sleep(5)
-    print(user_setting.text)
-    user = "sun2"
-
-    assert user == user_setting.text
-
-    driver.find_element_by_xpath("//a [@active-class='active']").click()
 
     """print("Current session is {}".format(driver.session_id))
     driver.close()

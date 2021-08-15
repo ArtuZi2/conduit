@@ -111,6 +111,9 @@ def test_edit_emil():
     update_ok_button = driver.find_element_by_xpath("/html/body/div[2]/div/div[3]/div/button")
     update_ok_button.click()
     time.sleep(8)
+    driver.find_element_by_xpath("//div/div/div/div/form/fieldset/button").click()
+    update_ok_button = driver.find_element_by_xpath("/html/body/div[2]/div/div[3]/div/button")
+    update_ok_button.click()
     assert new_emil == emil_field.text
 
     time.sleep(8)

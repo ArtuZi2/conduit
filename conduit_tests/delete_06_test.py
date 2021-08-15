@@ -89,6 +89,7 @@ def test_new_post():
 
 
 def test_delete_post():
+    time.sleep(5)
     delete_button = driver.find_element_by_xpath("//div/div[1]/div/div/span/button")
     delete_button.click()
 
