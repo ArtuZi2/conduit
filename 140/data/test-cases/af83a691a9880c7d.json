@@ -1,0 +1,233 @@
+{
+  "uid" : "af83a691a9880c7d",
+  "name" : "test_register",
+  "fullName" : "conduit_tests.cookie_post_07_test#test_register",
+  "historyId" : "4bc7172622c49908c3c06f3303431d00",
+  "time" : {
+    "start" : 1629059291913,
+    "stop" : 1629059312765,
+    "duration" : 20852
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "conduit_tests"
+  }, {
+    "name" : "suite",
+    "value" : "cookie_post_07_test"
+  }, {
+    "name" : "host",
+    "value" : "fv-az74-944"
+  }, {
+    "name" : "thread",
+    "value" : "3802-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "conduit_tests.cookie_post_07_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 7,
+        "skipped" : 0,
+        "passed" : 12,
+        "unknown" : 0,
+        "total" : 19
+      },
+      "items" : [ {
+        "uid" : "7bc5382a8ed4d1ce",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/139//#testresult/7bc5382a8ed4d1ce",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629059038786,
+          "stop" : 1629059059732,
+          "duration" : 20946
+        }
+      }, {
+        "uid" : "6dda19ed1e8a954",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/138//#testresult/6dda19ed1e8a954",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629058285036,
+          "stop" : 1629058305879,
+          "duration" : 20843
+        }
+      }, {
+        "uid" : "f2c75860d6252865",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/137//#testresult/f2c75860d6252865",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629057964781,
+          "stop" : 1629057985572,
+          "duration" : 20791
+        }
+      }, {
+        "uid" : "f62552793a7f1f65",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/136//#testresult/f62552793a7f1f65",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629057727710,
+          "stop" : 1629057748707,
+          "duration" : 20997
+        }
+      }, {
+        "uid" : "e5d1235d4be16c50",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/135//#testresult/e5d1235d4be16c50",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629057553185,
+          "stop" : 1629057574150,
+          "duration" : 20965
+        }
+      }, {
+        "uid" : "f63a4c703730b8fc",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/133//#testresult/f63a4c703730b8fc",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@active-class='active']\"}\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1628856578614,
+          "stop" : 1628856587391,
+          "duration" : 8777
+        }
+      }, {
+        "uid" : "2934f0cd50b92bd",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/132//#testresult/2934f0cd50b92bd",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a [@active-class='active']\"}\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1628807778115,
+          "stop" : 1628807786857,
+          "duration" : 8742
+        }
+      }, {
+        "uid" : "533a8d96ca935824",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/131//#testresult/533a8d96ca935824",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a [@active-class='active']\"}\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1628807082916,
+          "stop" : 1628807091521,
+          "duration" : 8605
+        }
+      }, {
+        "uid" : "ececea984eed6f22",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/130//#testresult/ececea984eed6f22",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a [@active-class='active']\"}\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1628806049315,
+          "stop" : 1628806057939,
+          "duration" : 8624
+        }
+      }, {
+        "uid" : "b74b0928d3ebcaca",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/129//#testresult/b74b0928d3ebcaca",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a [@active-class='active']\"}\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1628805250220,
+          "stop" : 1628805258876,
+          "duration" : 8656
+        }
+      }, {
+        "uid" : "12a02b4c36da122e",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/118//#testresult/12a02b4c36da122e",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a [@active-class='active']\"}\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1628770066672,
+          "stop" : 1628770075347,
+          "duration" : 8675
+        }
+      }, {
+        "uid" : "8f8a5fa1cb1c1247",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/117//#testresult/8f8a5fa1cb1c1247",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a [@active-class='active']\"}\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1628769956934,
+          "stop" : 1628769965750,
+          "duration" : 8816
+        }
+      }, {
+        "uid" : "7b3331e23a1f3627",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/115//#testresult/7b3331e23a1f3627",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628171934106,
+          "stop" : 1628171967084,
+          "duration" : 32978
+        }
+      }, {
+        "uid" : "b79940d5a36174d",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/114//#testresult/b79940d5a36174d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628150049618,
+          "stop" : 1628150082739,
+          "duration" : 33121
+        }
+      }, {
+        "uid" : "84310f767e488ff4",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/113//#testresult/84310f767e488ff4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628149597882,
+          "stop" : 1628149630691,
+          "duration" : 32809
+        }
+      }, {
+        "uid" : "51aa1d3d086b929a",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/112//#testresult/51aa1d3d086b929a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628080466989,
+          "stop" : 1628080499784,
+          "duration" : 32795
+        }
+      }, {
+        "uid" : "b531ef8001ae5863",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/111//#testresult/b531ef8001ae5863",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628079091772,
+          "stop" : 1628079124850,
+          "duration" : 33078
+        }
+      }, {
+        "uid" : "273a83da1d475d23",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/109//#testresult/273a83da1d475d23",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628008187664,
+          "stop" : 1628008220797,
+          "duration" : 33133
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "af83a691a9880c7d.json",
+  "parameterValues" : [ ]
+}
