@@ -1,0 +1,281 @@
+{
+  "uid" : "1ffc36497f8f02f8",
+  "name" : "test_login",
+  "fullName" : "conduit_tests.new_post_04_test#test_login",
+  "historyId" : "cf78f9c174f0c94dd09f44bf5811ab9f",
+  "time" : {
+    "start" : 1629061456324,
+    "stop" : 1629061473426,
+    "duration" : 17102
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "246bee837116494e",
+      "name" : "log",
+      "source" : "246bee837116494e.txt",
+      "type" : "text/plain",
+      "size" : 344
+    }, {
+      "uid" : "d17f8c057862f204",
+      "name" : "stderr",
+      "source" : "d17f8c057862f204.txt",
+      "type" : "text/plain",
+      "size" : 215
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "conduit_tests"
+  }, {
+    "name" : "suite",
+    "value" : "new_post_04_test"
+  }, {
+    "name" : "host",
+    "value" : "fv-az77-942"
+  }, {
+    "name" : "thread",
+    "value" : "3743-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "conduit_tests.new_post_04_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 16,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 22
+      },
+      "items" : [ {
+        "uid" : "d76ea523d727530e",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/142//#testresult/d76ea523d727530e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629060771654,
+          "stop" : 1629060788793,
+          "duration" : 17139
+        }
+      }, {
+        "uid" : "2918f0945f66afb5",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/141//#testresult/2918f0945f66afb5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629060457850,
+          "stop" : 1629060474881,
+          "duration" : 17031
+        }
+      }, {
+        "uid" : "8c0bad05ab371a81",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/140//#testresult/8c0bad05ab371a81",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629059612040,
+          "stop" : 1629059628988,
+          "duration" : 16948
+        }
+      }, {
+        "uid" : "67d1d084efea3209",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/139//#testresult/67d1d084efea3209",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629059362047,
+          "stop" : 1629059379325,
+          "duration" : 17278
+        }
+      }, {
+        "uid" : "226fbee4538f3882",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/138//#testresult/226fbee4538f3882",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629058605855,
+          "stop" : 1629058622913,
+          "duration" : 17058
+        }
+      }, {
+        "uid" : "f9959d44fa136bef",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/137//#testresult/f9959d44fa136bef",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"#/login\" class=\"nav-link router-link-exact-active active\" aria-current=\"page\">...</a> is not clickable at point (637, 26). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1629058279180,
+          "stop" : 1629058292697,
+          "duration" : 13517
+        }
+      }, {
+        "uid" : "e7c5f4b6afd396",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/136//#testresult/e7c5f4b6afd396",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"#/login\" class=\"nav-link router-link-exact-active active\" aria-current=\"page\">...</a> is not clickable at point (637, 26). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1629058044407,
+          "stop" : 1629058058017,
+          "duration" : 13610
+        }
+      }, {
+        "uid" : "4d32de1c259e20f7",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/135//#testresult/4d32de1c259e20f7",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"#/login\" class=\"nav-link router-link-exact-active active\" aria-current=\"page\">...</a> is not clickable at point (637, 26). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1629057864712,
+          "stop" : 1629057878281,
+          "duration" : 13569
+        }
+      }, {
+        "uid" : "965cac181d38a6a1",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/133//#testresult/965cac181d38a6a1",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"#/login\" class=\"nav-link router-link-exact-active active\" aria-current=\"page\">...</a> is not clickable at point (637, 26). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1628856878688,
+          "stop" : 1628856892314,
+          "duration" : 13626
+        }
+      }, {
+        "uid" : "f731a3cb67d74fbd",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/132//#testresult/f731a3cb67d74fbd",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"#/login\" class=\"nav-link router-link-exact-active active\" aria-current=\"page\">...</a> is not clickable at point (637, 26). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1628808087792,
+          "stop" : 1628808101455,
+          "duration" : 13663
+        }
+      }, {
+        "uid" : "37aad791cde399b2",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/131//#testresult/37aad791cde399b2",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"#/login\" class=\"nav-link router-link-exact-active active\" aria-current=\"page\">...</a> is not clickable at point (637, 26). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1628807389103,
+          "stop" : 1628807402666,
+          "duration" : 13563
+        }
+      }, {
+        "uid" : "d52de108af1f0e2a",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/130//#testresult/d52de108af1f0e2a",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href='#/editor']\"}\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1628806335392,
+          "stop" : 1628806347911,
+          "duration" : 12519
+        }
+      }, {
+        "uid" : "c46d0d7ef4492233",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/129//#testresult/c46d0d7ef4492233",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href='#/editor']\"}\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1628805536460,
+          "stop" : 1628805548983,
+          "duration" : 12523
+        }
+      }, {
+        "uid" : "dc2fcf55019c4e4a",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/118//#testresult/dc2fcf55019c4e4a",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href='#/editor']\"}\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1628770364579,
+          "stop" : 1628770377099,
+          "duration" : 12520
+        }
+      }, {
+        "uid" : "31e6f35aaaf08d98",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/117//#testresult/31e6f35aaaf08d98",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href='#/editor']\"}\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1628770256895,
+          "stop" : 1628770269447,
+          "duration" : 12552
+        }
+      }, {
+        "uid" : "7e93872062eca918",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/115//#testresult/7e93872062eca918",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href='#/editor']\"}\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1628172224650,
+          "stop" : 1628172234053,
+          "duration" : 9403
+        }
+      }, {
+        "uid" : "d99929b90d2a7a89",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/114//#testresult/d99929b90d2a7a89",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href='#/editor']\"}\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1628150340306,
+          "stop" : 1628150349825,
+          "duration" : 9519
+        }
+      }, {
+        "uid" : "1c6c1bea5b440198",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/113//#testresult/1c6c1bea5b440198",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href='#/editor']\"}\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1628149885433,
+          "stop" : 1628149894874,
+          "duration" : 9441
+        }
+      }, {
+        "uid" : "372f2d90aea90c92",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/112//#testresult/372f2d90aea90c92",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href='#/editor']\"}\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1628080758685,
+          "stop" : 1628080768096,
+          "duration" : 9411
+        }
+      }, {
+        "uid" : "ef07c54daf9c9e81",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/111//#testresult/ef07c54daf9c9e81",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href='#/editor']\"}\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1628079382006,
+          "stop" : 1628079391539,
+          "duration" : 9533
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "1ffc36497f8f02f8.json",
+  "parameterValues" : [ ]
+}
