@@ -3,7 +3,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 import random, string
 from selenium.webdriver.chrome.options import Options
-import pytest_order
 import pytest
 
 options = webdriver.ChromeOptions()
