@@ -4,8 +4,8 @@ import time
 import random, string
 from selenium.webdriver.chrome.options import Options
 options = webdriver.ChromeOptions()
-options.add_argument('--headless')
-options.add_argument('--disable-gpu')
+#options.add_argument('--headless')
+#options.add_argument('--disable-gpu')
 
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
@@ -34,8 +34,13 @@ def test_register():
     time.sleep(2)
     driver.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys(generate_email())
     time.sleep(2)
-    driver.find_element_by_xpath("//a[@active-class='active']").click()
-    time.sleep(10)
+    driver.find_element_by_xpath("//input[@type='password'][@placeholder='Password']").send_keys(password)
+    time.sleep(2)
+    driver.find_element_by_xpath("//div/div/div/div/form/button").click()
+    time.sleep(5)
+    driver.find_element_by_xpath("//button[contains(text(),'OK')]").click()
+    time.sleep(5)
+    driver.close()
 
 
 def test_cookie1():

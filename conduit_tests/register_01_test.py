@@ -35,9 +35,10 @@ def test_register():
     # if driver.find_element_by_class_name("swal-modal").is_displayed():
     #  a = driver.find_element_by_class_name("swal-button swal-button--confirm")
     #   a.click()
+    time.sleep(5)
+    driver.find_element_by_xpath("//input[@type='password'][@placeholder='Password']").send_keys(password)
 
     # belépés
-    driver.find_element_by_xpath("//input[@type='password'][@placeholder='Password']").send_keys(password)
 
     driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
 
@@ -61,7 +62,7 @@ def test_register():
 
     assert megjelen_username == username
 
-    time.sleep(2)
+    time.sleep(5)
 
     driver.find_element_by_xpath("//a[@active-class='active']").click()
 
