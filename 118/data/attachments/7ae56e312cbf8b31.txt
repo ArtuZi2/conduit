@@ -1,3 +1,0 @@
-[<selenium.webdriver.remote.webelement.WebElement (session="a11019c838e27b714e04bb6547648e98", element="21afef58-4f14-428a-ae0b-830483596e87")>, <selenium.webdriver.remote.webelement.WebElement (session="a11019c838e27b714e04bb6547648e98", element="9dc8550f-3a63-4425-8e2b-1c0ef6c13107")>]
-True
-True

@@ -1,0 +1,175 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button type=\"submit\" class=\"btn btn-lg pull-xs-right btn-primary\">...</button> is not clickable at point (592, 497). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_adatbevitel",
+        "uid" : "f2d4b58c6aa8feea",
+        "parentUid" : "582940588fe53d2671e67493d1e5bbb8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629058254542,
+          "stop" : 1629058284962,
+          "duration" : 30420
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_new_post",
+        "uid" : "be43ccef48fb39e4",
+        "parentUid" : "582940588fe53d2671e67493d1e5bbb8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629058634160,
+          "stop" : 1629058662735,
+          "duration" : 28575
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "582940588fe53d2671e67493d1e5bbb8"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href='#/editor']\"}\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_new_post",
+        "uid" : "6eb3d86fa7d3fe68",
+        "parentUid" : "a0087cd691aa890338943397c6b33a89",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629058357553,
+          "stop" : 1629058360573,
+          "duration" : 3020
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a0087cd691aa890338943397c6b33a89"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/div[1]/div/div/span/button\"}\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_delete_post",
+        "uid" : "b82bdae43c72ba72",
+        "parentUid" : "dece8e24f17ab1de3d9e4710643be5e9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629058360618,
+          "stop" : 1629058365638,
+          "duration" : 5020
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "dece8e24f17ab1de3d9e4710643be5e9"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"#/register\" class=\"nav-link\">...</a> is not clickable at point (713, 26). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_edit_emil",
+        "uid" : "b59535551ef9cc65",
+        "parentUid" : "fed6ec46835102c468ac25ba3f0f9439",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629058414072,
+          "stop" : 1629058415155,
+          "duration" : 1083
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fed6ec46835102c468ac25ba3f0f9439"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_login",
+        "uid" : "d15da88ab4ac6135",
+        "parentUid" : "9459d39975a8a1dfb1116e04e5b1e436",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629058511912,
+          "stop" : 1629058549539,
+          "duration" : 37627
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9459d39975a8a1dfb1116e04e5b1e436"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/ul/li[5]/a\"}\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_logout",
+        "uid" : "7c6b0191698b897",
+        "parentUid" : "b28cb77f322781ac0f3c858edfe45c7a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629058598094,
+          "stop" : 1629058598111,
+          "duration" : 17
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b28cb77f322781ac0f3c858edfe45c7a"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//nav/div/ul/li[5]/a\"}\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_register",
+        "uid" : "51b0d17bc7badb7c",
+        "parentUid" : "7d3d545a57641122deccf1541446c347",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629058598149,
+          "stop" : 1629058605813,
+          "duration" : 7664
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7d3d545a57641122deccf1541446c347"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"#/\" class=\"nav-link\">...</a> is not clickable at point (572, 26). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_home",
+        "uid" : "da0f325209cfba99",
+        "parentUid" : "50eddee78101cec9e9858fda5aa42c76",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629058622916,
+          "stop" : 1629058624015,
+          "duration" : 1099
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "50eddee78101cec9e9858fda5aa42c76"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"#/\" class=\"nav-link\">...</a> is not clickable at point (564, 26). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_home2",
+        "uid" : "57ae837d33b55c23",
+        "parentUid" : "15b554a33d85a1b492c1391cbb4b39fd",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629058662780,
+          "stop" : 1629058663848,
+          "duration" : 1068
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "15b554a33d85a1b492c1391cbb4b39fd"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
