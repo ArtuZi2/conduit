@@ -1,0 +1,89 @@
+{
+  "uid" : "dc49301c626f4df6",
+  "name" : "test_login",
+  "fullName" : "conduit_tests.edit_email_05_test#test_login",
+  "historyId" : "2069f4b373c17bfe5cb478479726f29a",
+  "time" : {
+    "start" : 1629057841651,
+    "stop" : 1629057857164,
+    "duration" : 15513
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "977298cf2ddd48b1",
+      "name" : "stdout",
+      "source" : "977298cf2ddd48b1.txt",
+      "type" : "text/plain",
+      "size" : 299
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "conduit_tests"
+  }, {
+    "name" : "suite",
+    "value" : "edit_email_05_test"
+  }, {
+    "name" : "host",
+    "value" : "fv-az83-93"
+  }, {
+    "name" : "thread",
+    "value" : "3803-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "conduit_tests.edit_email_05_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "8a199d3c1c0ac618",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/135//#testresult/8a199d3c1c0ac618",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629057666856,
+          "stop" : 1629057682387,
+          "duration" : 15531
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "dc49301c626f4df6.json",
+  "parameterValues" : [ ]
+}
