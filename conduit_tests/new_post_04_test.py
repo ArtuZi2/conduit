@@ -41,13 +41,15 @@ def test_register():
     driver.find_element_by_xpath("//div/div/div/div/form/button").click()
     #   a.click()
 
-    time.sleep(2)
+    time.sleep(5)
 
     driver.find_element_by_xpath("//nav/div/ul/li[5]/a").click()
     time.sleep(5)
+    driver.close()
 
 
 def test_login():
+    driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
     driver.get("http://localhost:1667")
     time.sleep(2)
 
@@ -59,7 +61,9 @@ def test_login():
     time.sleep(5)
     driver.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys(emil)
     driver.find_element_by_xpath("//input[@type='password'][@placeholder='Password']").send_keys(password)
-    driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
+    driver.find_element_by_xpath("//div/div/div/div/form/button").click()
+    time.sleep(3)
+    driver.find_element_by_xpath("//button[contains(text(),'OK')]").click()
 
     time.sleep(5)
 
@@ -114,7 +118,7 @@ def test_new_post():
     time.sleep(5)
 
 
-def test_home():
+def test_home2():
 
     driver.find_element_by_xpath("//nav/div/ul/li[1]/a").click()
     time.sleep(5)
