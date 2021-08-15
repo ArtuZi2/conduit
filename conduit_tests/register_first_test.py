@@ -3,6 +3,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 import random, string
 from selenium.webdriver.chrome.options import Options
+import pytest_order
+import pytest
 
 options = webdriver.ChromeOptions()
 options.add_argument('--headless')
@@ -12,7 +14,7 @@ driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
 # regisztráció random email címmel
 
-
+@pytest.mark.order1
 def test_register():
     username = "sun2"
     password = "Sunshine2046"
