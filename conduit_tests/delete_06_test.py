@@ -101,7 +101,7 @@ def test_delete_post():
     article_title = driver.find_element_by_xpath("//div/div[1]/div/h1")
 
     article_title.is_enabled()
-    assert article_title == "Autumn"
+    assert article_title != "Autumn"
 
 
 
