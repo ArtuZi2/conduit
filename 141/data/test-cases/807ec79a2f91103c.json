@@ -1,0 +1,209 @@
+{
+  "uid" : "807ec79a2f91103c",
+  "name" : "test_register",
+  "fullName" : "conduit_tests.login_02_test#test_register",
+  "historyId" : "04a0652585d1e02d892a1ff702a019d3",
+  "time" : {
+    "start" : 1629060344069,
+    "stop" : 1629060358999,
+    "duration" : 14930
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "7182a49abbd7f0c7",
+      "name" : "stdout",
+      "source" : "7182a49abbd7f0c7.txt",
+      "type" : "text/plain",
+      "size" : 5
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "conduit_tests"
+  }, {
+    "name" : "suite",
+    "value" : "login_02_test"
+  }, {
+    "name" : "host",
+    "value" : "fv-az74-944"
+  }, {
+    "name" : "thread",
+    "value" : "3894-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "conduit_tests.login_02_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 12,
+        "unknown" : 0,
+        "total" : 15
+      },
+      "items" : [ {
+        "uid" : "96d99111ab3167d2",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/140//#testresult/96d99111ab3167d2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629059503368,
+          "stop" : 1629059518253,
+          "duration" : 14885
+        }
+      }, {
+        "uid" : "2ddaf01c81e677ae",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/139//#testresult/2ddaf01c81e677ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629059252450,
+          "stop" : 1629059267461,
+          "duration" : 15011
+        }
+      }, {
+        "uid" : "1f35bddb6f68eea1",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/138//#testresult/1f35bddb6f68eea1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629058497054,
+          "stop" : 1629058511909,
+          "duration" : 14855
+        }
+      }, {
+        "uid" : "5ce6831fe340378e",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/137//#testresult/5ce6831fe340378e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629058175805,
+          "stop" : 1629058190605,
+          "duration" : 14800
+        }
+      }, {
+        "uid" : "6a2d75d727aac665",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/136//#testresult/6a2d75d727aac665",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629057940327,
+          "stop" : 1629057955243,
+          "duration" : 14916
+        }
+      }, {
+        "uid" : "7562e706e4e8b94f",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/135//#testresult/7562e706e4e8b94f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629057765591,
+          "stop" : 1629057780564,
+          "duration" : 14973
+        }
+      }, {
+        "uid" : "2071d696f1158cb1",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/133//#testresult/2071d696f1158cb1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628856779501,
+          "stop" : 1628856794463,
+          "duration" : 14962
+        }
+      }, {
+        "uid" : "734343f58243a995",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/132//#testresult/734343f58243a995",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628807988250,
+          "stop" : 1628808003363,
+          "duration" : 15113
+        }
+      }, {
+        "uid" : "4a0a6062261272c",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/131//#testresult/4a0a6062261272c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628807290454,
+          "stop" : 1628807305286,
+          "duration" : 14832
+        }
+      }, {
+        "uid" : "d30e5e1c8050bc7d",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/130//#testresult/d30e5e1c8050bc7d",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div/div/div/div/form/button] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div/div/div/div/form/button]' is not a valid XPath expression.\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1628806254719,
+          "stop" : 1628806257426,
+          "duration" : 2707
+        }
+      }, {
+        "uid" : "3be739ba16775107",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/129//#testresult/3be739ba16775107",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div/div/div/div/form/button] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div/div/div/div/form/button]' is not a valid XPath expression.\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1628805455720,
+          "stop" : 1628805458426,
+          "duration" : 2706
+        }
+      }, {
+        "uid" : "5321e1ae746306a3",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/118//#testresult/5321e1ae746306a3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628770271788,
+          "stop" : 1628770286693,
+          "duration" : 14905
+        }
+      }, {
+        "uid" : "b7e117bef190b740",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/117//#testresult/b7e117bef190b740",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628770163611,
+          "stop" : 1628770178658,
+          "duration" : 15047
+        }
+      }, {
+        "uid" : "df59c8df39e35701",
+        "reportUrl" : "https://ArtuZi2.github.io/conduit/115//#testresult/df59c8df39e35701",
+        "status" : "broken",
+        "statusDetails" : "NameError: name 'random' is not defined",
+        "time" : {
+          "start" : 1628172139362,
+          "stop" : 1628172141827,
+          "duration" : 2465
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "807ec79a2f91103c.json",
+  "parameterValues" : [ ]
+}
