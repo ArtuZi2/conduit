@@ -98,7 +98,7 @@ def test_login():
 
 
 def test_logout():
-
+    time.sleep(5)
     logout = driver.find_element_by_xpath("//nav/div/ul/li[5]/a")
     print(logout.is_enabled())
     print(logout.is_displayed())
