@@ -16,22 +16,22 @@ driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 def test_register():
     username = "sun2"
     password = "Sunshine2046"
+    e_mail = "tkata@gmail.com"
 
     driver.get("http://localhost:1667")
-    time.sleep(2)
 
-    def generate_email(prefix='tkata+', domain='gmail.com'):
+    """def generate_email(prefix='tkata+', domain='gmail.com'):
         random_part = ''.join(random.choice(string.ascii_lowercase + string.digits)
                               for _ in range(10))
 
         return prefix + random_part + '@' + domain
 
-    generate_email()
+    generate_email()"""
 
     time.sleep(5)
     driver.find_element_by_xpath("/html/body//a[contains(@href,'register')]").click()
     driver.find_element_by_xpath("//input[@type='text'][@placeholder='Username']").send_keys(username)
-    driver.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys(generate_email())
+    driver.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys(e_mail)
     # if driver.find_element_by_class_name("swal-modal").is_displayed():
     #  a = driver.find_element_by_class_name("swal-button swal-button--confirm")
     #   a.click()
