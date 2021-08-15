@@ -93,13 +93,13 @@ def test_login():
     time.sleep(2)
     driver.find_element_by_xpath("//fieldset[2]/input").send_keys(password)
     time.sleep(2)
-    driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']").click()
+    driver.find_element_by_xpath("//div/div/div/div/form/button").click()
     time.sleep(5)
 
 
 def test_logout():
 
-    logout = driver.find_element_by_xpath("//div/ul/li[5]/a")
+    logout = driver.find_element_by_xpath("//nav/div/ul/li[5]/a")
     print(logout.is_enabled())
     print(logout.is_displayed())
     logout.click()
